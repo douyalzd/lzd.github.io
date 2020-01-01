@@ -1,0 +1,151 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 豆YA博客
+subtitle: 往前走，别掉队
+description: I am not bound to win, but I am bound to be true
+keywords: 豆YA博客, 前端开发, 全栈开发
+author: luzhidong
+language: zh-CN
+timezone: Asia/Shanghai
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://ldouya.cn/
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render: README.md
+
+# Writing
+new_post_name: :year-:month-:day-:title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: false
+  line_number: true
+  auto_detect: false
+  tab_replace:
+
+prism_plugin:
+  mode: 'preprocess' # realtime/preprocess
+  theme: 'tomorrow'
+  line_number: false # default false
+  custom_css:
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 12
+  order_by: -date
+  
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 12
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: hexo-theme-matery
+
+avatar: http://img.ldouya.cn/medias/avatar.jpg
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy: 
+  type: git
+  repository: git@github.com:douyalzd/lzd.github.io.git
+  branch: gh-pages
+    # - git@gitee.com:douyadg/douyadg.git 
+    # - git@github.com:douyalzd/lzd.github.io.git
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+
+# 中文链接转拼音
+permalink_pinyin:
+  enable: true
+  separator: '' # default: '-'
+
+#七牛云存储设置
+##offline       是否离线. 离线状态将使用本地地址渲染
+##sync          是否同步
+##bucket        空间名称.
+##access_key    上传密钥AccessKey
+##secret_key    上传密钥SecretKey
+##secret_file   秘钥文件路径，可以将上述两个属性配置到文件内，防止泄露，json格式。绝对路径相对路径均可
+##dirPrefix     上传的资源子目录前缀.如设置，需与urlPrefix同步 
+##urlPrefix     外链前缀.
+##up_host      上传服务器路径,如选择华北区域的话配置为http://up-z1.qiniu.com
+##local_dir     本地目录.
+##update_exist  是否更新已经上传过的文件(仅文件大小不同或在上次上传后进行更新的才会重新上传)
+##image/js/css  子参数folder为不同静态资源种类的目录名称，一般不需要改动
+##image.extend  这是个特殊参数，用于生成缩略图或加水印等操作。具体请参考http://developer.qiniu.com/docs/v6/api/reference/fop/image/ 
+##              可使用基本图片处理、高级图片处理、图片水印处理这3个接口。例如 ?imageView2/2/w/500 即生成宽度最多500px的缩略图
+qiniu:
+  offline: false
+  sync: true
+  bucket: blog
+  secret_file: source/_data/key.json
+  # access_key: AccessKey
+  # secret_key: SecretKey
+  dirPrefix: static
+  urlPrefix: http://img.ldouya.cn/static
+  up_host: http://upload.qiniu.com
+  local_dir: static
+  update_exist: true
+  ignoring_files:
+    - '**/.DS_Store'
+  image: 
+    folder: images
+    extend: 
+  js:
+    folder: js
+  css:
+    folder: css
