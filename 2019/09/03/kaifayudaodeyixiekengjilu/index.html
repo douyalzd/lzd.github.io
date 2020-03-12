@@ -847,7 +847,7 @@ start();
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        130
+                        224
                     </div>
                     
 
@@ -873,10 +873,14 @@ start();
                 <h2 id="微信小程序-textarea-不跟随页面滚动问题"><a href="#微信小程序-textarea-不跟随页面滚动问题" class="headerlink" title="微信小程序 textarea 不跟随页面滚动问题"></a>微信小程序 textarea 不跟随页面滚动问题</h2><ol>
 <li>出现上面的问题是<code>textarea</code>的某一层父标签样式加了<code>overflow</code>css属性；去掉这个属性后就可以了</li>
 <li>设计的页面如果有textarea应该尽量避页面出现滚动条</li>
-<li>如果一定要滚动页面，那…就找解决办法吧<ul>
-<li>我这里的使用的办法是用<code>text</code>和<code>textarea</code>做隐藏和显示切换，当我们点击text时显示textarea，失去焦点时显示text<br>这样就可以在</li>
+<li><p>如果一定要滚动页面，那…就找解决办法吧</p>
+<ul>
+<li>我这里的使用的办法是用<code>text</code>和<code>textarea</code>做隐藏和显示切换，当我们点击text时显示textarea，失去焦点时显示text，这样就可以临时解决问题，但还不是很完美（当你需要自动获取焦点时，需要点击两次才能自动获取焦点），如果大家有完美的解决方案希望您能在下方评论留言。</li>
 </ul>
 </li>
+<li><p>使用小程序下拉刷新，页面外层布局不能使用flex布局</p>
+</li>
+<li>小程序textarea安卓和iOS显示不一样</li>
 </ol>
 
             </div>
@@ -1276,7 +1280,7 @@ Windows常用破解软件下载网站推荐吾</div>
                 
                 <span id="busuanzi_container_site_uv">
                     <i class="fa fa-users"></i>
-                    次,&nbsp;访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人. &copy;黔ICP备18000806号-1
+                    次,&nbsp;访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人. <a href="http://www.beian.miit.gov.cn" target="_blank">黔ICP备18000806号-1</a>
                 </span>
                 
             
