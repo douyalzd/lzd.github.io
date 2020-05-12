@@ -91,6 +91,7 @@ deploy:
   branch: gh-pages
     # - git@gitee.com:douyadg/douyadg.git 
     # - git@github.com:douyalzd/lzd.github.io.git
+    # - git@e.coding.net:ldouya/blog.git
 
 search:
   path: search.xml
