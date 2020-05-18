@@ -14,30 +14,25 @@ date: 2019-02-15 12:02:49
 ---
 
 ### eslint 全局安装
+
+>首先得使用`npm`安装下面的插件直接复制下面命令到控制台运行就可以了  
 > `npm i -g eslint eslint-plugin-html eslint-plugin-vue babel-eslint`
 
 ### vscode 配置
 
-> 需要安装【Prettier-Code formatter】和【ESLint】、【Vetur】、【beautify】插件
+> vscode需要安装一下插  
+>需要安装【Prettier-Code formatter】和【ESLint】、【Vetur】、【beautify】插件
 
+打开vscod设置，把下面的配置项复制进去
+{% qnimg 004.png %}
 ``` json
 {
     "editor.tabSize": 4,
     "prettier.tabWidth": 4,
-    "prettier.eslintIntegration": true,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 60000,
-    "eslint.autoFixOnSave": true,
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        "html",
-        {"language": "vue", "autoFix": true}
-    ],
-    "eslint.options": {
-        //"configFile": "E:/git/github/styleguide/eslint/.eslintrc.js",
-        "plugins": ["html"]
-    },
+    "vetur.format.options.tabSize": 4,
+    "vetur.validation.template": false,
     "vetur.format.defaultFormatter.html": "js-beautify-html",
     "vetur.format.defaultFormatter.js": "prettier",
     "vetur.format.defaultFormatterOptions": {
@@ -45,7 +40,7 @@ date: 2019-02-15 12:02:49
             "wrap-attributes": "aligned-multiple",
             "wrap-attributes-indent-size": 4,
             "wrap-line-length": 150,
-            "indent_size": 4,
+			"indent_size": 4,
         },
         "prettier": {
             "tabWidth": 4,
@@ -54,16 +49,21 @@ date: 2019-02-15 12:02:49
             "jsxBracketSameLine": true,
         },
     },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
 }
 ```
 
 ### eslintrc.js
 
+以下是我公司目前使用的esliint配置的代码规范，仅供参考 
+该配置项是基于vue-cli3搭建的项目配置的
 ``` javascript
 module.exports = {
     root: true,
-    parser: 'babel-eslint',
     parserOptions: {
+        parser: 'babel-eslint',
         sourceType: 'module'
     },
     env: {
@@ -71,25 +71,42 @@ module.exports = {
         node: true,
         es6: true,
     },
-    extends: 'eslint:recommended',
-    // required to lint *.vue files
-    plugins: [
-        'html'
-    ],
-    // check if imports actually resolve
-    'settings': {
-        'import/resolver': {
-            'webpack': {
-                'config': 'build/webpack.base.conf.js'
-            }
-        }
-    },
+    extends: ['plugin:vue/recommended', 'eslint:recommended'],
     // add your custom rules here
     //it is base on https://github.com/vuejs/eslint-config-vue
     rules: {
-        "indent": [2, 4, {// 强制使用一致的缩进
+        "sort-imports": ["error", {
+            "ignoreCase": true,
+            "ignoreMemberSort": false,
+            "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+        }],
+        "vue/require-default-prop": "off",
+        "vue/max-attributes-per-line": [2, {
+            "singleline": 10,
+            "multiline": {
+                "max": 1,
+                "allowFirstLine": false
+            }
+        }],
+        "vue/singleline-html-element-content-newline": "off",
+        "vue/multiline-html-element-content-newline": "off",
+        "vue/order-in-components": "off",
+        "vue/name-property-casing": ["error", "PascalCase"],
+        "vue/no-v-html": "off",
+        "vue/html-closing-bracket-newline": ["error", {
+            "singleline": "never",
+            "multiline": "never"
+        }],
+        "vue/html-indent": ["error", 4, {
+            "attribute": 1,
+            "baseIndent": 1,
+            "closeBracket": 0,
+            "alignAttributesVertically": true,
+            "ignores": []
+        }],
+        "indent": [2, 4, { // 强制使用一致的缩进
             'SwitchCase': 1
-        }], 
+        }],
         'no-mixed-spaces-and-tabs': 2, // 禁止空格和 tab 的混合缩进
         'arrow-spacing': [2, { // 强制箭头函数的箭头前后使用一致的空格
             'before': true,
@@ -118,8 +135,25 @@ module.exports = {
         }],
         'keyword-spacing': [2, { // 强制在关键字前后使用一致的空格
             // "after": true,
-            // "before": true
-           "overrides": { "if": { "after": false, "before": true }, "else": { "after": true, "before": false }, "for": { "after": false, "before": true }, "while": { "after": false, "before": true} }
+            // "before": true 
+            "overrides": {
+                "if": {
+                    "after": false,
+                    "before": true
+                },
+                "else": {
+                    "after": true,
+                    "before": false
+                },
+                "for": {
+                    "after": false,
+                    "before": true
+                },
+                "while": {
+                    "after": false,
+                    "before": true
+                }
+            }
         }],
         'new-cap': [2, { // 要求构造函数首字母大写
             'newIsCap': true,
@@ -170,7 +204,7 @@ module.exports = {
         'no-path-concat': 2, // 禁止对 __dirname 和 __filename 进行字符串连接
         'no-proto': 2, // 禁用 __proto__ 属性
         'no-redeclare': 2, // 禁止多次声明同一变量
-        'no-regex-spaces': 2, // 不允许正则表达式文字中的多个空格
+        'no-regex-spaces': 2, // 	不允许正则表达式文字中的多个空格
         'no-return-assign': [2, 'except-parens'], // 禁止在 return 语句中使用赋值语句
         'no-self-assign': 2, // 禁止自我赋值
         'no-self-compare': 2, // 禁止自身比较
@@ -203,13 +237,15 @@ module.exports = {
         'one-var': [2, { // 强制函数中的变量要么一起声明要么分开声明
             'initialized': 'never'
         }],
-        'operator-linebreak': [2, 'before'],  // 强制操作符使用一致的换行符
+        'operator-linebreak': [2, 'before'], // 强制操作符使用一致的换行符
         'padded-blocks': [2, 'never'], // 要求或禁止块内填充
         // 'quotes': [2, 'double', { // 强制使用一致的反勾号、双引号或单引号
         //     'avoidEscape': true,
         //     'allowTemplateLiterals': true
         // }],
-        'semi': [2, 'always', { "omitLastInOneLineBlock": true}], // 要求或禁止使用分号代替 ASI
+        'semi': [2, 'always', {
+            "omitLastInOneLineBlock": true
+        }], // 要求或禁止使用分号代替 ASI
         'semi-spacing': [2, { // 强制分号之前和之后使用一致的空格
             'before': false,
             'after': true
@@ -231,7 +267,7 @@ module.exports = {
         'wrap-iife': [2, 'any'], // 要求 IIFE 使用括号括起来
         'yield-star-spacing': [2, 'both'], // 强制在 yield* 表达式中 * 周围使用空格
         'yoda': [2, 'never'], // 要求或禁止 “Yoda” 条件
-        'prefer-const': 2,  // 要求使用 const 声明那些声明后不再被修改的变量
+        'prefer-const': 2, // 要求使用 const 声明那些声明后不再被修改的变量
         'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0, // 禁用 debugger
         'object-curly-spacing': [2, 'always', { // 强制在大括号中使用一致的空格
             objectsInObjects: false
