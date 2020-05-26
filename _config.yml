@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 豆YA博客
+title: 前端豆芽
 subtitle: 往前走，别掉队
 description: I am not bound to win, but I am bound to be true
-keywords: 豆YA博客, 前端开发, 全栈开发
+keywords: 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号
 author: luzhidong
 language: zh-CN
 timezone: Asia/Shanghai
