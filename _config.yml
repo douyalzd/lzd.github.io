@@ -7,7 +7,7 @@ title: 前端豆芽
 subtitle: 往前走，别掉队
 description: I am not bound to win, but I am bound to be true
 keywords: 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号
-author: luzhidong
+author: Mr.Bean
 language: zh-CN
 timezone: Asia/Shanghai
 
@@ -81,13 +81,13 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: hexo-theme-matery
 
-avatar: http://img.ldouya.cn/medias/avatar.jpg
+avatar: http://img.ldouya.cn/medias/avatar2.jpg
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy: 
   type: git
-  repository: git@github.com:douyalzd/lzd.github.io.git
+  repository: git@e.coding.net:ldouya/blog.git
   branch: gh-pages
     # - git@gitee.com:douyadg/douyadg.git 
     # - git@github.com:douyalzd/lzd.github.io.git
