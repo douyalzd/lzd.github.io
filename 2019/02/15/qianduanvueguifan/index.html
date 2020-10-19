@@ -4,13 +4,8 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="前端-VUE规范, 豆YA博客, 前端开发, 全栈开发">
-    <meta name="description" content="标签使用
-除了div ul&amp;gt;li标签外，其他html标签内不能含有任务组件的标签（包括element-ui标签）
-el-row 必须包含el-col 不要单独使用el-col
-
-样式
-使用scss语法 每个.vue文件下的style都">
+    <meta name="keywords" content="前端-VUE规范, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
+    <meta name="description" content="命名分类camelCase（驼峰式，也叫小驼峰命名，e.g. userInfo）PascalCase（帕斯卡命名式，也叫大驼峰命名，e.g. UserInfo）kebab-case（短横线连接式，e.g. user-info）snake_c">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +13,7 @@ el-row 必须包含el-col 不要单独使用el-col
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>前端-VUE规范 | 豆YA博客</title>
+    <title>前端-VUE规范 | 前端豆芽</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -51,9 +46,9 @@ el-row 必须包含el-col 不要单独使用el-col
                 <div class="brand-logo">
                     <a href="/" class="waves-effect waves-light">
                         
-                        <img src="http://img.ldouya.cn/medias/logo2.png" class="logo-img hide-on-small-only">
+                        <img src="http://img.ldouya.cn/medias/logo3.png" class="logo-img hide-on-small-only">
                         
-                        <!-- <span class="logo-span">豆YA博客</span> -->
+                        <!-- <span class="logo-span">前端豆芽</span> -->
                     </a>
                 </div>
                 
@@ -127,9 +122,9 @@ el-row 必须包含el-col 不要单独使用el-col
 
     <div class="mobile-head bg-color">
         
-        <img src="http://img.ldouya.cn/medias/logo2.png" class="logo-img responsive-img">
+        <img src="http://img.ldouya.cn/medias/logo3.png" class="logo-img responsive-img">
         
-        <!-- <div class="logo-name">豆YA博客</div> -->
+        <!-- <div class="logo-name">前端豆芽</div> -->
         <div class="logo-desc">
             
             I am not bound to win, but I am bound to be true
@@ -849,14 +844,14 @@ start();
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        454
+                        1.5k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        6 分
                     </div>
                     
                 
@@ -872,66 +867,223 @@ start();
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="标签使用"><a href="#标签使用" class="headerlink" title="标签使用"></a>标签使用</h3><ul>
-<li>除了div ul&gt;li标签外，其他html标签内不能含有任务组件的标签（包括element-ui标签）</li>
-<li><code>el-row</code> 必须包含<code>el-col</code> 不要单独使用<code>el-col</code></li>
-</ul>
-<h3 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h3><ul>
-<li>使用<code>scss</code>语法 每个<code>.vue</code>文件下的style都必须加上<code>scope</code>属性</li>
-</ul>
+                <h2 id="命名分类"><a href="#命名分类" class="headerlink" title="命名分类"></a>命名分类</h2><p>camelCase（驼峰式，也叫小驼峰命名，e.g. userInfo）<br>PascalCase（帕斯卡命名式，也叫大驼峰命名，e.g. UserInfo）<br>kebab-case（短横线连接式，e.g. user-info）<br>snake_case（下划线连接式，e.g. user_info）</p>
+<h2 id="标签使用"><a href="#标签使用" class="headerlink" title="标签使用"></a>标签使用</h2><p>除了div ul&gt;li标签外，其他html标签内不能含有任务组件的标签（包括element-ui标签）<br><code>el-row</code> 必须包含<code>el-col</code> 不要单独使用<code>el-col</code></p>
+<h2 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h2><p>使用<code>scss</code>语法 每个<code>.vue</code>文件下的style都必须加上<code>scope</code>属性 </p>
 <pre class=" language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>style rel<span class="token operator">=</span><span class="token string">"stylesheet/scss"</span> lang<span class="token operator">=</span><span class="token string">"scss"</span> scoped<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>style<span class="token operator">></span>
 </code></pre>
-<h3 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h3><ul>
-<li><p>每个 Vue 组件的代码建议不要超出 200 行，如果超出建议拆分组件。</p>
-</li>
-<li><p>组件一般情况下是可以拆成基础/ui部分和业务部分，基础组件一般是承载呈现，基础功能，不和业务耦合部分。</p>
-</li>
-<li><p>业务组件一般包含业务功能业务特殊数据等等。</p>
-</li>
-</ul>
+<h2 id="组件建议"><a href="#组件建议" class="headerlink" title="组件建议"></a>组件建议</h2><blockquote>
 <ol>
-<li><p>组件命名</p>
-<ul>
-<li>使用小驼峰命名法（有待商议） 引入组件名用小驼峰</li>
-<li>命名建议：尽量不要超过三个单词</li>
-</ul>
-</li>
-<li><p>UI组件/基础组件</p>
-<ul>
-<li><p>开发的时候注意可拓展性，支持数据传参进行渲染，支持插槽slot。</p>
-</li>
-<li><p>设置有mixin，mixin中放了基础信息和方法。</p>
-</li>
-</ul>
-</li>
-<li><p>容器组件</p>
-<ul>
-<li>和当前业务耦合性比较高，由多个基础组件组成，可承载当前页的业务接口请求和数据(vuex)。</li>
-</ul>
-</li>
-<li><p>组件存放位置</p>
-<ul>
-<li>ui组件存放在 src/components/ 中，包含 xxx.vue和 xxmixin.js 和 readme.md。</li>
-</ul>
-</li>
-<li><p>组件通讯</p>
-<ul>
-<li>避免数据的分发源混乱，不建议使用 eventBus控制数据，应使用 props来和 $emit来数据分发和传送。</li>
-<li>同级组件的通讯一般会有一个中间容器组件作为桥梁。</li>
-<li>容器组件作为数据的接受和分发点。</li>
-</ul>
-</li>
-<li><p>组件的挂在和销毁</p>
-<ul>
-<li><p>通过v-if控制组件的挂在和销毁</p>
+<li>每个 Vue 组件的代码建议不要超出 200 行，如果超出建议拆分组件。  </li>
+<li>组件一般情况下是可以拆成基础/ui部分和业务部分，基础组件一般是承载呈现，基础功能，不和业务耦合部分。  </li>
+<li>业务组件一般包含业务功能业务特殊数据等等。</li>
+</ol>
+</blockquote>
+<h2 id="组件命名"><a href="#组件命名" class="headerlink" title="组件命名"></a>组件命名</h2><p>组件文件名除index.vue之外，一律采用PascalCase(<strong>大驼峰</strong>)写法。原因是引入组件时，组件的变量通常用PascalCase格式，以区别于一般变量。组件文件名与变量名一致，方便对应。</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> UserBook <span class="token keyword">from</span> <span class="token string">'./user/UserBook'</span>
+</code></pre>
+<p>组件名应该始终是多个单词的，根组件 App 除外<br>html元素都是单个单词的（如 <code>&lt;article&gt;</code>,<code>&lt;header&gt;</code>)，为了区分组件和一般html元素，组件由多个单词组成，如<code>BookItem.vue</code>，单独的<code>Book.vue</code>不推荐。</p>
+<h2 id="UI组件-基础组件"><a href="#UI组件-基础组件" class="headerlink" title="UI组件/基础组件"></a>UI组件/基础组件</h2><p>开发的时候注意可拓展性，支持数据传参进行渲染，支持插槽slot。<br>设置有mixin，mixin中放了基础信息和方法。</p>
+<h2 id="容器组件"><a href="#容器组件" class="headerlink" title="容器组件"></a>容器组件</h2><p>和当前业务耦合性比较高，由多个基础组件组成，可承载当前页的业务接口请求和数据(vuex)。</p>
+<h2 id="组件存放位置"><a href="#组件存放位置" class="headerlink" title="组件存放位置"></a>组件存放位置</h2><p>ui组件存放在 src/components/ 中，包含 xxx.vue和 xxmixin.js 和 readme.md。</p>
+<h2 id="组件通讯"><a href="#组件通讯" class="headerlink" title="组件通讯"></a>组件通讯</h2><p>避免数据的分发源混乱，不建议使用 eventBus控制数据，应使用 props来和 $emit来数据分发和传送。<br>同级组件的通讯一般会有一个中间容器组件作为桥梁。<br>容器组件作为数据的接受和分发点。</p>
+<h2 id="组件的挂载和销毁"><a href="#组件的挂载和销毁" class="headerlink" title="组件的挂载和销毁"></a>组件的挂载和销毁</h2><p>通过v-if控制组件的挂载和销毁</p>
 <pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>testcomponent</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>componentActive<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>testcomponent</span><span class="token punctuation">></span></span>
 </code></pre>
-</li>
-<li><p>通过is控制组件的挂在和销毁</p>
+<p>通过is控制组件的挂载和销毁</p>
 <pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>component</span> <span class="token attr-name">is</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>componentName<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>component</span><span class="token punctuation">></span></span>
 </code></pre>
-</li>
-</ul>
+<h2 id="Vue文件结构"><a href="#Vue文件结构" class="headerlink" title="Vue文件结构"></a>Vue文件结构</h2><p>顺序：template -&gt; script -&gt; style。一个组件尽量不要超过200行，页面包含独立部分时尽量分离成子组件</p>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script language-javascript">
+   <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+      components<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      methods<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+   <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+<span class="token comment" spellcheck="true">&lt;!-- 声明语言，并且添加scoped --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>scss<span class="token punctuation">"</span></span> <span class="token attr-name">scoped</span><span class="token punctuation">></span></span><span class="token style language-css"><span class="token number">...</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>组件/实例的选项顺序</p>
+<pre class=" language-md"><code class="language-md">- name          (全局引用)
+- components    (模板依赖)
+- directives    ...
+- filters       ...
+- mixins        (组合)
+- props         (接口)
+- data          (本地状态属性)
+- computed      ...
+- watch         (响应回调)
+- created       (生命周期函数)
+- mounted       ...
+- methods       (实例属性)
+</code></pre>
+<h2 id="Vue-Router-Path规范"><a href="#Vue-Router-Path规范" class="headerlink" title="Vue Router Path规范"></a>Vue Router Path规范</h2><p>router path采用kebab-case格式。</p>
+<blockquote>
+<p>用下划线（如：/user_info）或camelCase（如：/userInfo)的单词被当成一个单词，搜索引擎无法区分语义。  </p>
+</blockquote>
+<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// bad</span>
+<span class="token punctuation">{</span>
+   path<span class="token punctuation">:</span> <span class="token string">'/user_info'</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// user_info当成一个单词</span>
+   name<span class="token punctuation">:</span> <span class="token string">'UserInfo'</span><span class="token punctuation">,</span>
+   component<span class="token punctuation">:</span> UserInfo<span class="token punctuation">,</span>
+   meta<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+   title<span class="token punctuation">:</span> <span class="token string">' - 用户'</span><span class="token punctuation">,</span>
+   desc<span class="token punctuation">:</span> <span class="token string">''</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+<span class="token comment" spellcheck="true">// good</span>
+<span class="token punctuation">{</span>
+   path<span class="token punctuation">:</span> <span class="token string">'/user-info'</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 能解析成user info</span>
+   name<span class="token punctuation">:</span> <span class="token string">'UserInfo'</span><span class="token punctuation">,</span>
+   component<span class="token punctuation">:</span> UserInfo<span class="token punctuation">,</span>
+   meta<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+   title<span class="token punctuation">:</span> <span class="token string">' - 用户'</span><span class="token punctuation">,</span>
+   desc<span class="token punctuation">:</span> <span class="token string">''</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre>
+<h2 id="methods-命名规范"><a href="#methods-命名规范" class="headerlink" title="methods 命名规范"></a>methods 命名规范</h2><p>驼峰式命名，统一使用动词或者动词+名词形式</p>
+<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">//bad</span>
+go、nextPage、show、login、get_code
+
+<span class="token comment" spellcheck="true">// good</span>
+jumpPage、openCarInfoDialog
+</code></pre>
+<p>请求数据方法，以 data 结尾</p>
+<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">//bad</span>
+takeData、confirmData、getList、postForm
+
+<span class="token comment" spellcheck="true">// good</span>
+getListData、postFormData
+</code></pre>
+<blockquote>
+<p>尽量使用常用单词开头（set、get、go、can、has、is）</p>
+</blockquote>
+<p><strong>附：</strong> 函数方法常用的动词</p>
+<pre class=" language-md"><code class="language-md">get 获取/set 设置,
+add 增加/remove 删除
+create 创建/destory 移除
+start 启动/stop 停止
+open 打开/close 关闭,
+read 读取/write 写入
+load 载入/save 保存,
+create 创建/destroy 销毁
+begin 开始/end 结束,
+backup 备份/restore 恢复
+import 导入/export 导出,
+split 分割/merge 合并
+inject 注入/extract 提取,
+attach 附着/detach 脱离
+bind 绑定/separate 分离,
+view 查看/browse 浏览
+edit 编辑/modify 修改,
+select 选取/mark 标记
+copy 复制/paste 粘贴,
+undo 撤销/redo 重做
+insert 插入/delete 移除,
+add 加入/append 添加
+clean 清理/clear 清除,
+index 索引/sort 排序
+find 查找/search 搜索,
+increase 增加/decrease 减少
+play 播放/pause 暂停,
+launch 启动/run 运行
+compile 编译/execute 执行,
+debug 调试/trace 跟踪
+observe 观察/listen 监听,
+build 构建/publish 发布
+input 输入/output 输出,
+encode 编码/decode 解码
+encrypt 加密/decrypt 解密,
+compress 压缩/decompress 解压缩
+pack 打包/unpack 解包,
+parse 解析/emit 生成
+connect 连接/disconnect 断开,
+send 发送/receive 接收
+download 下载/upload 上传,
+refresh 刷新/synchronize 同步
+update 更新/revert 复原,
+lock 锁定/unlock 解锁
+check out 签出/check in 签入,
+submit 提交/commit 交付
+push 推/pull 拉,
+expand 展开/collapse 折叠
+begin 起始/end 结束,
+start 开始/finish 完成
+enter 进入/exit 退出,
+abort 放弃/quit 离开
+obsolete 废弃/depreciate 废旧,
+collect 收集/aggregate 聚集
+</code></pre>
+<h2 id="多个属性的html元素规范"><a href="#多个属性的html元素规范" class="headerlink" title="多个属性的html元素规范"></a>多个属性的html元素规范</h2><p>多个特性的元素，占据一行过长时，应该分多行撰写，每个特性一行。(增强更易读)</p>
+<pre class=" language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- bad --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://vuejs.org/images/logo.png<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Vue Logo<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>my-component</span> <span class="token attr-name">foo</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>fooattribute<span class="token punctuation">"</span></span> <span class="token attr-name">bar</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>barattribute<span class="token punctuation">"</span></span> <span class="token attr-name">baz</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>bazattribute<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>my-component</span><span class="token punctuation">></span></span>
+
+<span class="token comment" spellcheck="true">&lt;!-- good --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span>
+   <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://vuejs.org/images/logo.png<span class="token punctuation">"</span></span>
+   <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Vue Logo<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>my-component</span>
+   <span class="token attr-name">foo</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>fooattribute<span class="token punctuation">"</span></span>
+   <span class="token attr-name">bar</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>barattribute<span class="token punctuation">"</span></span>
+   <span class="token attr-name">baz</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>bazattribute<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+</code></pre>
+<h2 id="指令规范"><a href="#指令规范" class="headerlink" title="指令规范"></a>指令规范</h2><ol>
+<li>v-for 循环必须加上 key 属性，在整个 for 循环中 key 需要唯一</li>
+<li><p>避免 v-if 和 v-for 同时用在一个元素上（性能问题）<br>出现这样的需求，有两种解决方案：</p>
+<ol>
+<li>将数据替换为一个计算属性，让其返回过滤后的列表</li>
+</ol>
+<pre class=" language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- bad --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>user in users<span class="token punctuation">"</span></span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>user.isActive<span class="token punctuation">"</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>user.id<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      {{ user.name }}
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span>
+
+<span class="token comment" spellcheck="true">&lt;!-- good --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>user in activeUsers<span class="token punctuation">"</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>user.id<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      {{ user.name }}
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script language-javascript">
+computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+   activeUsers<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>users<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>user<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> user<span class="token punctuation">.</span>isActive
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+</code></pre>
+<ol start="2">
+<li>将 v-if 移动至容器元素上 (比如 ul, ol)</li>
+</ol>
+<pre class=" language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- bad --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>user in users<span class="token punctuation">"</span></span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>shouldShowUsers<span class="token punctuation">"</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>user.id<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      {{ user.name }}
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span>
+
+<span class="token comment" spellcheck="true">&lt;!-- good --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>shouldShowUsers<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>user in users<span class="token punctuation">"</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>user.id<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      {{ user.name }}
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span>
+</code></pre>
 </li>
 </ol>
 
@@ -1072,7 +1224,7 @@ start();
                     <span class="reprint-tip">
                         <i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;转载请注明:
                     </span>
-                    <a href="https://ldouya.cn" class="b-link-green">豆YA博客</a>
+                    <a href="https://ldouya.cn" class="b-link-green">前端豆芽</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
                     <a href="/2019/02/15/qianduanvueguifan/" class="b-link-green">前端-VUE规范</a>
                 </p>
@@ -1081,35 +1233,272 @@ start();
     </div>
 
     
-        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
-<link rel="stylesheet" href="/css/my-gitalk.css">
 
-<div class="card gitalk-card" data-aos="fade-up">
-    <div id="gitalk-container" class="card-content"></div>
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments input[type=text],
+    #vcomments input[type=email],
+    #vcomments input[type=url],
+    #vcomments textarea {
+        box-sizing: border-box;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #42b983;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+
+    #vcomments img {
+        max-width: 25px;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div id="vcomments" class="card-content"></div>
 </div>
 
-<script src="/libs/gitalk/gitalk.min.js"></script>
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
 <script>
-    let gitalk = new Gitalk({
-        clientID: 'd3d644d1b7b40626e6fb',
-        clientSecret: '041970c1bb496755e815ff695303dd8bb93809d1',
-        repo: 'lzd.github.io',
-        owner: 'douyalzd',
-        admin: "douyalzd",
-        id: '2019-02-15T11-59-28',
-        distractionFreeMode: false  // Facebook-like distraction free mode
+    new Valine({
+        el: '#vcomments',
+        appId: 'eGQo1GVw9hzjYKunc7w5WUiz-gzGzoHsz',
+        appKey: 'COYw02xpalomAH6DpVic7Shd',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'retro',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: '畅所欲言吧'
     });
-
-    gitalk.render('gitalk-container');
 </script>
-    
-
-    
-
-    
-
-    
-
     
 
     
@@ -1132,10 +1521,9 @@ start();
                 </a>
                 <div class="card-content article-content">
                     <div class="summary">eslint 全局安装
-npm i -g eslint eslint-plugin-html eslint-plugin-vue babel-eslint
+首先得使用npm安装下面的插件直接复制下面命令到控制台运行就可以了npm i -g eslint eslint-plugin-html eslint-plugin-vue babel-eslint
 
-vscode 配置
-需要安装【Prettier-Code formatter】和【</div>
+vscode 配</div>
                     <div class="publish-info">
                         <span class="publish-date">
                             <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-15
@@ -1266,7 +1654,7 @@ let maxCount = </div>
 
         var url = document.location.href;
         newdiv.innerHTML += '<br />'
-            + '来源: 豆YA博客<br />'
+            + '来源: 前端豆芽<br />'
             + '作者: luzhidong<br />'
             + '链接: <a href="' + url + '">' + url + '</a><br />'
             + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
@@ -1329,13 +1717,13 @@ let maxCount = </div>
 <footer class="page-footer bg-color">
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
-            本站由&copy;<a href="https://ldouya.cn/" target="_blank">lzd</a>基于
+            本站由&copy;<a href="https://luzhidong.cn/" target="_blank">lzd</a>基于
             <a href="https://hexo.io/" target="_blank">Hexo</a> 的
             <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">hexo-theme-matery</a>主题搭建.
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">12.6k</span>
+                <span class="white-color">14.2k</span>
             
 
             
@@ -1424,5 +1812,7 @@ let maxCount = </div>
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
 
 
+<!-- <script id="ribbon" type="text/javascript" size="150" alpha='0.3' zIndex="-2" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js"></script> -->
+<script id="fluttering_ribbon" mobile="false" src="/js/canvas-fluttering-ribbon.min.js"></script>
 </body>
 </html>

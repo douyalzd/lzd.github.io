@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>豆YA博客</title>
+  <title>前端豆芽</title>
   
   <subtitle>往前走，别掉队</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ldouya.cn/"/>
-  <updated>2020-03-12T14:45:00.521Z</updated>
+  <updated>2020-06-02T11:59:50.571Z</updated>
   <id>https://ldouya.cn/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>开发遇到的一些坑记录</title>
-    <link href="https://ldouya.cn/2019/09/03/kaifayudaodeyixiekengjilu/"/>
-    <id>https://ldouya.cn/2019/09/03/kaifayudaodeyixiekengjilu/</id>
-    <published>2019-09-03T03:24:59.000Z</published>
-    <updated>2020-03-12T14:45:00.521Z</updated>
+    <title>vsCode-PHP环境配置-windows</title>
+    <link href="https://ldouya.cn/2020/05/22/vscodephphuanjingpeizhiwindows/"/>
+    <id>https://ldouya.cn/2020/05/22/vscodephphuanjingpeizhiwindows/</id>
+    <published>2020-05-22T03:36:17.000Z</published>
+    <updated>2020-06-02T11:59:50.571Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,63 @@
       
         
         
-          &lt;h2 id=&quot;微信小程序-textarea-不跟随页面滚动问题&quot;&gt;&lt;a href=&quot;#微信小程序-textarea-不跟随页面滚动问题&quot; class=&quot;headerlink&quot; title=&quot;微信小程序 textarea 不跟随页面滚动问题&quot;&gt;&lt;/a&gt;微信小程序
+          &lt;h2 id=&quot;安装Wampserver&quot;&gt;&lt;a href=&quot;#安装Wampserver&quot; class=&quot;headerlink&quot; title=&quot;安装Wampserver&quot;&gt;&lt;/a&gt;安装Wampserver&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Wampserver&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="php" scheme="https://ldouya.cn/categories/php/"/>
+    
+    
+      <category term="php" scheme="https://ldouya.cn/tags/php/"/>
+    
+      <category term="vsCode" scheme="https://ldouya.cn/tags/vsCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端插件集合收藏</title>
+    <link href="https://ldouya.cn/2020/05/20/qianduanchajianjiheshoucang/"/>
+    <id>https://ldouya.cn/2020/05/20/qianduanchajianjiheshoucang/</id>
+    <published>2020-05-20T01:38:34.000Z</published>
+    <updated>2020-06-02T11:59:50.571Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;vue图片剪栽组件&quot;&gt;&lt;a href=&quot;#vue图片剪栽组件&quot; class=&quot;headerlink&quot; title=&quot;vue图片剪栽组件&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/xyxiao001/vue-cropper&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://ldouya.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="tool" scheme="https://ldouya.cn/tags/tool/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开发遇到的一些坑记录</title>
+    <link href="https://ldouya.cn/2019/09/03/kaifayudaodeyixiekengjilu/"/>
+    <id>https://ldouya.cn/2019/09/03/kaifayudaodeyixiekengjilu/</id>
+    <published>2019-09-03T03:24:59.000Z</published>
+    <updated>2020-06-02T11:59:50.571Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;微信小程序&quot;&gt;&lt;a href=&quot;#微信小程序&quot; class=&quot;headerlink&quot; title=&quot;微信小程序&quot;&gt;&lt;/a&gt;微信小程序&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;textarea
         
       
     
@@ -49,7 +105,7 @@
     <link href="https://ldouya.cn/2019/06/30/changyongziyuanwangzhantuijian/"/>
     <id>https://ldouya.cn/2019/06/30/changyongziyuanwangzhantuijian/</id>
     <published>2019-06-30T06:43:19.000Z</published>
-    <updated>2019-06-30T08:29:12.492Z</updated>
+    <updated>2020-08-23T06:27:10.268Z</updated>
     
     <summary type="html">
     
@@ -283,9 +339,9 @@
       <category term="Hexo" scheme="https://ldouya.cn/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="https://ldouya.cn/tags/Hexo/"/>
-    
       <category term="Markdown" scheme="https://ldouya.cn/tags/Markdown/"/>
+    
+      <category term="Hexo" scheme="https://ldouya.cn/tags/Hexo/"/>
     
   </entry>
   
@@ -294,7 +350,7 @@
     <link href="https://ldouya.cn/2019/02/15/kaifagongjuvscodeeslinthedaimageshihuaxiangguanpeizhi/"/>
     <id>https://ldouya.cn/2019/02/15/kaifagongjuvscodeeslinthedaimageshihuaxiangguanpeizhi/</id>
     <published>2019-02-15T04:02:49.000Z</published>
-    <updated>2019-06-30T07:59:29.768Z</updated>
+    <updated>2020-06-02T11:59:50.570Z</updated>
     
     <summary type="html">
     
@@ -302,8 +358,7 @@
       
         
         
-          &lt;h3 id=&quot;eslint-全局安装&quot;&gt;&lt;a href=&quot;#eslint-全局安装&quot; class=&quot;headerlink&quot; title=&quot;eslint 全局安装&quot;&gt;&lt;/a&gt;eslint 全局安装&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;npm i -g
+          &lt;h3 id=&quot;eslint-全局安装&quot;&gt;&lt;a href=&quot;#eslint-全局安装&quot; class=&quot;headerlink&quot; title=&quot;eslint 全局安装&quot;&gt;&lt;/a&gt;eslint
         
       
     
@@ -323,7 +378,7 @@
     <link href="https://ldouya.cn/2019/02/15/qianduanvueguifan/"/>
     <id>https://ldouya.cn/2019/02/15/qianduanvueguifan/</id>
     <published>2019-02-15T03:59:28.000Z</published>
-    <updated>2019-05-09T14:01:42.260Z</updated>
+    <updated>2020-06-02T11:59:50.569Z</updated>
     
     <summary type="html">
     
@@ -331,8 +386,7 @@
       
         
         
-          &lt;h3 id=&quot;标签使用&quot;&gt;&lt;a href=&quot;#标签使用&quot; class=&quot;headerlink&quot; title=&quot;标签使用&quot;&gt;&lt;/a&gt;标签使用&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;除了div
+          &lt;h2 id=&quot;命名分类&quot;&gt;&lt;a href=&quot;#命名分类&quot; class=&quot;headerlink&quot; title=&quot;命名分类&quot;&gt;&lt;/a&gt;命名分类&lt;/h2&gt;&lt;p&gt;camelCase（驼峰式，也叫小驼峰命名，e.g.
         
       
     
@@ -430,37 +484,6 @@
       <category term="前端" scheme="https://ldouya.cn/tags/%E5%89%8D%E7%AB%AF/"/>
     
       <category term="CSS" scheme="https://ldouya.cn/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>iOS UI设计规范</title>
-    <link href="https://ldouya.cn/2018/09/14/iosuishejiguifan/"/>
-    <id>https://ldouya.cn/2018/09/14/iosuishejiguifan/</id>
-    <published>2018-09-13T16:15:15.000Z</published>
-    <updated>2019-06-29T16:14:06.843Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;这篇文章收录了最新iPhone设备尺寸，主要是为了自己方便自己查阅苹果设备尺寸，图标尺寸等，苹果官方有Human Interface Guidelines文档，感兴趣的朋友可以自行查阅。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3
-        
-      
-    
-    </summary>
-    
-      <category term="UI设计" scheme="https://ldouya.cn/categories/UI%E8%AE%BE%E8%AE%A1/"/>
-    
-    
-      <category term="UI设计" scheme="https://ldouya.cn/tags/UI%E8%AE%BE%E8%AE%A1/"/>
-    
-      <category term="iOS" scheme="https://ldouya.cn/tags/iOS/"/>
     
   </entry>
   

@@ -4,12 +4,11 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="开发工具VsCode-Eslint和代码格式化相关配置, 豆YA博客, 前端开发, 全栈开发">
+    <meta name="keywords" content="开发工具VsCode-Eslint和代码格式化相关配置, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
     <meta name="description" content="eslint 全局安装
-npm i -g eslint eslint-plugin-html eslint-plugin-vue babel-eslint
+首先得使用npm安装下面的插件直接复制下面命令到控制台运行就可以了npm i -g eslint eslint-plugin-html eslint-plugin-vue babel-eslint
 
-vscode 配置
-需要安装【Prettier-Code formatter】和【">
+vscode 配">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +16,7 @@ vscode 配置
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>开发工具VsCode-Eslint和代码格式化相关配置 | 豆YA博客</title>
+    <title>开发工具VsCode-Eslint和代码格式化相关配置 | 前端豆芽</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -50,9 +49,9 @@ vscode 配置
                 <div class="brand-logo">
                     <a href="/" class="waves-effect waves-light">
                         
-                        <img src="http://img.ldouya.cn/medias/logo2.png" class="logo-img hide-on-small-only">
+                        <img src="http://img.ldouya.cn/medias/logo3.png" class="logo-img hide-on-small-only">
                         
-                        <!-- <span class="logo-span">豆YA博客</span> -->
+                        <!-- <span class="logo-span">前端豆芽</span> -->
                     </a>
                 </div>
                 
@@ -126,9 +125,9 @@ vscode 配置
 
     <div class="mobile-head bg-color">
         
-        <img src="http://img.ldouya.cn/medias/logo2.png" class="logo-img responsive-img">
+        <img src="http://img.ldouya.cn/medias/logo3.png" class="logo-img responsive-img">
         
-        <!-- <div class="logo-name">豆YA博客</div> -->
+        <!-- <div class="logo-name">前端豆芽</div> -->
         <div class="logo-desc">
             
             I am not bound to win, but I am bound to be true
@@ -848,14 +847,14 @@ start();
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        4.4k
+                        4.5k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        18 分
+                        19 分
                     </div>
                     
                 
@@ -872,28 +871,19 @@ start();
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h3 id="eslint-全局安装"><a href="#eslint-全局安装" class="headerlink" title="eslint 全局安装"></a>eslint 全局安装</h3><blockquote>
-<p><code>npm i -g eslint eslint-plugin-html eslint-plugin-vue babel-eslint</code></p>
+<p>首先得使用<code>npm</code>安装下面的插件直接复制下面命令到控制台运行就可以了<br><code>npm i -g eslint eslint-plugin-html eslint-plugin-vue babel-eslint</code></p>
 </blockquote>
 <h3 id="vscode-配置"><a href="#vscode-配置" class="headerlink" title="vscode 配置"></a>vscode 配置</h3><blockquote>
-<p>需要安装【Prettier-Code formatter】和【ESLint】、【Vetur】、【beautify】插件</p>
+<p>vscode需要安装一下插<br>需要安装【Prettier-Code formatter】和【ESLint】、【Vetur】、【beautify】插件</p>
 </blockquote>
+<p>打开vscod设置，把下面的配置项复制进去<br><img src="http://img.ldouya.cn/static/images/004.png"></p>
 <pre class=" language-json"><code class="language-json"><span class="token punctuation">{</span>
     <span class="token property">"editor.tabSize"</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
     <span class="token property">"prettier.tabWidth"</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
-    <span class="token property">"prettier.eslintIntegration"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
     <span class="token property">"files.autoSave"</span><span class="token operator">:</span> <span class="token string">"afterDelay"</span><span class="token punctuation">,</span>
     <span class="token property">"files.autoSaveDelay"</span><span class="token operator">:</span> <span class="token number">60000</span><span class="token punctuation">,</span>
-    <span class="token property">"eslint.autoFixOnSave"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-    <span class="token property">"eslint.validate"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
-        <span class="token string">"javascript"</span><span class="token punctuation">,</span>
-        <span class="token string">"javascriptreact"</span><span class="token punctuation">,</span>
-        <span class="token string">"html"</span><span class="token punctuation">,</span>
-        <span class="token punctuation">{</span><span class="token property">"language"</span><span class="token operator">:</span> <span class="token string">"vue"</span><span class="token punctuation">,</span> <span class="token property">"autoFix"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">}</span>
-    <span class="token punctuation">]</span><span class="token punctuation">,</span>
-    <span class="token property">"eslint.options"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-        //<span class="token property">"configFile"</span><span class="token operator">:</span> <span class="token string">"E:/git/github/styleguide/eslint/.eslintrc.js"</span><span class="token punctuation">,</span>
-        <span class="token property">"plugins"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"html"</span><span class="token punctuation">]</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"vetur.format.options.tabSize"</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+    <span class="token property">"vetur.validation.template"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
     <span class="token property">"vetur.format.defaultFormatter.html"</span><span class="token operator">:</span> <span class="token string">"js-beautify-html"</span><span class="token punctuation">,</span>
     <span class="token property">"vetur.format.defaultFormatter.js"</span><span class="token operator">:</span> <span class="token string">"prettier"</span><span class="token punctuation">,</span>
     <span class="token property">"vetur.format.defaultFormatterOptions"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
@@ -910,12 +900,16 @@ start();
             <span class="token property">"jsxBracketSameLine"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
         <span class="token punctuation">}</span><span class="token punctuation">,</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"editor.codeActionsOnSave"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"source.fixAll.eslint"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<h3 id="eslintrc-js"><a href="#eslintrc-js" class="headerlink" title="eslintrc.js"></a>eslintrc.js</h3><pre class=" language-javascript"><code class="language-javascript">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+<h3 id="eslintrc-js"><a href="#eslintrc-js" class="headerlink" title="eslintrc.js"></a>eslintrc.js</h3><p>以下是我公司目前使用的esliint配置的代码规范，仅供参考<br>该配置项是基于vue-cli3搭建的项目配置的</p>
+<pre class=" language-javascript"><code class="language-javascript">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
     root<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-    parser<span class="token punctuation">:</span> <span class="token string">'babel-eslint'</span><span class="token punctuation">,</span>
     parserOptions<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        parser<span class="token punctuation">:</span> <span class="token string">'babel-eslint'</span><span class="token punctuation">,</span>
         sourceType<span class="token punctuation">:</span> <span class="token string">'module'</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
     env<span class="token punctuation">:</span> <span class="token punctuation">{</span>
@@ -923,25 +917,42 @@ start();
         node<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
         es6<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token keyword">extends</span><span class="token punctuation">:</span> <span class="token string">'eslint:recommended'</span><span class="token punctuation">,</span>
-    <span class="token comment" spellcheck="true">// required to lint *.vue files</span>
-    plugins<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-        <span class="token string">'html'</span>
-    <span class="token punctuation">]</span><span class="token punctuation">,</span>
-    <span class="token comment" spellcheck="true">// check if imports actually resolve</span>
-    <span class="token string">'settings'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-        <span class="token string">'import/resolver'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-            <span class="token string">'webpack'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-                <span class="token string">'config'</span><span class="token punctuation">:</span> <span class="token string">'build/webpack.base.conf.js'</span>
-            <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token keyword">extends</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'plugin:vue/recommended'</span><span class="token punctuation">,</span> <span class="token string">'eslint:recommended'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
     <span class="token comment" spellcheck="true">// add your custom rules here</span>
     <span class="token comment" spellcheck="true">//it is base on https://github.com/vuejs/eslint-config-vue</span>
     rules<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-        <span class="token string">"indent"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token comment" spellcheck="true">// 强制使用一致的缩进</span>
+        <span class="token string">"sort-imports"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"error"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+            <span class="token string">"ignoreCase"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">"ignoreMemberSort"</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token string">"memberSyntaxSortOrder"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"none"</span><span class="token punctuation">,</span> <span class="token string">"all"</span><span class="token punctuation">,</span> <span class="token string">"multiple"</span><span class="token punctuation">,</span> <span class="token string">"single"</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token string">"vue/require-default-prop"</span><span class="token punctuation">:</span> <span class="token string">"off"</span><span class="token punctuation">,</span>
+        <span class="token string">"vue/max-attributes-per-line"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+            <span class="token string">"singleline"</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+            <span class="token string">"multiline"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                <span class="token string">"max"</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token string">"allowFirstLine"</span><span class="token punctuation">:</span> <span class="token boolean">false</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token string">"vue/singleline-html-element-content-newline"</span><span class="token punctuation">:</span> <span class="token string">"off"</span><span class="token punctuation">,</span>
+        <span class="token string">"vue/multiline-html-element-content-newline"</span><span class="token punctuation">:</span> <span class="token string">"off"</span><span class="token punctuation">,</span>
+        <span class="token string">"vue/order-in-components"</span><span class="token punctuation">:</span> <span class="token string">"off"</span><span class="token punctuation">,</span>
+        <span class="token string">"vue/name-property-casing"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"error"</span><span class="token punctuation">,</span> <span class="token string">"PascalCase"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token string">"vue/no-v-html"</span><span class="token punctuation">:</span> <span class="token string">"off"</span><span class="token punctuation">,</span>
+        <span class="token string">"vue/html-closing-bracket-newline"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"error"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+            <span class="token string">"singleline"</span><span class="token punctuation">:</span> <span class="token string">"never"</span><span class="token punctuation">,</span>
+            <span class="token string">"multiline"</span><span class="token punctuation">:</span> <span class="token string">"never"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token string">"vue/html-indent"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"error"</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+            <span class="token string">"attribute"</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+            <span class="token string">"baseIndent"</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+            <span class="token string">"closeBracket"</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+            <span class="token string">"alignAttributesVertically"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token string">"ignores"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token string">"indent"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// 强制使用一致的缩进</span>
             <span class="token string">'SwitchCase'</span><span class="token punctuation">:</span> <span class="token number">1</span>
-        <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span> 
+        <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
         <span class="token string">'no-mixed-spaces-and-tabs'</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 禁止空格和 tab 的混合缩进</span>
         <span class="token string">'arrow-spacing'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// 强制箭头函数的箭头前后使用一致的空格</span>
             <span class="token string">'before'</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
@@ -970,8 +981,25 @@ start();
         <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
         <span class="token string">'keyword-spacing'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// 强制在关键字前后使用一致的空格</span>
             <span class="token comment" spellcheck="true">// "after": true,</span>
-            <span class="token comment" spellcheck="true">// "before": true</span>
-           <span class="token string">"overrides"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token string">"if"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token string">"after"</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token string">"before"</span><span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token string">"else"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token string">"after"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token string">"before"</span><span class="token punctuation">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token string">"for"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token string">"after"</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token string">"before"</span><span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token string">"while"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token string">"after"</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token string">"before"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">}</span> <span class="token punctuation">}</span>
+            <span class="token comment" spellcheck="true">// "before": true </span>
+            <span class="token string">"overrides"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                <span class="token string">"if"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                    <span class="token string">"after"</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                    <span class="token string">"before"</span><span class="token punctuation">:</span> <span class="token boolean">true</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token string">"else"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                    <span class="token string">"after"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                    <span class="token string">"before"</span><span class="token punctuation">:</span> <span class="token boolean">false</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token string">"for"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                    <span class="token string">"after"</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                    <span class="token string">"before"</span><span class="token punctuation">:</span> <span class="token boolean">true</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token string">"while"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                    <span class="token string">"after"</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                    <span class="token string">"before"</span><span class="token punctuation">:</span> <span class="token boolean">true</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
         <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
         <span class="token string">'new-cap'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// 要求构造函数首字母大写</span>
             <span class="token string">'newIsCap'</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
@@ -1022,7 +1050,7 @@ start();
         <span class="token string">'no-path-concat'</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 禁止对 __dirname 和 __filename 进行字符串连接</span>
         <span class="token string">'no-proto'</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 禁用 __proto__ 属性</span>
         <span class="token string">'no-redeclare'</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 禁止多次声明同一变量</span>
-        <span class="token string">'no-regex-spaces'</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 不允许正则表达式文字中的多个空格</span>
+        <span class="token string">'no-regex-spaces'</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">//     不允许正则表达式文字中的多个空格</span>
         <span class="token string">'no-return-assign'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'except-parens'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 禁止在 return 语句中使用赋值语句</span>
         <span class="token string">'no-self-assign'</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 禁止自我赋值</span>
         <span class="token string">'no-self-compare'</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 禁止自身比较</span>
@@ -1055,13 +1083,15 @@ start();
         <span class="token string">'one-var'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// 强制函数中的变量要么一起声明要么分开声明</span>
             <span class="token string">'initialized'</span><span class="token punctuation">:</span> <span class="token string">'never'</span>
         <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-        <span class="token string">'operator-linebreak'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'before'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  <span class="token comment" spellcheck="true">// 强制操作符使用一致的换行符</span>
+        <span class="token string">'operator-linebreak'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'before'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 强制操作符使用一致的换行符</span>
         <span class="token string">'padded-blocks'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'never'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 要求或禁止块内填充</span>
         <span class="token comment" spellcheck="true">// 'quotes': [2, 'double', { // 强制使用一致的反勾号、双引号或单引号</span>
         <span class="token comment" spellcheck="true">//     'avoidEscape': true,</span>
         <span class="token comment" spellcheck="true">//     'allowTemplateLiterals': true</span>
         <span class="token comment" spellcheck="true">// }],</span>
-        <span class="token string">'semi'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'always'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token string">"omitLastInOneLineBlock"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 要求或禁止使用分号代替 ASI</span>
+        <span class="token string">'semi'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'always'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+            <span class="token string">"omitLastInOneLineBlock"</span><span class="token punctuation">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 要求或禁止使用分号代替 ASI</span>
         <span class="token string">'semi-spacing'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// 强制分号之前和之后使用一致的空格</span>
             <span class="token string">'before'</span><span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
             <span class="token string">'after'</span><span class="token punctuation">:</span> <span class="token boolean">true</span>
@@ -1083,7 +1113,7 @@ start();
         <span class="token string">'wrap-iife'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'any'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 要求 IIFE 使用括号括起来</span>
         <span class="token string">'yield-star-spacing'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'both'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 强制在 yield* 表达式中 * 周围使用空格</span>
         <span class="token string">'yoda'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'never'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 要求或禁止 “Yoda” 条件</span>
-        <span class="token string">'prefer-const'</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>  <span class="token comment" spellcheck="true">// 要求使用 const 声明那些声明后不再被修改的变量</span>
+        <span class="token string">'prefer-const'</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 要求使用 const 声明那些声明后不再被修改的变量</span>
         <span class="token string">'no-debugger'</span><span class="token punctuation">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>NODE_ENV <span class="token operator">===</span> <span class="token string">'production'</span> <span class="token operator">?</span> <span class="token number">2</span> <span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// 禁用 debugger</span>
         <span class="token string">'object-curly-spacing'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'always'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// 强制在大括号中使用一致的空格</span>
             objectsInObjects<span class="token punctuation">:</span> <span class="token boolean">false</span>
@@ -1407,7 +1437,7 @@ start();
                     <span class="reprint-tip">
                         <i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;转载请注明:
                     </span>
-                    <a href="https://ldouya.cn" class="b-link-green">豆YA博客</a>
+                    <a href="https://ldouya.cn" class="b-link-green">前端豆芽</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
                     <a href="/2019/02/15/kaifagongjuvscodeeslinthedaimageshihuaxiangguanpeizhi/" class="b-link-green">开发工具VsCode-Eslint和代码格式化相关配置</a>
                 </p>
@@ -1416,35 +1446,272 @@ start();
     </div>
 
     
-        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
-<link rel="stylesheet" href="/css/my-gitalk.css">
 
-<div class="card gitalk-card" data-aos="fade-up">
-    <div id="gitalk-container" class="card-content"></div>
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments input[type=text],
+    #vcomments input[type=email],
+    #vcomments input[type=url],
+    #vcomments textarea {
+        box-sizing: border-box;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #42b983;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+
+    #vcomments img {
+        max-width: 25px;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div id="vcomments" class="card-content"></div>
 </div>
 
-<script src="/libs/gitalk/gitalk.min.js"></script>
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
 <script>
-    let gitalk = new Gitalk({
-        clientID: 'd3d644d1b7b40626e6fb',
-        clientSecret: '041970c1bb496755e815ff695303dd8bb93809d1',
-        repo: 'lzd.github.io',
-        owner: 'douyalzd',
-        admin: "douyalzd",
-        id: '2019-02-15T12-02-49',
-        distractionFreeMode: false  // Facebook-like distraction free mode
+    new Valine({
+        el: '#vcomments',
+        appId: 'eGQo1GVw9hzjYKunc7w5WUiz-gzGzoHsz',
+        appKey: 'COYw02xpalomAH6DpVic7Shd',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'retro',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: '畅所欲言吧'
     });
-
-    gitalk.render('gitalk-container');
 </script>
-    
-
-    
-
-    
-
-    
-
     
 
     
@@ -1490,12 +1757,12 @@ layout属性有： page（新建页面）、draft(新建草稿)、 post（新建
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo/" target="_blank">
-                        <span class="chip bg-color">Hexo</span>
-                    </a>
-                    
                     <a href="/tags/Markdown/" target="_blank">
                         <span class="chip bg-color">Markdown</span>
+                    </a>
+                    
+                    <a href="/tags/Hexo/" target="_blank">
+                        <span class="chip bg-color">Hexo</span>
                     </a>
                     
                 </div>
@@ -1519,12 +1786,7 @@ layout属性有： page（新建页面）、draft(新建草稿)、 post（新建
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">标签使用
-除了div ul&gt;li标签外，其他html标签内不能含有任务组件的标签（包括element-ui标签）
-el-row 必须包含el-col 不要单独使用el-col
-
-样式
-使用scss语法 每个.vue文件下的style都</div>
+                    <div class="summary">命名分类camelCase（驼峰式，也叫小驼峰命名，e.g. userInfo）PascalCase（帕斯卡命名式，也叫大驼峰命名，e.g. UserInfo）kebab-case（短横线连接式，e.g. user-info）snake_c</div>
                     <div class="publish-info">
                             <span class="publish-date">
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-15
@@ -1589,7 +1851,7 @@ el-row 必须包含el-col 不要单独使用el-col
 
         var url = document.location.href;
         newdiv.innerHTML += '<br />'
-            + '来源: 豆YA博客<br />'
+            + '来源: 前端豆芽<br />'
             + '作者: luzhidong<br />'
             + '链接: <a href="' + url + '">' + url + '</a><br />'
             + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
@@ -1652,13 +1914,13 @@ el-row 必须包含el-col 不要单独使用el-col
 <footer class="page-footer bg-color">
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
-            本站由&copy;<a href="https://ldouya.cn/" target="_blank">lzd</a>基于
+            本站由&copy;<a href="https://luzhidong.cn/" target="_blank">lzd</a>基于
             <a href="https://hexo.io/" target="_blank">Hexo</a> 的
             <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">hexo-theme-matery</a>主题搭建.
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">12.6k</span>
+                <span class="white-color">14.2k</span>
             
 
             
@@ -1747,5 +2009,7 @@ el-row 必须包含el-col 不要单独使用el-col
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
 
 
+<!-- <script id="ribbon" type="text/javascript" size="150" alpha='0.3' zIndex="-2" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js"></script> -->
+<script id="fluttering_ribbon" mobile="false" src="/js/canvas-fluttering-ribbon.min.js"></script>
 </body>
 </html>
