@@ -68,7 +68,7 @@ recommend:
 # Configure website favicon and LOGO
 # 配置网站favicon和网站LOGO
 favicon: /favicon.png
-logo: http://img.ldouya.cn/medias/logo3.png
+logo: http://qiniu.luzhidong.cn/medias/logo3.png
 
 # The configuration of the second button in the home banner,
 # including the display name of the button, the font awesome icon, and the hyperlink to the button.
@@ -136,7 +136,7 @@ clicklove:
 # profile in about page, including avatars, career, and personal introductions.
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
-  avatar: http://img.ldouya.cn/medias/avatar2.jpg
+  avatar: http://qiniu.luzhidong.cn/medias/avatar2.jpg
   career: 前端开发工程师
   introduction: If you wish to succeed, you should use persistence as your good friend, experience as your reference, prudence as your brother and hope as your sentry.
 
@@ -193,9 +193,9 @@ mySkills:
 myGallery:
   enable: true
   data:
-    - http://img.ldouya.cn/medias/featureimages/0.jpg
-    - http://img.ldouya.cn/medias/featureimages/1.jpg
-    - http://img.ldouya.cn/medias/featureimages/2.jpg
+    - http://qiniu.luzhidong.cn/medias/featureimages/0.jpg
+    - http://qiniu.luzhidong.cn/medias/featureimages/1.jpg
+    - http://qiniu.luzhidong.cn/medias/featureimages/2.jpg
 
 # Whether to display post-calender in the `archive` page
 # 设置在归档页面中是否显示'文章日历'控件
@@ -282,35 +282,35 @@ googleAnalytics:
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
 featureImages: 
-- http://img.ldouya.cn/medias/featureimages/0.jpg
-- http://img.ldouya.cn/medias/featureimages/1.jpg
-- http://img.ldouya.cn/medias/featureimages/2.jpg
-- http://img.ldouya.cn/medias/featureimages/3.jpg
-- http://img.ldouya.cn/medias/featureimages/4.jpg
-- http://img.ldouya.cn/medias/featureimages/5.jpg
-- http://img.ldouya.cn/medias/featureimages/6.jpg
-- http://img.ldouya.cn/medias/featureimages/7.jpg
-- http://img.ldouya.cn/medias/featureimages/8.jpg
-- http://img.ldouya.cn/medias/featureimages/9.jpg
-- http://img.ldouya.cn/medias/featureimages/10.jpg
-- http://img.ldouya.cn/medias/featureimages/11.jpg
-- http://img.ldouya.cn/medias/featureimages/12.jpg
-- http://img.ldouya.cn/medias/featureimages/13.jpg
-- http://img.ldouya.cn/medias/featureimages/14.jpg
-- http://img.ldouya.cn/medias/featureimages/15.jpg
-- http://img.ldouya.cn/medias/featureimages/16.jpg
-- http://img.ldouya.cn/medias/featureimages/17.jpg
-- http://img.ldouya.cn/medias/featureimages/18.jpg
-- http://img.ldouya.cn/medias/featureimages/19.jpg
-- http://img.ldouya.cn/medias/featureimages/20.jpg
-- http://img.ldouya.cn/medias/featureimages/21.jpg
-- http://img.ldouya.cn/medias/featureimages/22.jpg
-- http://img.ldouya.cn/medias/featureimages/23.jpg
-- http://img.ldouya.cn/medias/featureimages/24.jpg
-- http://img.ldouya.cn/medias/featureimages/25.jpg
-- http://img.ldouya.cn/medias/featureimages/26.jpg
-- http://img.ldouya.cn/medias/featureimages/27.jpg
-- http://img.ldouya.cn/medias/featureimages/28.jpg
-- http://img.ldouya.cn/medias/featureimages/29.jpg
-- http://img.ldouya.cn/medias/featureimages/30.jpg
-- http://img.ldouya.cn/medias/featureimages/31.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/0.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/1.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/2.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/3.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/4.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/5.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/6.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/7.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/8.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/9.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/10.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/11.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/12.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/13.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/14.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/15.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/16.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/17.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/18.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/19.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/20.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/21.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/22.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/23.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/24.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/25.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/26.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/27.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/28.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/29.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/30.jpg
+- http://qiniu.luzhidong.cn/medias/featureimages/31.jpg

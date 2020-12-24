@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://ldouya.cn/
+url: https://luzhidong.cn/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -81,7 +81,7 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: hexo-theme-matery
 
-avatar: http://img.ldouya.cn/medias/avatar2.jpg
+avatar: http://qiniu.luzhidong.cn/medias/avatar2.jpg
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -137,7 +137,7 @@ qiniu:
   # access_key: AccessKey
   # secret_key: SecretKey
   dirPrefix: static
-  urlPrefix: http://img.ldouya.cn/static
+  urlPrefix: http://qiniu.luzhidong.cn/static
   up_host: http://upload.qiniu.com
   local_dir: static
   update_exist: true
