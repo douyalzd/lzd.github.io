@@ -285,7 +285,8 @@
     </nav>
 </header>
 
-<div class="bg-cover  about-cover" style="background-image: url('/medias/cover.jpg')">
+<!-- <div class="bg-cover  about-cover" style="background-image: url('/medias/cover.jpg')"> -->
+<div class="bg-cover  about-cover">
     <style type="text/css">
     #canvasBg {
         display: block;
@@ -708,7 +709,7 @@ start();
 
 <script>
 // Dynamically switch banner pictures every day.
-$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+// $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
 
 <main class="content">
@@ -756,17 +757,9 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 </a>
                 
                 
-                <a href="/tags/VUE/" title="VUE: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default " data-tagname="VUE" style="background-color: #FEF9E7;">VUE
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
                 <a href="/tags/JS/" title="JS: 1">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default " data-tagname="JS" style="background-color: #F8F9F9;">JS
+                             chip-default " data-tagname="JS" style="background-color: #FEF9E7;">JS
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -774,7 +767,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 
                 <a href="/tags/eslitn/" title="eslitn: 1">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default " data-tagname="eslitn" style="background-color: #82E0AA;">eslitn
+                             chip-default " data-tagname="eslitn" style="background-color: #F8F9F9;">eslitn
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -782,7 +775,15 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 
                 <a href="/tags/开发工具/" title="开发工具: 1">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default " data-tagname="开发工具" style="background-color: #D7BDE2;">开发工具
+                             chip-default " data-tagname="开发工具" style="background-color: #82E0AA;">开发工具
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/VUE/" title="VUE: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default " data-tagname="VUE" style="background-color: #D7BDE2;">VUE
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -907,7 +908,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 <script type="text/javascript">
     
 
-    $('#tag-wordcloud').jQCloud([{"text":"Markdown","weight":2,"link":"https://luzhidong.cn/tags/Markdown/"},{"text":"前端","weight":5,"link":"https://luzhidong.cn/tags/前端/"},{"text":"CSS","weight":1,"link":"https://luzhidong.cn/tags/CSS/"},{"text":"HTML","weight":1,"link":"https://luzhidong.cn/tags/HTML/"},{"text":"VUE","weight":1,"link":"https://luzhidong.cn/tags/VUE/"},{"text":"JS","weight":1,"link":"https://luzhidong.cn/tags/JS/"},{"text":"eslitn","weight":1,"link":"https://luzhidong.cn/tags/eslitn/"},{"text":"开发工具","weight":1,"link":"https://luzhidong.cn/tags/开发工具/"},{"text":"Hexo","weight":1,"link":"https://luzhidong.cn/tags/Hexo/"},{"text":"Linux","weight":1,"link":"https://luzhidong.cn/tags/Linux/"},{"text":"Typora","weight":1,"link":"https://luzhidong.cn/tags/Typora/"},{"text":"node","weight":1,"link":"https://luzhidong.cn/tags/node/"},{"text":"vue","weight":3,"link":"https://luzhidong.cn/tags/vue/"},{"text":"微信公众号","weight":1,"link":"https://luzhidong.cn/tags/微信公众号/"},{"text":"资源推荐","weight":1,"link":"https://luzhidong.cn/tags/资源推荐/"},{"text":"小程序","weight":1,"link":"https://luzhidong.cn/tags/小程序/"},{"text":"tool","weight":1,"link":"https://luzhidong.cn/tags/tool/"},{"text":"php","weight":1,"link":"https://luzhidong.cn/tags/php/"},{"text":"vsCode","weight":1,"link":"https://luzhidong.cn/tags/vsCode/"},{"text":"绘声绘影","weight":1,"link":"https://luzhidong.cn/tags/绘声绘影/"}], {
+    $('#tag-wordcloud').jQCloud([{"text":"Markdown","weight":2,"link":"https://luzhidong.cn/tags/Markdown/"},{"text":"前端","weight":5,"link":"https://luzhidong.cn/tags/前端/"},{"text":"CSS","weight":1,"link":"https://luzhidong.cn/tags/CSS/"},{"text":"HTML","weight":1,"link":"https://luzhidong.cn/tags/HTML/"},{"text":"JS","weight":1,"link":"https://luzhidong.cn/tags/JS/"},{"text":"eslitn","weight":1,"link":"https://luzhidong.cn/tags/eslitn/"},{"text":"开发工具","weight":1,"link":"https://luzhidong.cn/tags/开发工具/"},{"text":"VUE","weight":1,"link":"https://luzhidong.cn/tags/VUE/"},{"text":"Hexo","weight":1,"link":"https://luzhidong.cn/tags/Hexo/"},{"text":"Linux","weight":1,"link":"https://luzhidong.cn/tags/Linux/"},{"text":"Typora","weight":1,"link":"https://luzhidong.cn/tags/Typora/"},{"text":"node","weight":1,"link":"https://luzhidong.cn/tags/node/"},{"text":"vue","weight":3,"link":"https://luzhidong.cn/tags/vue/"},{"text":"微信公众号","weight":1,"link":"https://luzhidong.cn/tags/微信公众号/"},{"text":"资源推荐","weight":1,"link":"https://luzhidong.cn/tags/资源推荐/"},{"text":"小程序","weight":1,"link":"https://luzhidong.cn/tags/小程序/"},{"text":"tool","weight":1,"link":"https://luzhidong.cn/tags/tool/"},{"text":"php","weight":1,"link":"https://luzhidong.cn/tags/php/"},{"text":"vsCode","weight":1,"link":"https://luzhidong.cn/tags/vsCode/"},{"text":"绘声绘影","weight":1,"link":"https://luzhidong.cn/tags/绘声绘影/"}], {
         autoResize: true
     });
 </script>

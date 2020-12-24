@@ -292,7 +292,8 @@
     } */
 </style>
 
-<div class="bg-cover  about-cover" style="background-image: url('/medias/cover.jpg')">
+<!-- <div class="bg-cover  about-cover" style="background-image: url('/medias/cover.jpg')"> -->
+<div class="bg-cover  about-cover">
     <style type="text/css">
     #canvasBg {
         display: block;
@@ -715,7 +716,7 @@ start();
 
 <script>
 // Dynamically switch banner pictures every day.
-$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+// $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
 
 <main class="content">
@@ -960,7 +961,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         xAxis: [
             {
                 type: 'category',
-                data: ["前端","vue","Markdown","CSS","HTML","VUE","JS","eslitn","开发工具","Hexo"]
+                data: ["前端","vue","Markdown","CSS","HTML","JS","eslitn","开发工具","VUE","Hexo"]
             }
         ],
         yAxis: [
@@ -1152,12 +1153,6 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             
             
-            <a href="/tags/VUE/" target="_blank">
-                <span class="chip center-align waves-effect waves-light chip-default">VUE</span>
-            </a>
-            
-            
-            
             <a href="/tags/JS/" target="_blank">
                 <span class="chip center-align waves-effect waves-light chip-default">JS</span>
             </a>
@@ -1172,6 +1167,12 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             <a href="/tags/开发工具/" target="_blank">
                 <span class="chip center-align waves-effect waves-light chip-default">开发工具</span>
+            </a>
+            
+            
+            
+            <a href="/tags/VUE/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">VUE</span>
             </a>
             
             
