@@ -5,9 +5,9 @@
   <subtitle>往前走，别掉队</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://ldouya.cn/"/>
-  <updated>2020-12-17T05:28:51.674Z</updated>
-  <id>https://ldouya.cn/</id>
+  <link href="https://luzhidong.cn/"/>
+  <updated>2020-12-24T13:53:25.007Z</updated>
+  <id>https://luzhidong.cn/</id>
   
   <author>
     <name>Mr.Bean</name>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>绘声绘影素材分享</title>
-    <link href="https://ldouya.cn/2020/12/16/huishenghuiyingsucaifenxiang/"/>
-    <id>https://ldouya.cn/2020/12/16/huishenghuiyingsucaifenxiang/</id>
+    <link href="https://luzhidong.cn/2020/12/16/huishenghuiyingsucaifenxiang/"/>
+    <id>https://luzhidong.cn/2020/12/16/huishenghuiyingsucaifenxiang/</id>
     <published>2020-12-16T10:21:39.000Z</published>
-    <updated>2020-12-17T05:28:51.674Z</updated>
+    <updated>2020-12-24T13:53:25.007Z</updated>
     
     <summary type="html">
     
@@ -36,19 +36,19 @@
     
     </summary>
     
-      <category term="绘声绘影" scheme="https://ldouya.cn/categories/%E7%BB%98%E5%A3%B0%E7%BB%98%E5%BD%B1/"/>
+      <category term="绘声绘影" scheme="https://luzhidong.cn/categories/%E7%BB%98%E5%A3%B0%E7%BB%98%E5%BD%B1/"/>
     
     
-      <category term="绘声绘影" scheme="https://ldouya.cn/tags/%E7%BB%98%E5%A3%B0%E7%BB%98%E5%BD%B1/"/>
+      <category term="绘声绘影" scheme="https://luzhidong.cn/tags/%E7%BB%98%E5%A3%B0%E7%BB%98%E5%BD%B1/"/>
     
   </entry>
   
   <entry>
     <title>vsCode-PHP环境配置-windows</title>
-    <link href="https://ldouya.cn/2020/05/22/vscodephphuanjingpeizhiwindows/"/>
-    <id>https://ldouya.cn/2020/05/22/vscodephphuanjingpeizhiwindows/</id>
+    <link href="https://luzhidong.cn/2020/05/22/vscodephphuanjingpeizhiwindows/"/>
+    <id>https://luzhidong.cn/2020/05/22/vscodephphuanjingpeizhiwindows/</id>
     <published>2020-05-22T03:36:17.000Z</published>
-    <updated>2020-06-02T11:59:50.571Z</updated>
+    <updated>2020-12-24T13:53:25.002Z</updated>
     
     <summary type="html">
     
@@ -63,19 +63,19 @@
     
     </summary>
     
-      <category term="php" scheme="https://ldouya.cn/categories/php/"/>
+      <category term="php" scheme="https://luzhidong.cn/categories/php/"/>
     
     
-      <category term="php" scheme="https://ldouya.cn/tags/php/"/>
+      <category term="php" scheme="https://luzhidong.cn/tags/php/"/>
     
-      <category term="vsCode" scheme="https://ldouya.cn/tags/vsCode/"/>
+      <category term="vsCode" scheme="https://luzhidong.cn/tags/vsCode/"/>
     
   </entry>
   
   <entry>
     <title>前端插件集合收藏</title>
-    <link href="https://ldouya.cn/2020/05/20/qianduanchajianjiheshoucang/"/>
-    <id>https://ldouya.cn/2020/05/20/qianduanchajianjiheshoucang/</id>
+    <link href="https://luzhidong.cn/2020/05/20/qianduanchajianjiheshoucang/"/>
+    <id>https://luzhidong.cn/2020/05/20/qianduanchajianjiheshoucang/</id>
     <published>2020-05-20T01:38:34.000Z</published>
     <updated>2020-06-02T11:59:50.571Z</updated>
     
@@ -91,17 +91,17 @@
     
     </summary>
     
-      <category term="前端" scheme="https://ldouya.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://luzhidong.cn/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-      <category term="tool" scheme="https://ldouya.cn/tags/tool/"/>
+      <category term="tool" scheme="https://luzhidong.cn/tags/tool/"/>
     
   </entry>
   
   <entry>
     <title>开发遇到的一些坑记录</title>
-    <link href="https://ldouya.cn/2019/09/03/kaifayudaodeyixiekengjilu/"/>
-    <id>https://ldouya.cn/2019/09/03/kaifayudaodeyixiekengjilu/</id>
+    <link href="https://luzhidong.cn/2019/09/03/kaifayudaodeyixiekengjilu/"/>
+    <id>https://luzhidong.cn/2019/09/03/kaifayudaodeyixiekengjilu/</id>
     <published>2019-09-03T03:24:59.000Z</published>
     <updated>2020-06-02T11:59:50.571Z</updated>
     
@@ -118,21 +118,21 @@
     
     </summary>
     
-      <category term="前端" scheme="https://ldouya.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://luzhidong.cn/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-      <category term="vue" scheme="https://ldouya.cn/tags/vue/"/>
+      <category term="vue" scheme="https://luzhidong.cn/tags/vue/"/>
     
-      <category term="小程序" scheme="https://ldouya.cn/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+      <category term="小程序" scheme="https://luzhidong.cn/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
   </entry>
   
   <entry>
     <title>常用资源网站推荐</title>
-    <link href="https://ldouya.cn/2019/06/30/changyongziyuanwangzhantuijian/"/>
-    <id>https://ldouya.cn/2019/06/30/changyongziyuanwangzhantuijian/</id>
+    <link href="https://luzhidong.cn/2019/06/30/changyongziyuanwangzhantuijian/"/>
+    <id>https://luzhidong.cn/2019/06/30/changyongziyuanwangzhantuijian/</id>
     <published>2019-06-30T06:43:19.000Z</published>
-    <updated>2020-08-23T06:27:10.268Z</updated>
+    <updated>2020-12-24T13:53:25.007Z</updated>
     
     <summary type="html">
     
@@ -146,17 +146,17 @@
     
     </summary>
     
-      <category term="资源" scheme="https://ldouya.cn/categories/%E8%B5%84%E6%BA%90/"/>
+      <category term="资源" scheme="https://luzhidong.cn/categories/%E8%B5%84%E6%BA%90/"/>
     
     
-      <category term="资源推荐" scheme="https://ldouya.cn/tags/%E8%B5%84%E6%BA%90%E6%8E%A8%E8%8D%90/"/>
+      <category term="资源推荐" scheme="https://luzhidong.cn/tags/%E8%B5%84%E6%BA%90%E6%8E%A8%E8%8D%90/"/>
     
   </entry>
   
   <entry>
     <title>vue常用命令和填坑技巧</title>
-    <link href="https://ldouya.cn/2019/06/29/vuechangyongminglinghetiankengjiqiao/"/>
-    <id>https://ldouya.cn/2019/06/29/vuechangyongminglinghetiankengjiqiao/</id>
+    <link href="https://luzhidong.cn/2019/06/29/vuechangyongminglinghetiankengjiqiao/"/>
+    <id>https://luzhidong.cn/2019/06/29/vuechangyongminglinghetiankengjiqiao/</id>
     <published>2019-06-29T13:58:17.000Z</published>
     <updated>2019-06-29T15:23:12.856Z</updated>
     
@@ -178,17 +178,17 @@
     
     </summary>
     
-      <category term="VUE" scheme="https://ldouya.cn/categories/VUE/"/>
+      <category term="VUE" scheme="https://luzhidong.cn/categories/VUE/"/>
     
     
-      <category term="vue" scheme="https://ldouya.cn/tags/vue/"/>
+      <category term="vue" scheme="https://luzhidong.cn/tags/vue/"/>
     
   </entry>
   
   <entry>
     <title>微信视频全屏方案</title>
-    <link href="https://ldouya.cn/2019/06/29/weixinshipinquanpingfangan/"/>
-    <id>https://ldouya.cn/2019/06/29/weixinshipinquanpingfangan/</id>
+    <link href="https://luzhidong.cn/2019/06/29/weixinshipinquanpingfangan/"/>
+    <id>https://luzhidong.cn/2019/06/29/weixinshipinquanpingfangan/</id>
     <published>2019-06-29T13:40:28.000Z</published>
     <updated>2019-06-29T14:06:45.760Z</updated>
     
@@ -204,17 +204,17 @@
     
     </summary>
     
-      <category term="微信" scheme="https://ldouya.cn/categories/%E5%BE%AE%E4%BF%A1/"/>
+      <category term="微信" scheme="https://luzhidong.cn/categories/%E5%BE%AE%E4%BF%A1/"/>
     
     
-      <category term="微信公众号" scheme="https://ldouya.cn/tags/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7/"/>
+      <category term="微信公众号" scheme="https://luzhidong.cn/tags/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7/"/>
     
   </entry>
   
   <entry>
     <title>重学前端</title>
-    <link href="https://ldouya.cn/2019/06/02/chongxueqianduan/"/>
-    <id>https://ldouya.cn/2019/06/02/chongxueqianduan/</id>
+    <link href="https://luzhidong.cn/2019/06/02/chongxueqianduan/"/>
+    <id>https://luzhidong.cn/2019/06/02/chongxueqianduan/</id>
     <published>2019-06-02T13:05:05.000Z</published>
     <updated>2019-06-30T08:00:05.975Z</updated>
     
@@ -230,17 +230,17 @@
     
     </summary>
     
-      <category term="前端" scheme="https://ldouya.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://luzhidong.cn/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-      <category term="前端" scheme="https://ldouya.cn/tags/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://luzhidong.cn/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
   <entry>
     <title>VUE自定义过滤器和指令</title>
-    <link href="https://ldouya.cn/2019/05/22/vuezidingyiguoluqihezhiling/"/>
-    <id>https://ldouya.cn/2019/05/22/vuezidingyiguoluqihezhiling/</id>
+    <link href="https://luzhidong.cn/2019/05/22/vuezidingyiguoluqihezhiling/"/>
+    <id>https://luzhidong.cn/2019/05/22/vuezidingyiguoluqihezhiling/</id>
     <published>2019-05-22T06:57:58.000Z</published>
     <updated>2019-08-30T05:19:27.438Z</updated>
     
@@ -256,17 +256,17 @@
     
     </summary>
     
-      <category term="VUE" scheme="https://ldouya.cn/categories/VUE/"/>
+      <category term="VUE" scheme="https://luzhidong.cn/categories/VUE/"/>
     
     
-      <category term="vue" scheme="https://ldouya.cn/tags/vue/"/>
+      <category term="vue" scheme="https://luzhidong.cn/tags/vue/"/>
     
   </entry>
   
   <entry>
     <title>nodejs配置</title>
-    <link href="https://ldouya.cn/2019/05/12/nodejspeizhi/"/>
-    <id>https://ldouya.cn/2019/05/12/nodejspeizhi/</id>
+    <link href="https://luzhidong.cn/2019/05/12/nodejspeizhi/"/>
+    <id>https://luzhidong.cn/2019/05/12/nodejspeizhi/</id>
     <published>2019-05-12T14:57:51.000Z</published>
     <updated>2019-05-12T15:00:19.404Z</updated>
     
@@ -282,17 +282,17 @@
     
     </summary>
     
-      <category term="nodejs" scheme="https://ldouya.cn/categories/nodejs/"/>
+      <category term="nodejs" scheme="https://luzhidong.cn/categories/nodejs/"/>
     
     
-      <category term="node" scheme="https://ldouya.cn/tags/node/"/>
+      <category term="node" scheme="https://luzhidong.cn/tags/node/"/>
     
   </entry>
   
   <entry>
     <title>Linux常用命令</title>
-    <link href="https://ldouya.cn/2019/05/12/linuxchangyongmingling/"/>
-    <id>https://ldouya.cn/2019/05/12/linuxchangyongmingling/</id>
+    <link href="https://luzhidong.cn/2019/05/12/linuxchangyongmingling/"/>
+    <id>https://luzhidong.cn/2019/05/12/linuxchangyongmingling/</id>
     <published>2019-05-12T14:53:53.000Z</published>
     <updated>2019-08-25T15:18:06.041Z</updated>
     
@@ -308,17 +308,17 @@
     
     </summary>
     
-      <category term="Linux" scheme="https://ldouya.cn/categories/Linux/"/>
+      <category term="Linux" scheme="https://luzhidong.cn/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="https://ldouya.cn/tags/Linux/"/>
+      <category term="Linux" scheme="https://luzhidong.cn/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>Markdown语法</title>
-    <link href="https://ldouya.cn/2019/05/12/markdownyufa/"/>
-    <id>https://ldouya.cn/2019/05/12/markdownyufa/</id>
+    <link href="https://luzhidong.cn/2019/05/12/markdownyufa/"/>
+    <id>https://luzhidong.cn/2019/05/12/markdownyufa/</id>
     <published>2019-05-12T14:02:32.000Z</published>
     <updated>2019-05-12T14:41:42.131Z</updated>
     
@@ -334,21 +334,21 @@
     
     </summary>
     
-      <category term="Markdown" scheme="https://ldouya.cn/categories/Markdown/"/>
+      <category term="Markdown" scheme="https://luzhidong.cn/categories/Markdown/"/>
     
     
-      <category term="Markdown" scheme="https://ldouya.cn/tags/Markdown/"/>
+      <category term="Markdown" scheme="https://luzhidong.cn/tags/Markdown/"/>
     
-      <category term="Typora" scheme="https://ldouya.cn/tags/Typora/"/>
+      <category term="Typora" scheme="https://luzhidong.cn/tags/Typora/"/>
     
   </entry>
   
   <entry>
     <title>Hexo命令使用</title>
-    <link href="https://ldouya.cn/2019/05/12/hexominglingshiyong/"/>
-    <id>https://ldouya.cn/2019/05/12/hexominglingshiyong/</id>
+    <link href="https://luzhidong.cn/2019/05/12/hexominglingshiyong/"/>
+    <id>https://luzhidong.cn/2019/05/12/hexominglingshiyong/</id>
     <published>2019-05-12T13:25:27.000Z</published>
-    <updated>2019-06-30T07:26:35.233Z</updated>
+    <updated>2020-12-24T13:53:25.062Z</updated>
     
     <summary type="html">
     
@@ -363,19 +363,19 @@
     
     </summary>
     
-      <category term="Hexo" scheme="https://ldouya.cn/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://luzhidong.cn/categories/Hexo/"/>
     
     
-      <category term="Markdown" scheme="https://ldouya.cn/tags/Markdown/"/>
+      <category term="Markdown" scheme="https://luzhidong.cn/tags/Markdown/"/>
     
-      <category term="Hexo" scheme="https://ldouya.cn/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://luzhidong.cn/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>开发工具VsCode-Eslint和代码格式化相关配置</title>
-    <link href="https://ldouya.cn/2019/02/15/kaifagongjuvscodeeslinthedaimageshihuaxiangguanpeizhi/"/>
-    <id>https://ldouya.cn/2019/02/15/kaifagongjuvscodeeslinthedaimageshihuaxiangguanpeizhi/</id>
+    <link href="https://luzhidong.cn/2019/02/15/kaifagongjuvscodeeslinthedaimageshihuaxiangguanpeizhi/"/>
+    <id>https://luzhidong.cn/2019/02/15/kaifagongjuvscodeeslinthedaimageshihuaxiangguanpeizhi/</id>
     <published>2019-02-15T04:02:49.000Z</published>
     <updated>2020-06-02T11:59:50.570Z</updated>
     
@@ -391,19 +391,19 @@
     
     </summary>
     
-      <category term="开发工具" scheme="https://ldouya.cn/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+      <category term="开发工具" scheme="https://luzhidong.cn/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="eslitn" scheme="https://ldouya.cn/tags/eslitn/"/>
+      <category term="eslitn" scheme="https://luzhidong.cn/tags/eslitn/"/>
     
-      <category term="开发工具" scheme="https://ldouya.cn/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+      <category term="开发工具" scheme="https://luzhidong.cn/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
   <entry>
     <title>前端-VUE规范</title>
-    <link href="https://ldouya.cn/2019/02/15/qianduanvueguifan/"/>
-    <id>https://ldouya.cn/2019/02/15/qianduanvueguifan/</id>
+    <link href="https://luzhidong.cn/2019/02/15/qianduanvueguifan/"/>
+    <id>https://luzhidong.cn/2019/02/15/qianduanvueguifan/</id>
     <published>2019-02-15T03:59:28.000Z</published>
     <updated>2020-06-02T11:59:50.569Z</updated>
     
@@ -419,19 +419,19 @@
     
     </summary>
     
-      <category term="前端" scheme="https://ldouya.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://luzhidong.cn/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-      <category term="前端" scheme="https://ldouya.cn/tags/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://luzhidong.cn/tags/%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="VUE" scheme="https://ldouya.cn/tags/VUE/"/>
+      <category term="VUE" scheme="https://luzhidong.cn/tags/VUE/"/>
     
   </entry>
   
   <entry>
     <title>前端-JS规范</title>
-    <link href="https://ldouya.cn/2019/02/15/qianduanjsguifan/"/>
-    <id>https://ldouya.cn/2019/02/15/qianduanjsguifan/</id>
+    <link href="https://luzhidong.cn/2019/02/15/qianduanjsguifan/"/>
+    <id>https://luzhidong.cn/2019/02/15/qianduanjsguifan/</id>
     <published>2019-02-15T03:57:33.000Z</published>
     <updated>2019-05-09T14:01:42.260Z</updated>
     
@@ -447,19 +447,19 @@
     
     </summary>
     
-      <category term="前端" scheme="https://ldouya.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://luzhidong.cn/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-      <category term="前端" scheme="https://ldouya.cn/tags/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://luzhidong.cn/tags/%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="JS" scheme="https://ldouya.cn/tags/JS/"/>
+      <category term="JS" scheme="https://luzhidong.cn/tags/JS/"/>
     
   </entry>
   
   <entry>
     <title>前端-HTML规范</title>
-    <link href="https://ldouya.cn/2019/02/15/qianduanhtmlguifan/"/>
-    <id>https://ldouya.cn/2019/02/15/qianduanhtmlguifan/</id>
+    <link href="https://luzhidong.cn/2019/02/15/qianduanhtmlguifan/"/>
+    <id>https://luzhidong.cn/2019/02/15/qianduanhtmlguifan/</id>
     <published>2019-02-15T03:53:40.000Z</published>
     <updated>2019-05-09T14:01:42.259Z</updated>
     
@@ -476,19 +476,19 @@
     
     </summary>
     
-      <category term="前端" scheme="https://ldouya.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://luzhidong.cn/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-      <category term="前端" scheme="https://ldouya.cn/tags/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://luzhidong.cn/tags/%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="HTML" scheme="https://ldouya.cn/tags/HTML/"/>
+      <category term="HTML" scheme="https://luzhidong.cn/tags/HTML/"/>
     
   </entry>
   
   <entry>
     <title>前端-CSS规范</title>
-    <link href="https://ldouya.cn/2019/02/15/qianduancssguifan/"/>
-    <id>https://ldouya.cn/2019/02/15/qianduancssguifan/</id>
+    <link href="https://luzhidong.cn/2019/02/15/qianduancssguifan/"/>
+    <id>https://luzhidong.cn/2019/02/15/qianduancssguifan/</id>
     <published>2019-02-15T03:47:34.000Z</published>
     <updated>2019-05-09T14:01:42.259Z</updated>
     
@@ -505,12 +505,12 @@
     
     </summary>
     
-      <category term="前端" scheme="https://ldouya.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://luzhidong.cn/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-      <category term="前端" scheme="https://ldouya.cn/tags/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://luzhidong.cn/tags/%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="CSS" scheme="https://ldouya.cn/tags/CSS/"/>
+      <category term="CSS" scheme="https://luzhidong.cn/tags/CSS/"/>
     
   </entry>
   
