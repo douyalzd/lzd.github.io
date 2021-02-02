@@ -26,7 +26,13 @@ dream:
   enable: true
   showTitle: true
   title: In A Word
-  text: 不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
+  text: 
+    - 不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
+    - 当人类的始祖第一次对日月更替，下雨打雷产生好奇的时候，当他们第一次抬头看到满天繁星的时候，人类自此以后千百年的科技发展就已经上路了。  ——刘慈欣
+    - 得到了不应该得到的得到，就一定会失去不该失去的失去，所以只有忍受别人不能忍受的忍受，才能享受别人不该享受的享受，这就是老天最基本的法则！
+    - 人类从不久的将来一直发展到世界的尽头，每一个时代都有人，向超级智能体提出那个终极的问题，熵可以被逆转吗？从人类发展出人工智能，到人类站满了银河系的每一个角落，最后人类已经抛弃了肉体的限制，融入到了集体意识，这个问题的答案一直都是资料不足，无可奉告。然而最后宇宙死寂之时，问题终于有了解答，全体人类和超级智能合一地存在，AC说到要有光，于是就有了光，如果未来有光的话，那么也一定是人类和科技的结合体。——啊西莫夫
+    - 一生能够积累多少财富，不取决于你能够赚多少钱，而取决于你如何投资理财，钱找人胜过人找钱，要懂得钱为你工作，而不是你为钱工作！  ——巴菲特
+    - 梦想会指引我们,从伤疤里续放光芒,长出翅膀  即使流尽鲜血,也再所不惜。  ——我就是一个虚
 
 # Whether to display the musics.
 # 是否在首页显示音乐.
@@ -282,35 +288,35 @@ googleAnalytics:
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
 featureImages: 
-- http://qiniu.luzhidong.cn/medias/featureimages/0.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/1.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/2.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/3.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/4.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/5.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/6.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/7.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/8.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/9.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/10.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/11.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/12.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/13.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/14.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/15.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/16.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/17.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/18.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/19.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/20.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/21.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/22.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/23.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/24.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/25.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/26.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/27.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/28.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/29.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/30.jpg
-- http://qiniu.luzhidong.cn/medias/featureimages/31.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/0.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/1.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/2.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/3.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/4.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/5.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/6.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/7.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/8.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/9.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/10.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/11.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/12.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/13.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/14.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/15.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/16.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/17.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/18.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/19.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/20.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/21.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/22.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/23.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/24.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/25.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/26.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/27.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/28.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/29.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/30.jpg
+  - http://qiniu.luzhidong.cn/medias/featureimages/31.jpg
