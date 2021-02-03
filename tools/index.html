@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="分类: 开发工具, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
-    <meta name="description" content="分类: 开发工具 | 前端豆芽">
+    <meta name="keywords" content="工具, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
+    <meta name="description" content="工具 | 前端豆芽">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>分类: 开发工具 | 前端豆芽</title>
+    <title>工具 | 前端豆芽</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -732,185 +732,411 @@ start();
 // Dynamically switch banner pictures every day.
 $('.bg-cover').css('background-image', 'url(http://qiniu.luzhidong.cn/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
+<style>
+    .tools-container {
+        margin-top: -60px;
+    }
+
+    .tools-container .tag-title {
+        margin-bottom: 10px;
+        color: #3C4858;
+        font-size: 1.75rem;
+        font-weight: 400;
+    }
+    .tools-container .item-con {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .tools-container .item-con .item {
+        border-radius: 5px;
+        margin: 10px;
+        display: block;
+        background-color: #fff;
+        border: 1px solid #f1f1f1;
+        padding: 10px;
+        height: 90px;
+        width: 200px;
+    }
+    .tools-container .item-con .item:hover {
+        border: none;
+        box-shadow: 0px 0px 10px rgba(50, 50, 93, .1);
+    }
+
+    .tools-container .item-wrap +  .item-wrap {
+        margin-top: 20px;
+    }
+
+    .tools-container .item-type {
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+    .tools-container .item-name {
+        font-size: 16px;
+    }
+
+    .tools-container .desc {
+        color: #666;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+</style>
 
 <main class="content">
-
-    
-
-<div id="category-cloud" class="container chip-container">
-    <div class="card">
-        <div class="card-content">
-            <div class="tag-title center-align">
-                <i class="fa fa-bookmark"></i>&nbsp;&nbsp;文章分类
-            </div>
-            <div class="tag-chips">
+    <div class="container tools-container">
+        <div class="card">
+            <div class="card-content">
+                <div class="tag-title center-align">
+                    <i class="fa fa-bookmark"></i>&nbsp;&nbsp;图片工具
+                </div>
                 
-                
-                
-                <a href="/categories/Markdown/" title="Markdown: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #F9EBEA;">Markdown
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/%E5%89%8D%E7%AB%AF/" title="前端: 7">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #F5EEF8;">前端
-                        <span class="tag-length">7</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/Hexo/" title="Hexo: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #D5F5E3;">Hexo
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/Linux/" title="Linux: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #E8F8F5;">Linux
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/nodejs/" title="nodejs: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #FEF9E7;">nodejs
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/VUE/" title="VUE: 2">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #F8F9F9;">VUE
-                        <span class="tag-length">2</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/%E5%BE%AE%E4%BF%A1/" title="微信: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #82E0AA;">微信
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/%E8%B5%84%E6%BA%90/" title="资源: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #D7BDE2;">资源
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/php/" title="php: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #A3E4D7;">php
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/%E7%BB%98%E5%A3%B0%E7%BB%98%E5%BD%B1/" title="绘声绘影: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #85C1E9;">绘声绘影
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" title="开发工具: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-active "
-                            style="background-color: #F8C471;">开发工具
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
+                    
+                    <div>
+                        
+                            
+                            <div class="item-wrap">
+                                <div class="item-type">图床</div>
+                                <div class="item-con">
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://sm.ms/" target="_blank">sm</a>
+                                            <div class="desc">图床首推</div>
+                                        </div>
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://upload.cc/" target="_blank">upload.cc</a>
+                                            <div class="desc">老牌图床</div>
+                                        </div>
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://www.superbed.cn/" target="_blank">聚合图床</a>
+                                            <div class="desc">要注册</div>
+                                        </div>
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://imgchr.com/" target="_blank">路过图床</a>
+                                            <div class="desc">专业图床</div>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="item-wrap">
+                                <div class="item-type">生成图片</div>
+                                <div class="item-con">
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://mosaically.com/" target="_blank">mosaically</a>
+                                            <div class="desc">马赛克图片拼贴、千图成像</div>
+                                        </div>
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://onlinetexttools.com/convert-text-to-image" target="_blank">生成文字图片</a>
+                                            <div class="desc">输入文本，生成对应图片，支持中文</div>
+                                        </div>
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://carbon.now.sh/" target="_blank">代码片段图片</a>
+                                            <div class="desc">演示代码</div>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="item-wrap">
+                                <div class="item-type">免费商用图库</div>
+                                <div class="item-con">
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://unsplash.com/" target="_blank">unsplash</a>
+                                            <div class="desc">最全最多</div>
+                                        </div>
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://pixabay.com/zh/" target="_blank">pixabay</a>
+                                            <div class="desc">支持中文搜索</div>
+                                        </div>
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://gratisography.com/" target="_blank">gratisography</a>
+                                            <div class="desc">特色</div>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="item-wrap">
+                                <div class="item-type">免费商用图标</div>
+                                <div class="item-con">
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://icons8.com/icons" target="_blank">icons8</a>
+                                            <div class="desc">还行</div>
+                                        </div>
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://www.iconfinder.com/" target="_blank">iconfinder</a>
+                                            <div class="desc">有收费的，科学上网</div>
+                                        </div>
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://iconpark.bytedance.com/" target="_blank">IconPark图标库</a>
+                                            <div class="desc">开源、免费</div>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="item-wrap">
+                                <div class="item-type">抠图</div>
+                                <div class="item-con">
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://kt.fkw.com/koutu.html" target="_blank">凡客抠图</a>
+                                            <div class="desc">次数不限，效果略差</div>
+                                        </div>
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://www.stickermule.com/trace" target="_blank">trace</a>
+                                            <div class="desc">全局才能使用，不限次数，抠图效果不错</div>
+                                        </div>
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://www.gaoding.com/koutu" target="_blank">搞定抠图</a>
+                                            <div class="desc">三次免费抠图</div>
+                                        </div>
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://www.remove.bg/" target="_blank">remove.bg</a>
+                                            <div class="desc">一次免费抠图</div>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="item-wrap">
+                                <div class="item-type">大变图片</div>
+                                <div class="item-con">
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="http://funny.pho.to/zh/" target="_blank">图片变素描</a>
+                                            <div class="desc">免费、逼真</div>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="item-wrap">
+                                <div class="item-type">图片放大</div>
+                                <div class="item-con">
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://bigjpg.com/" target="_blank">bigjpg</a>
+                                            <div class="desc">免费、在线</div>
+                                        </div>
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://topazlabs.com/gigapixel-ai/" target="_blank">Gigapixel AI Photo</a>
+                                            <div class="desc">专业、极致、收费、下载软件</div>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="item-wrap">
+                                <div class="item-type">图片压缩</div>
+                                <div class="item-con">
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://squoosh.app/" target="_blank">Squoosh</a>
+                                            <div class="desc">离线、只能单张压缩</div>
+                                        </div>
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://www.betweenelements.com/tinypng-app" target="_blank">tinyPNG App</a>
+                                            <div class="desc">Mac、Windows客户端，大批量</div>
+                                        </div>
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://tinify.cn/" target="_blank">tinyPNG</a>
+                                            <div class="desc">最好用。5M，一次最多处理 20 张</div>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="item-wrap">
+                                <div class="item-type">图片拼接</div>
+                                <div class="item-con">
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://www.filesmerge.com/zh/merge-images" target="_blank">合并图片</a>
+                                            <div class="desc">拼接横向、纵向多张图片，生成长图</div>
+                                        </div>
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="http://join-screenshots.zhanghai.me/" target="_blank">电影截图拼接</a>
+                                            <div class="desc">生成电影台词拼接图片</div>
+                                        </div>
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://www.gaoding.com/pintu" target="_blank">稿定拼图</a>
+                                            <div class="desc">最好用的在线拼图工具</div>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="item-wrap">
+                                <div class="item-type">卡通图片</div>
+                                <div class="item-con">
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://avatarmaker.com/" target="_blank">卡通头像</a>
+                                            <div class="desc">DIY，手动制作</div>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="item-wrap">
+                                <div class="item-type">二维码图片</div>
+                                <div class="item-con">
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://cli.im/" target="_blank">草料</a>
+                                            <div class="desc">二维码生成和识别</div>
+                                        </div>
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://www.9thws.com/" target="_blank">第九工场</a>
+                                            <div class="desc">死磕二维码艺术</div>
+                                        </div>
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="" target="_blank">MockUPhone</a>
+                                            <div class="desc">用邮箱接收图片</div>
+                                        </div>
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="" target="_blank">dimmy</a>
+                                            <div class="desc">直接用，没任何要求</div>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="item-wrap">
+                                <div class="item-type">带壳截图</div>
+                                <div class="item-con">
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://mockuphone.com/" target="_blank">MockUPhone</a>
+                                            <div class="desc">用邮箱接收图片</div>
+                                        </div>
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://dimmy.club/" target="_blank">dimmy</a>
+                                            <div class="desc">直接用，没任何要求</div>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="item-wrap">
+                                <div class="item-type">图片水印</div>
+                                <div class="item-con">
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://theinpaint.com/" target="_blank">图片去水印</a>
+                                            <div class="desc">傻瓜式去水印</div>
+                                        </div>
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://uutool.cn/img-watermark/" target="_blank">图片加水印</a>
+                                            <div class="desc">支持离线使用</div>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="item-wrap">
+                                <div class="item-type">生成词云</div>
+                                <div class="item-con">
+                                    
+                                        
+                                        <div class="item" >
+                                            <a class="item-name" href="https://www.weiciyun.com/" target="_blank">微词云</a>
+                                            <div class="desc">免费、专业</div>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        
+                    </div>
                 
             </div>
         </div>
     </div>
-</div>
-
-    
-
-    <article id="articles" class="container articles">
-        <div class="row tags-posts">
-            
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2019/02/15/kaifagongjuvscodeeslinthedaimageshihuaxiangguanpeizhi/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="http://qiniu.luzhidong.cn/medias/featureimages/26.jpg" class="responsive-img" alt="开发工具VsCode-Eslint和代码格式化相关配置">
-                            
-                            <span class="card-title">开发工具VsCode-Eslint和代码格式化相关配置</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="summary">
-                            
-                                为使开发更规范化，这里给出了关于vscode开发工具格式化代码的相关设置和eslint的配置信息
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-15
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" class="post-category" target="_blank">
-                                    开发工具
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/eslitn/" target="_blank">
-                            <span class="chip bg-color">eslitn</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" target="_blank">
-                            <span class="chip bg-color">开发工具</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
+    <!-- <div class="container aos-init aos-animate" data-aos="fade-up">
+        <div class="card" style="height: 200px;">
+            <div class="card-content">
+                dseffsd
             </div>
-            
         </div>
-    </article>
+    </div> -->
 </main>
-
-
 <footer class="page-footer bg-color">
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
