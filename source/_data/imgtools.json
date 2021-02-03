@@ -1,0 +1,226 @@
+[
+  {
+    "type": "图床",
+    "list": [{
+      "url": "https://sm.ms/",
+      "name": "sm",
+      "desc": "图床首推"
+    },
+    {
+      "url": "https://upload.cc/",
+      "name": "upload.cc",
+      "desc": "老牌图床"
+    },
+    {
+      "url": "https://www.superbed.cn/",
+      "name": "聚合图床",
+      "desc": "要注册"
+    },
+    {
+      "url": "https://imgchr.com/",
+      "name": "路过图床",
+      "desc": "专业图床"
+    }]
+  },
+  {
+    "type": "生成图片",
+    "list": [{
+      "url": "https://mosaically.com/",
+      "name": "mosaically",
+      "desc": "马赛克图片拼贴、千图成像"
+    },
+    {
+      "url": "https://onlinetexttools.com/convert-text-to-image",
+      "name": "生成文字图片",
+      "desc": "输入文本，生成对应图片，支持中文"
+    },
+    {
+      "url": "https://carbon.now.sh/",
+      "name": "代码片段图片",
+      "desc": "演示代码"
+    }]
+  },
+  {
+    "type": "免费商用图库",
+    "list": [{
+      "url": "https://unsplash.com/",
+      "name": "unsplash",
+      "desc": "最全最多"
+    },
+    {
+      "url": "https://pixabay.com/zh/",
+      "name": "pixabay",
+      "desc": "支持中文搜索"
+    },
+    {
+      "url": "https://gratisography.com/",
+      "name": "gratisography",
+      "desc": "特色"
+    }]
+  },
+  {
+    "type": "免费商用图标",
+    "list": [{
+      "url": "https://icons8.com/icons",
+      "name": "icons8",
+      "desc": "还行"
+    },
+    {
+      "url": "https://www.iconfinder.com/",
+      "name": "iconfinder",
+      "desc": "有收费的，科学上网"
+    },
+    {
+      "url": "https://iconpark.bytedance.com/",
+      "name": "IconPark图标库",
+      "desc": "开源、免费"
+    }]
+  },
+  {
+    "type": "抠图",
+    "list": [{
+      "url": "https://kt.fkw.com/koutu.html",
+      "name": "凡客抠图",
+      "desc": "次数不限，效果略差"
+    },
+    {
+      "url": "https://www.stickermule.com/trace",
+      "name": "trace",
+      "desc": "全局才能使用，不限次数，抠图效果不错"
+    },
+    {
+      "url": "https://www.gaoding.com/koutu",
+      "name": "搞定抠图",
+      "desc": "三次免费抠图"
+    },
+    {
+      "url": "https://www.remove.bg/",
+      "name": "remove.bg",
+      "desc": "一次免费抠图"
+    }]
+  },
+  {
+    "type": "大变图片",
+    "list": [{
+      "url": "http://funny.pho.to/zh/",
+      "name": "图片变素描",
+      "desc": "免费、逼真"
+    }]
+  },
+  {
+    "type": "图片放大",
+    "list": [{
+      "url": "https://bigjpg.com/",
+      "name": "bigjpg",
+      "desc": "免费、在线"
+    },
+    {
+      "url": "https://topazlabs.com/gigapixel-ai/",
+      "name": "Gigapixel AI Photo",
+      "desc": "专业、极致、收费、下载软件"
+    }]
+  },
+  {
+    "type": "图片压缩",
+    "list": [{
+      "url": "https://squoosh.app/",
+      "name": "Squoosh",
+      "desc": "离线、只能单张压缩"
+    },
+    {
+      "url": "https://www.betweenelements.com/tinypng-app",
+      "name": "tinyPNG App",
+      "desc": "Mac、Windows客户端，大批量"
+    },
+    {
+      "url": "https://tinify.cn/",
+      "name": "tinyPNG",
+      "desc": "最好用。5M，一次最多处理 20 张"
+    }]
+  },
+  {
+    "type": "图片拼接",
+    "list": [{
+      "url": "https://www.filesmerge.com/zh/merge-images",
+      "name": "合并图片",
+      "desc": "拼接横向、纵向多张图片，生成长图"
+    },
+    {
+      "url": "http://join-screenshots.zhanghai.me/",
+      "name": "电影截图拼接",
+      "desc": "生成电影台词拼接图片"
+    },
+    {
+      "url": "https://www.gaoding.com/pintu",
+      "name": "稿定拼图",
+      "desc": "最好用的在线拼图工具"
+    }]
+  },
+  {
+    "type": "卡通图片",
+    "list": [{
+      "url": "https://avatarmaker.com/",
+      "name": "卡通头像",
+      "desc": "DIY，手动制作"
+    }]
+  },
+  {
+    "type": "二维码图片",
+    "list": [{
+      "url": "https://cli.im/",
+      "name": "草料",
+      "desc": "二维码生成和识别"
+    },
+    {
+      "url": "https://www.9thws.com/",
+      "name": "第九工场",
+      "desc": "死磕二维码艺术"
+    },
+    {
+      "url": "",
+      "name": "MockUPhone",
+      "desc": "用邮箱接收图片"
+    },
+    {
+      "url": "",
+      "name": "dimmy",
+      "desc": "直接用，没任何要求"
+    }]
+  },
+  {
+    "type": "带壳截图",
+    "list": [{
+      "url": "https://mockuphone.com/",
+      "name": "MockUPhone",
+      "desc": "用邮箱接收图片"
+    },
+    {
+      "url": "https://dimmy.club/",
+      "name": "dimmy",
+      "desc": "直接用，没任何要求"
+    }]
+  },
+  {
+    "type": "图片水印",
+    "list": [{
+      "url": "https://theinpaint.com/",
+      "name": "图片去水印",
+      "desc": "傻瓜式去水印"
+    },
+    {
+      "url": "https://uutool.cn/img-watermark/",
+      "name": "图片加水印",
+      "desc": "支持离线使用"
+    }]
+  },
+  {
+    "type": "生成词云",
+    "list": [{
+      "url": "https://www.weiciyun.com/",
+      "name": "微词云",
+      "desc": "免费、专业"
+    }]
+  }
+
+ 
+]

@@ -1,0 +1,92 @@
+<%- partial('_partial/bg-cover') %>
+<style>
+    .tools-container {
+        margin-top: -60px;
+    }
+
+    .tools-container .tag-title {
+        margin-bottom: 10px;
+        color: #3C4858;
+        font-size: 1.75rem;
+        font-weight: 400;
+    }
+    .tools-container .item-con {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .tools-container .item-con .item {
+        border-radius: 5px;
+        margin: 10px;
+        display: block;
+        background-color: #fff;
+        border: 1px solid #f1f1f1;
+        padding: 10px;
+        height: 90px;
+        width: 200px;
+    }
+    .tools-container .item-con .item:hover {
+        border: none;
+        box-shadow: 0px 0px 10px rgba(50, 50, 93, .1);
+    }
+
+    .tools-container .item-wrap +  .item-wrap {
+        margin-top: 20px;
+    }
+
+    .tools-container .item-type {
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+    .tools-container .item-name {
+        font-size: 16px;
+    }
+
+    .tools-container .desc {
+        color: #666;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+</style>
+
+<main class="content">
+    <div class="container tools-container">
+        <div class="card">
+            <div class="card-content">
+                <div class="tag-title center-align">
+                    <i class="fa fa-bookmark"></i>&nbsp;&nbsp;图片工具
+                </div>
+                <% if (site.data && site.data.imgtools) { %>
+                    <% var imgtools = site.data.imgtools; %>
+                    <div>
+                        <% for (var i = 0, len = imgtools.length; i < len; i++) { %>
+                            <% var tool = imgtools[i]; %>
+                            <div class="item-wrap">
+                                <div class="item-type"><%- tool.type %></div>
+                                <div class="item-con">
+                                    <% for (var j = 0, len2 = tool.list.length; j < len2; j++) { %>
+                                        <% var item = tool.list[j]; %>
+                                        <div class="item" >
+                                            <a class="item-name" href="<%- item.url %>" target="_blank"><%- item.name %></a>
+                                            <div class="desc"><%- item.desc %></div>
+                                        </div>
+                                    <% } %>
+                                </div>
+                            </div>
+                        <% } %>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container aos-init aos-animate" data-aos="fade-up">
+        <div class="card" style="height: 200px;">
+            <div class="card-content">
+                dseffsd
+            </div>
+        </div>
+    </div> -->
+</main>

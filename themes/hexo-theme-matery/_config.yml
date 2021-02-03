@@ -19,6 +19,9 @@ menu:
   Friends:
     url: /friends
     icon: fa-address-book
+  Tools:
+    url: /tools
+    icon: fa-cogs
 
 # index page dream text,
 # 配置首页显示"梦想"的语句.
