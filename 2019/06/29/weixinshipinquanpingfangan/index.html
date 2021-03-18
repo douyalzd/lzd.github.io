@@ -34,8 +34,8 @@
     </script>
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="前端豆芽" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism.css" type="text/css"><link rel="alternate" href="/atom.xml" title="前端豆芽" type="application/atom+xml">
+</head>
 
 
 <body>
@@ -1244,8 +1244,11 @@ start();
 阻止默认事件@contextmenu.prevent 
 
 模板:
-&amp;#123;&amp;#123;msg&amp;#125;&amp;#125;        数据更新模板变化
-&amp;#1</div>
+{{msg}}        数据更新模板变化
+{{*msg}}    数据只绑定一次
+{{{msg}}}    HTML转意输出
+
+</div>
                     <div class="publish-info">
                         <span class="publish-date">
                             <i class="fa fa-clock-o fa-fw icon-date"></i>2019-06-29
@@ -1424,7 +1427,7 @@ start();
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;总字数:&nbsp;
-                <span class="white-color">14.9k,&nbsp;</span>
+                <span class="white-color">14.3k,&nbsp;</span>
             
 
             

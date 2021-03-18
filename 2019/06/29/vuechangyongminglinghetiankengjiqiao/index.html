@@ -11,8 +11,11 @@
 阻止默认事件@contextmenu.prevent 
 
 模板:
-&amp;amp;#123;&amp;amp;#123;msg&amp;amp;#125;&amp;amp;#125;        数据更新模板变化
-&amp;amp;#1">
+{{msg}}        数据更新模板变化
+{{*msg}}    数据只绑定一次
+{{{msg}}}    HTML转意输出
+
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -41,8 +44,8 @@
     </script>
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="前端豆芽" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism.css" type="text/css"><link rel="alternate" href="/atom.xml" title="前端豆芽" type="application/atom+xml">
+</head>
 
 
 <body>
@@ -869,7 +872,7 @@ start();
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        148
+                        96
                     </div>
                     
 
@@ -898,22 +901,22 @@ start();
 <li><p>阻止默认事件<br>@contextmenu.prevent </p>
 </li>
 <li><p>模板:</p>
-<pre class=" language-html"><code class="language-html"><span class="token entity" title="&#123;">&amp;#123;</span><span class="token entity" title="&#123;">&amp;#123;</span>msg<span class="token entity" title="&#125;">&amp;#125;</span><span class="token entity" title="&#125;">&amp;#125;</span>        数据更新模板变化
-<span class="token entity" title="&#123;">&amp;#123;</span><span class="token entity" title="&#123;">&amp;#123;</span>*msg<span class="token entity" title="&#125;">&amp;#125;</span><span class="token entity" title="&#125;">&amp;#125;</span>    数据只绑定一次
-<span class="token entity" title="&#123;">&amp;#123;</span><span class="token entity" title="&#123;">&amp;#123;</span><span class="token entity" title="&#123;">&amp;#123;</span>msg<span class="token entity" title="&#125;">&amp;#125;</span><span class="token entity" title="&#125;">&amp;#125;</span><span class="token entity" title="&#125;">&amp;#125;</span>    HTML转意输出</code></pre>
+<pre class=" language-html"><code class="language-html">{{msg}}        数据更新模板变化
+{{*msg}}    数据只绑定一次
+{{{msg}}}    HTML转意输出</code></pre>
 </li>
 <li><p>用户会看到花括号标记:</p>
 <pre class=" language-html"><code class="language-html">v-cloak        防止闪烁, 比较大段落
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span><span class="token entity" title="&#123;">&amp;#123;</span><span class="token entity" title="&#123;">&amp;#123;</span>msg<span class="token entity" title="&#125;">&amp;#125;</span><span class="token entity" title="&#125;">&amp;#125;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>        ->   v-text
-<span class="token entity" title="&#123;">&amp;#123;</span><span class="token entity" title="&#123;">&amp;#123;</span><span class="token entity" title="&#123;">&amp;#123;</span>msg<span class="token entity" title="&#125;">&amp;#125;</span><span class="token entity" title="&#125;">&amp;#125;</span><span class="token entity" title="&#125;">&amp;#125;</span>            ->   v-html</code></pre>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>{{msg}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>        ->   v-text
+{{{msg}}}            ->   v-html</code></pre>
 </li>
 <li><p>Vue.nextTick( [callback, context] )</p>
 <pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 修改数据</span>
 vm<span class="token punctuation">.</span>msg <span class="token operator">=</span> <span class="token string">'Hello'</span>
 <span class="token comment" spellcheck="true">// DOM 还没有更新</span>
-Vue<span class="token punctuation">.</span><span class="token function">nextTick</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+Vue<span class="token punctuation">.</span><span class="token function">nextTick</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 <span class="token comment" spellcheck="true">// DOM 更新了</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span></code></pre>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
 </li>
 </ul>
 
@@ -1411,7 +1414,7 @@ Digit77.com | 精品Mac应用免费分享
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;总字数:&nbsp;
-                <span class="white-color">14.9k,&nbsp;</span>
+                <span class="white-color">14.3k,&nbsp;</span>
             
 
             

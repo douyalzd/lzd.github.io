@@ -39,8 +39,8 @@ textarea 不跟随页面滚动问题，问题是textarea的某一层父标签样
     </script>
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="前端豆芽" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism.css" type="text/css"><link rel="alternate" href="/atom.xml" title="前端豆芽" type="application/atom+xml">
+</head>
 
 
 <body>
@@ -871,7 +871,7 @@ start();
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        436
+                        408
                     </div>
                     
 
@@ -905,39 +905,39 @@ start();
 </li>
 <li><p>小程序textarea安卓和iOS显示不一样<br> 解决办法：判断手机是否是iPhone，通过样式的方式解决</p>
 <pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 判断手机型号</span>
-wx<span class="token punctuation">.</span><span class="token function">getSystemInfo</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-    success<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>system<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">"iOS"</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+wx<span class="token punctuation">.</span><span class="token function">getSystemInfo</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    success<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>system<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">"iOS"</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
             that<span class="token punctuation">.</span>globalData<span class="token punctuation">.</span>isIphone <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>model<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'iPhone X'</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token operator">||</span> res<span class="token punctuation">.</span>model <span class="token operator">==</span> <span class="token string">'iPhone X'</span> <span class="token operator">||</span> res<span class="token punctuation">.</span>model <span class="token operator">==</span> <span class="token string">'iphonrx'</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>model<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'iPhone X'</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token operator">||</span> res<span class="token punctuation">.</span>model <span class="token operator">==</span> <span class="token string">'iPhone X'</span> <span class="token operator">||</span> res<span class="token punctuation">.</span>model <span class="token operator">==</span> <span class="token string">'iphonrx'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
             that<span class="token punctuation">.</span>globalData<span class="token punctuation">.</span>isIphoneX <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<pre class=" language-css"><code class="language-css"><span class="token number">.</span>ds-textarea <span class="token number">.</span>textarea &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.ds-textarea</span> <span class="token class">.textarea</span> </span><span class="token punctuation">{</span>
     <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
     <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span>
     <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span>
     <span class="token property">line-height</span><span class="token punctuation">:</span> <span class="token number">18</span>px<span class="token punctuation">;</span>
-&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-<span class="token number">.</span>ds-textarea <span class="token number">.</span>textarea<span class="token number">.</span>iphone &amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span>
+<span class="token selector"><span class="token class">.ds-textarea</span> <span class="token class">.textarea.iphone</span> </span><span class="token punctuation">{</span>
     <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
     <span class="token property">top</span><span class="token punctuation">:</span> -<span class="token number">14</span>rpx<span class="token punctuation">;</span>
     <span class="token property">left</span><span class="token punctuation">:</span> -<span class="token number">14</span>rpx<span class="token punctuation">;</span>
-&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span></code></pre>
+<span class="token punctuation">}</span></code></pre>
 </li>
 </ol>
 <h2 id="百度地图"><a href="#百度地图" class="headerlink" title="百度地图"></a>百度地图</h2><ol>
-<li>地图上 <code>marker</code> 和 <code>circle</code> 同时存在时，使用打点功能 <code>marker</code>  会错位<br>解决办法：<pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">setMark</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<li>地图上 <code>marker</code> 和 <code>circle</code> 同时存在时，使用打点功能 <code>marker</code>  会错位<br>解决办法：<pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">setMark</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
  <span class="token keyword">var</span> x<span class="token punctuation">,</span>y<span class="token punctuation">;</span>
  <span class="token keyword">var</span> e <span class="token operator">=</span> e<span class="token operator">||</span>window<span class="token punctuation">.</span>event<span class="token punctuation">;</span>
  <span class="token keyword">var</span> b <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token function">pixelToPoint</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BMap<span class="token punctuation">.</span>Pixel</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>clientX<span class="token punctuation">,</span>e<span class="token punctuation">.</span>clientY<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//屏幕坐标转换为</span>
  <span class="token keyword">var</span> marker <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BMap<span class="token punctuation">.</span>Marker</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
  map<span class="token punctuation">.</span><span class="token function">addOverlay</span><span class="token punctuation">(</span>marker<span class="token punctuation">)</span><span class="token punctuation">;</span>
  <span class="token function">drawcircle</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<span class="token punctuation">}</span></code></pre>
 </li>
 </ol>
 <h2 id="浏览解析问题"><a href="#浏览解析问题" class="headerlink" title="浏览解析问题"></a>浏览解析问题</h2><ol>
@@ -1456,7 +1456,7 @@ Digit77.com | 精品Mac应用免费分享
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;总字数:&nbsp;
-                <span class="white-color">14.9k,&nbsp;</span>
+                <span class="white-color">14.3k,&nbsp;</span>
             
 
             
