@@ -7,3 +7,4 @@ public/
 .deploy*/
 source/_data/key.json
 package-lock.json
+scp.sh
