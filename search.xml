@@ -1,119 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>前端-HTML规范</title>
-    <url>/posts/934ef266.html</url>
-    <content><![CDATA[<h2 id="class、id命名规则"><a href="#class、id命名规则" class="headerlink" title="class、id命名规则"></a>class、id命名规则</h2><ul>
-<li><p>class 不能使用驼峰 使用(烤串写法) 例子：class=”login-dialog”  class=”login-form-dialog”  </p>
-<ul>
-<li>命名建议：页面-属性-功能</li>
-<li>公用类 修饰符-功能</li>
-</ul>
-</li>
-<li><p>id 一般参与样式，命名的话使用驼峰。</p>
-</li>
-</ul>
-<h2 id="标签使用"><a href="#标签使用" class="headerlink" title="标签使用"></a>标签使用</h2><ul>
-<li>内联元素内不能有块级元素</li>
-<li>标签里面的样式超过2个需要提出来</li>
-</ul>
-<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><ul>
-<li><p>使用 <code>4</code> 个空格做为一个缩进层级，不允许使用 <code>2</code></p>
-</li>
-<li><p>在属性上，使用双引号 <code>&quot;&quot;</code>，不要使用单引号 <code>&#39;&#39;</code></p>
-</li>
-<li><p>属性名 / 属性值全小写，用中划线 <code>-</code> 做分隔符</p>
-</li>
-<li><p>不要忽略可选的关闭标签，例：<code>&lt;/li&gt;</code> 和 <code>&lt;/body&gt;</code></p>
-</li>
-</ul>
-<pre class=" language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- good --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>logo.png<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>logo<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>first-child<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>first<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">data-index</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>second<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span></code></pre>
-<h2 id="HTML5-doctype"><a href="#HTML5-doctype" class="headerlink" title="HTML5 doctype"></a>HTML5 doctype</h2><p>在页面开头使用这个简单的 doctype 来启用标准模式，使其在每个浏览器中尽可能一致的展现</p>
-<p>虽然 doctype 不区分大小写，但是按照惯例，doctype 使用全大写</p>
-<pre class=" language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- good --></span>
-<span class="token doctype">&lt;!DOCTYPE html></span></code></pre>
-<h2 id="lang-属性"><a href="#lang-属性" class="headerlink" title="lang 属性"></a>lang 属性</h2><p>根据HTML5规范：</p>
-<blockquote>
-<p>应在 html 标签上加上 lang 属性。这会给语音工具和翻译工具帮助，告诉它们应当怎么去发音和翻译。</p>
-</blockquote>
-<p>在 sitepoint 上可以查到 <a href="https://www.sitepoint.com/web-foundations/iso-2-letter-language-codes/">语言列表</a></p>
-<p>但 sitepoint 只是给出了语言的大类，例如中文只给出了 zh，但是没有区分香港，台湾，大陆。而微软给出了一份更加详细的 <a href="https://msdn.microsoft.com/en-us/library/ms533052(v=vs.85).aspx">语言列表</a>，其中细分了 zh-cn, zh-hk, zh-tw</p>
-<pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>zh-cn<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
-<h2 id="字符编码"><a href="#字符编码" class="headerlink" title="字符编码"></a>字符编码</h2><p>通过声明一个明确的字符编码，让浏览器轻松、快速的确定适合网页内容的渲染方式，通常指定为 “utf-8”</p>
-<pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
-<h2 id="IE-兼容模式"><a href="#IE-兼容模式" class="headerlink" title="IE 兼容模式"></a>IE 兼容模式</h2><p>用 <code>&lt;meta&gt;</code> 标签可以指定页面应该用什么版本的 IE 来渲染，PC 端项目，建议启用 IE Edge 模式</p>
-<pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
-        <span class="token comment" spellcheck="true">&lt;!-- 极速模式 --></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>renderer<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>webkit<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
-        <span class="token comment" spellcheck="true">&lt;!-- IE兼容 --></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>X-UA-Compatible<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>IE<span class="token punctuation">=</span>Edge<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
-<h2 id="引入-CSS、JS"><a href="#引入-CSS、JS" class="headerlink" title="引入 CSS、JS"></a>引入 CSS、JS</h2><ul>
-<li><p>根据 HTML5 规范, 通常在引入 CSS 和 JS 时不需要指明 <code>type</code>，因为 <code>text/css</code> 和 <code>text/javascript</code> 分别是他们的默认值</p>
-</li>
-<li><p>在引入 CSS 时，必须指明 <code>rel=&quot;stylesheet&quot;</code></p>
-</li>
-<li><p>将 script 放在页面中间将阻断页面的渲染，出于性能方面的考虑，如非必要，JavaScript 应当放在页面末尾</p>
-</li>
-</ul>
-<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>index.css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>index.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
-<h2 id="boolean-属性"><a href="#boolean-属性" class="headerlink" title="boolean 属性"></a>boolean 属性</h2><p>boolean 属性指不需要声明取值的属性，XHTML 需要每个属性声明取值，但是 HTML5 并不需要</p>
-<pre class=" language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- good --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">disabled</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>1<span class="token punctuation">"</span></span> <span class="token attr-name">checked</span><span class="token punctuation">></span></span>
-
-<span class="token comment" spellcheck="true">&lt;!-- bad --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">disabled</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>disabled<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>1<span class="token punctuation">"</span></span> <span class="token attr-name">checked</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre>
-<h2 id="减少标签数量"><a href="#减少标签数量" class="headerlink" title="减少标签数量"></a>减少标签数量</h2><p>在编写HTML代码时，需要尽量避免多余的父节点</p>
-<pre class=" language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- good --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>logo<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>logo.png<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-
-<span class="token comment" spellcheck="true">&lt;!-- bad --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>logo<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>logo.png<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span></code></pre>
-<h2 id="实用高于完美"><a href="#实用高于完美" class="headerlink" title="实用高于完美"></a>实用高于完美</h2><ul>
-<li><p>尽量遵循 HTML 标准和语义，但是不应该以浪费实用性作为代价</p>
-</li>
-<li><p>任何时候都要用尽量小的复杂度和尽量少的标签来解决问题</p>
-</li>
-</ul>
-<h2 id="推荐文章"><a href="#推荐文章" class="headerlink" title="推荐文章"></a>推荐文章</h2><p>1、<a href="https://guide.aotu.io/docs/">凹凸使用实验室的前端开发规范</a><br>2、<a href="https://github.com/hardylinfee/styleguide">hardylinfee前端开发规范</a></p>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>前端-CSS规范</title>
     <url>/posts/cd5ce6b9.html</url>
     <content><![CDATA[<h2 id="class、id命名规则"><a href="#class、id命名规则" class="headerlink" title="class、id命名规则"></a>class、id命名规则</h2><ol>
@@ -294,6 +181,119 @@
       <tags>
         <tag>前端</tag>
         <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>前端-HTML规范</title>
+    <url>/posts/934ef266.html</url>
+    <content><![CDATA[<h2 id="class、id命名规则"><a href="#class、id命名规则" class="headerlink" title="class、id命名规则"></a>class、id命名规则</h2><ul>
+<li><p>class 不能使用驼峰 使用(烤串写法) 例子：class=”login-dialog”  class=”login-form-dialog”  </p>
+<ul>
+<li>命名建议：页面-属性-功能</li>
+<li>公用类 修饰符-功能</li>
+</ul>
+</li>
+<li><p>id 一般参与样式，命名的话使用驼峰。</p>
+</li>
+</ul>
+<h2 id="标签使用"><a href="#标签使用" class="headerlink" title="标签使用"></a>标签使用</h2><ul>
+<li>内联元素内不能有块级元素</li>
+<li>标签里面的样式超过2个需要提出来</li>
+</ul>
+<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><ul>
+<li><p>使用 <code>4</code> 个空格做为一个缩进层级，不允许使用 <code>2</code></p>
+</li>
+<li><p>在属性上，使用双引号 <code>&quot;&quot;</code>，不要使用单引号 <code>&#39;&#39;</code></p>
+</li>
+<li><p>属性名 / 属性值全小写，用中划线 <code>-</code> 做分隔符</p>
+</li>
+<li><p>不要忽略可选的关闭标签，例：<code>&lt;/li&gt;</code> 和 <code>&lt;/body&gt;</code></p>
+</li>
+</ul>
+<pre class=" language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- good --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>logo.png<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>logo<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>first-child<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>first<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">data-index</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>second<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span></code></pre>
+<h2 id="HTML5-doctype"><a href="#HTML5-doctype" class="headerlink" title="HTML5 doctype"></a>HTML5 doctype</h2><p>在页面开头使用这个简单的 doctype 来启用标准模式，使其在每个浏览器中尽可能一致的展现</p>
+<p>虽然 doctype 不区分大小写，但是按照惯例，doctype 使用全大写</p>
+<pre class=" language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- good --></span>
+<span class="token doctype">&lt;!DOCTYPE html></span></code></pre>
+<h2 id="lang-属性"><a href="#lang-属性" class="headerlink" title="lang 属性"></a>lang 属性</h2><p>根据HTML5规范：</p>
+<blockquote>
+<p>应在 html 标签上加上 lang 属性。这会给语音工具和翻译工具帮助，告诉它们应当怎么去发音和翻译。</p>
+</blockquote>
+<p>在 sitepoint 上可以查到 <a href="https://www.sitepoint.com/web-foundations/iso-2-letter-language-codes/">语言列表</a></p>
+<p>但 sitepoint 只是给出了语言的大类，例如中文只给出了 zh，但是没有区分香港，台湾，大陆。而微软给出了一份更加详细的 <a href="https://msdn.microsoft.com/en-us/library/ms533052(v=vs.85).aspx">语言列表</a>，其中细分了 zh-cn, zh-hk, zh-tw</p>
+<pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>zh-cn<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
+<h2 id="字符编码"><a href="#字符编码" class="headerlink" title="字符编码"></a>字符编码</h2><p>通过声明一个明确的字符编码，让浏览器轻松、快速的确定适合网页内容的渲染方式，通常指定为 “utf-8”</p>
+<pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
+<h2 id="IE-兼容模式"><a href="#IE-兼容模式" class="headerlink" title="IE 兼容模式"></a>IE 兼容模式</h2><p>用 <code>&lt;meta&gt;</code> 标签可以指定页面应该用什么版本的 IE 来渲染，PC 端项目，建议启用 IE Edge 模式</p>
+<pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+        <span class="token comment" spellcheck="true">&lt;!-- 极速模式 --></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>renderer<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>webkit<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+        <span class="token comment" spellcheck="true">&lt;!-- IE兼容 --></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>X-UA-Compatible<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>IE<span class="token punctuation">=</span>Edge<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
+<h2 id="引入-CSS、JS"><a href="#引入-CSS、JS" class="headerlink" title="引入 CSS、JS"></a>引入 CSS、JS</h2><ul>
+<li><p>根据 HTML5 规范, 通常在引入 CSS 和 JS 时不需要指明 <code>type</code>，因为 <code>text/css</code> 和 <code>text/javascript</code> 分别是他们的默认值</p>
+</li>
+<li><p>在引入 CSS 时，必须指明 <code>rel=&quot;stylesheet&quot;</code></p>
+</li>
+<li><p>将 script 放在页面中间将阻断页面的渲染，出于性能方面的考虑，如非必要，JavaScript 应当放在页面末尾</p>
+</li>
+</ul>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>index.css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>index.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
+<h2 id="boolean-属性"><a href="#boolean-属性" class="headerlink" title="boolean 属性"></a>boolean 属性</h2><p>boolean 属性指不需要声明取值的属性，XHTML 需要每个属性声明取值，但是 HTML5 并不需要</p>
+<pre class=" language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- good --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">disabled</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>1<span class="token punctuation">"</span></span> <span class="token attr-name">checked</span><span class="token punctuation">></span></span>
+
+<span class="token comment" spellcheck="true">&lt;!-- bad --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">disabled</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>disabled<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>1<span class="token punctuation">"</span></span> <span class="token attr-name">checked</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre>
+<h2 id="减少标签数量"><a href="#减少标签数量" class="headerlink" title="减少标签数量"></a>减少标签数量</h2><p>在编写HTML代码时，需要尽量避免多余的父节点</p>
+<pre class=" language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- good --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>logo<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>logo.png<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+
+<span class="token comment" spellcheck="true">&lt;!-- bad --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>logo<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>logo.png<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span></code></pre>
+<h2 id="实用高于完美"><a href="#实用高于完美" class="headerlink" title="实用高于完美"></a>实用高于完美</h2><ul>
+<li><p>尽量遵循 HTML 标准和语义，但是不应该以浪费实用性作为代价</p>
+</li>
+<li><p>任何时候都要用尽量小的复杂度和尽量少的标签来解决问题</p>
+</li>
+</ul>
+<h2 id="推荐文章"><a href="#推荐文章" class="headerlink" title="推荐文章"></a>推荐文章</h2><p>1、<a href="https://guide.aotu.io/docs/">凹凸使用实验室的前端开发规范</a><br>2、<a href="https://github.com/hardylinfee/styleguide">hardylinfee前端开发规范</a></p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>HTML</tag>
       </tags>
   </entry>
   <entry>
@@ -935,8 +935,8 @@ ignoring_files:
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>Markdown</tag>
         <tag>Hexo</tag>
+        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -1448,25 +1448,6 @@ ignoring_files:
       </tags>
   </entry>
   <entry>
-    <title>nodejs配置</title>
-    <url>/posts/b01f8ed2.html</url>
-    <content><![CDATA[<h2 id="node全局文件夹配置"><a href="#node全局文件夹配置" class="headerlink" title="node全局文件夹配置"></a>node全局文件夹配置</h2><p>我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【D:\Develop\nodejs】下创建两个文件夹【node_global】及【node_cache】</p>
-<p>创建完两个空文件夹之后，打开cmd命令窗口，输入</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token keyword">set</span> prefix D:\DevelopeTool\node-v8.11.3\node_global
-<span class="token function">npm</span> config <span class="token keyword">set</span> cache D:\DevelopeTool\node-v8.11.3\node_cache</code></pre>
-<p>接下来设置环境变量，关闭cmd窗口，“我的电脑”-右键-“属性”-“高级系统设置”-“高级”-“环境变量”</p>
-<p>进入环境变量对话框，在【系统变量】下新建【NODE_PATH】，<br>输入【D:\Develop\nodejs\node_global\node_modules】，<br>将【用户变量】下的【Path】修改为【D:\Develop\nodejs\node_global】</p>
-<p>淘宝 NPM 镜像</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g cnpm --registry<span class="token operator">=</span>https://registry.npm.taobao.org</code></pre>
-]]></content>
-      <categories>
-        <category>nodejs</category>
-      </categories>
-      <tags>
-        <tag>node</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>VUE自定义过滤器和指令</title>
     <url>/posts/a6e58f56.html</url>
     <content><![CDATA[<h2 id="自定义过滤器（filters）"><a href="#自定义过滤器（filters）" class="headerlink" title="自定义过滤器（filters）"></a>自定义过滤器（filters）</h2><p>1、过滤器可以串联：</p>
@@ -1539,6 +1520,25 @@ Object<span class="token punctuation">.</span><span class="token function">keys<
       </tags>
   </entry>
   <entry>
+    <title>nodejs配置</title>
+    <url>/posts/b01f8ed2.html</url>
+    <content><![CDATA[<h2 id="node全局文件夹配置"><a href="#node全局文件夹配置" class="headerlink" title="node全局文件夹配置"></a>node全局文件夹配置</h2><p>我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【D:\Develop\nodejs】下创建两个文件夹【node_global】及【node_cache】</p>
+<p>创建完两个空文件夹之后，打开cmd命令窗口，输入</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token keyword">set</span> prefix D:\DevelopeTool\node-v8.11.3\node_global
+<span class="token function">npm</span> config <span class="token keyword">set</span> cache D:\DevelopeTool\node-v8.11.3\node_cache</code></pre>
+<p>接下来设置环境变量，关闭cmd窗口，“我的电脑”-右键-“属性”-“高级系统设置”-“高级”-“环境变量”</p>
+<p>进入环境变量对话框，在【系统变量】下新建【NODE_PATH】，<br>输入【D:\Develop\nodejs\node_global\node_modules】，<br>将【用户变量】下的【Path】修改为【D:\Develop\nodejs\node_global】</p>
+<p>淘宝 NPM 镜像</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g cnpm --registry<span class="token operator">=</span>https://registry.npm.taobao.org</code></pre>
+]]></content>
+      <categories>
+        <category>nodejs</category>
+      </categories>
+      <tags>
+        <tag>node</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>重学前端</title>
     <url>/posts/c421a65c.html</url>
     <content><![CDATA[<h2 id="0-1-0-2为什么不等于0-3"><a href="#0-1-0-2为什么不等于0-3" class="headerlink" title="0.1+0.2为什么不等于0.3"></a>0.1+0.2为什么不等于0.3</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// 比较大小使用下面的方式</span>
@@ -1590,6 +1590,49 @@ Vue<span class="token punctuation">.</span><span class="token function">nextTick
       </tags>
   </entry>
   <entry>
+    <title>常用资源网站推荐</title>
+    <url>/posts/e2735779.html</url>
+    <content><![CDATA[<h2 id="MacOS-常用破解软件下载网站推荐"><a href="#MacOS-常用破解软件下载网站推荐" class="headerlink" title="MacOS 常用破解软件下载网站推荐"></a>MacOS 常用破解软件下载网站推荐</h2><p><a href="https://www.waitsun.com/">麦氪派(WaitsUn.com) 致力于分享优秀的Mac应用软件</a></p>
+<p><a href="https://www.digit77.com/">Digit77.com | 精品Mac应用免费分享</a></p>
+<p><a href="https://masuit.com/">懒得勤快，互联网分享精神，勤于发现，乐于分享</a></p>
+<p>都是些奇怪的外语网站，如有需要也请自行想办法解决语言障碍和网络障碍。</p>
+<p><a href="http://www.downloadsoftware.ir/">http://www.downloadsoftware.ir/</a></p>
+<p><a href="https://www.0daydown.com/">https://www.0daydown.com/</a></p>
+<p><a href="https://downloadly.ir/">https://downloadly.ir/</a></p>
+<p><a href="https://repack.me/">https://repack.me/</a></p>
+<p><a href="https://lrepacks.ru/">https://lrepacks.ru/</a></p>
+<p><a href="https://mac-torrents.io/">https://mac-torrents.io/</a></p>
+<p><a href="https://4howcrack.com/">https://4howcrack.com/</a></p>
+<p><a href="https://free4pc.org/">https://free4pc.org/</a></p>
+<h2 id="Windows常用破解软件下载网站推荐"><a href="#Windows常用破解软件下载网站推荐" class="headerlink" title="Windows常用破解软件下载网站推荐"></a>Windows常用破解软件下载网站推荐</h2><p><a href="http://www.wuleba.com/">吾乐吧软件站 | 打造一个高品质的绿色软件博客！</a></p>
+<p><a href="http://msdn.itellyou.cn/?lang=zh-cn">Windows系统下载</a></p>
+<p><a href="http://www.newxitong.com/">专注于win7,Win7纯净版下载,专注于win10,最新系统下载</a></p>
+<h2 id="网盘资源搜索"><a href="#网盘资源搜索" class="headerlink" title="网盘资源搜索"></a>网盘资源搜索</h2><p><a href="https://www.52sopan.com/">我爱搜盘 - 搜索百度网盘资源，查找提取密码</a></p>
+<p><a href="http://ifkdy.com/">疯狂影视搜索-最有用的影视搜索引擎</a></p>
+<p><a href="http://www.daysou.com/">网盘搜索,就上天天搜索-国内优秀网盘搜索引擎</a></p>
+<h2 id="VPN网站"><a href="#VPN网站" class="headerlink" title="VPN网站"></a>VPN网站</h2><p><a href="https://www.thatseed.org/">好用便宜的且稳定的vpn网站</a></p>
+<p><a href="https://github.com/Shadowsocks-Wiki/shadowsocks">vpn工具下载win、mac、ios、Android都有</a></p>
+<h2 id="实用网站"><a href="#实用网站" class="headerlink" title="实用网站"></a>实用网站</h2><p><a href="https://www.reg007.com/">你注册过哪些网站？,通过手机号和邮箱查询你注册过的网站</a></p>
+<p><a href="https://tinypng.com/">TinyPNG图片压缩网站</a></p>
+<p><a href="https://cubic-bezier.com/#.17,.67,.83,.67">cubic-bezier css动画工具</a></p>
+<p><a href="http://www.spritecow.com/">css图片精灵工具</a></p>
+<p><a href="https://www.pexels.com/">无版权图片下载网站</a></p>
+<p><a href="https://pixabay.com/zh/">惊人的免费图片 - Pixabay</a></p>
+<h2 id="一些好玩的网站"><a href="#一些好玩的网站" class="headerlink" title="一些好玩的网站"></a>一些好玩的网站</h2><img src="http://qiniu.luzhidong.cn/static/images/001.png">
+<p><a href="https://www.zwcsm.com/">中午吃什么？——今天中午吃什么？</a></p>
+<img src="http://qiniu.luzhidong.cn/static/images/002.png">
+<p><a href="https://happyhappyhardcore.com/">happy happy hardcore</a></p>
+<img src="http://qiniu.luzhidong.cn/static/images/003.png">
+<p><a href="http://www.spielzeugz.de/html5/liquid-particles-3D">Liquid Particles 3D | spielzeugz.de/lab </a></p>
+]]></content>
+      <categories>
+        <category>资源</category>
+      </categories>
+      <tags>
+        <tag>资源推荐</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>微信视频全屏方案</title>
     <url>/posts/7455f6fa.html</url>
     <content><![CDATA[<h2 id="微信视频播放全屏问题"><a href="#微信视频播放全屏问题" class="headerlink" title="微信视频播放全屏问题"></a>微信视频播放全屏问题</h2><p>   在ios和安卓手机里的微信下播放视频时，会遇到不少问题，例如需要手动点击，视频才会播放，并且视频会跳出微信框，出现控制条，如果视频不是腾讯视频，播放完毕会出现腾讯视频的广告推送，今天我们就来看一下如何规避这些问题。</p>
@@ -1634,49 +1677,6 @@ Vue<span class="token punctuation">.</span><span class="token function">nextTick
       </categories>
       <tags>
         <tag>微信公众号</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常用资源网站推荐</title>
-    <url>/posts/e2735779.html</url>
-    <content><![CDATA[<h2 id="MacOS-常用破解软件下载网站推荐"><a href="#MacOS-常用破解软件下载网站推荐" class="headerlink" title="MacOS 常用破解软件下载网站推荐"></a>MacOS 常用破解软件下载网站推荐</h2><p><a href="https://www.waitsun.com/">麦氪派(WaitsUn.com) 致力于分享优秀的Mac应用软件</a></p>
-<p><a href="https://www.digit77.com/">Digit77.com | 精品Mac应用免费分享</a></p>
-<p><a href="https://masuit.com/">懒得勤快，互联网分享精神，勤于发现，乐于分享</a></p>
-<p>都是些奇怪的外语网站，如有需要也请自行想办法解决语言障碍和网络障碍。</p>
-<p><a href="http://www.downloadsoftware.ir/">http://www.downloadsoftware.ir/</a></p>
-<p><a href="https://www.0daydown.com/">https://www.0daydown.com/</a></p>
-<p><a href="https://downloadly.ir/">https://downloadly.ir/</a></p>
-<p><a href="https://repack.me/">https://repack.me/</a></p>
-<p><a href="https://lrepacks.ru/">https://lrepacks.ru/</a></p>
-<p><a href="https://mac-torrents.io/">https://mac-torrents.io/</a></p>
-<p><a href="https://4howcrack.com/">https://4howcrack.com/</a></p>
-<p><a href="https://free4pc.org/">https://free4pc.org/</a></p>
-<h2 id="Windows常用破解软件下载网站推荐"><a href="#Windows常用破解软件下载网站推荐" class="headerlink" title="Windows常用破解软件下载网站推荐"></a>Windows常用破解软件下载网站推荐</h2><p><a href="http://www.wuleba.com/">吾乐吧软件站 | 打造一个高品质的绿色软件博客！</a></p>
-<p><a href="http://msdn.itellyou.cn/?lang=zh-cn">Windows系统下载</a></p>
-<p><a href="http://www.newxitong.com/">专注于win7,Win7纯净版下载,专注于win10,最新系统下载</a></p>
-<h2 id="网盘资源搜索"><a href="#网盘资源搜索" class="headerlink" title="网盘资源搜索"></a>网盘资源搜索</h2><p><a href="https://www.52sopan.com/">我爱搜盘 - 搜索百度网盘资源，查找提取密码</a></p>
-<p><a href="http://ifkdy.com/">疯狂影视搜索-最有用的影视搜索引擎</a></p>
-<p><a href="http://www.daysou.com/">网盘搜索,就上天天搜索-国内优秀网盘搜索引擎</a></p>
-<h2 id="VPN网站"><a href="#VPN网站" class="headerlink" title="VPN网站"></a>VPN网站</h2><p><a href="https://www.thatseed.org/">好用便宜的且稳定的vpn网站</a></p>
-<p><a href="https://github.com/Shadowsocks-Wiki/shadowsocks">vpn工具下载win、mac、ios、Android都有</a></p>
-<h2 id="实用网站"><a href="#实用网站" class="headerlink" title="实用网站"></a>实用网站</h2><p><a href="https://www.reg007.com/">你注册过哪些网站？,通过手机号和邮箱查询你注册过的网站</a></p>
-<p><a href="https://tinypng.com/">TinyPNG图片压缩网站</a></p>
-<p><a href="https://cubic-bezier.com/#.17,.67,.83,.67">cubic-bezier css动画工具</a></p>
-<p><a href="http://www.spritecow.com/">css图片精灵工具</a></p>
-<p><a href="https://www.pexels.com/">无版权图片下载网站</a></p>
-<p><a href="https://pixabay.com/zh/">惊人的免费图片 - Pixabay</a></p>
-<h2 id="一些好玩的网站"><a href="#一些好玩的网站" class="headerlink" title="一些好玩的网站"></a>一些好玩的网站</h2><img src="http://qiniu.luzhidong.cn/static/images/001.png">
-<p><a href="https://www.zwcsm.com/">中午吃什么？——今天中午吃什么？</a></p>
-<img src="http://qiniu.luzhidong.cn/static/images/002.png">
-<p><a href="https://happyhappyhardcore.com/">happy happy hardcore</a></p>
-<img src="http://qiniu.luzhidong.cn/static/images/003.png">
-<p><a href="http://www.spielzeugz.de/html5/liquid-particles-3D">Liquid Particles 3D | spielzeugz.de/lab </a></p>
-]]></content>
-      <categories>
-        <category>资源</category>
-      </categories>
-      <tags>
-        <tag>资源推荐</tag>
       </tags>
   </entry>
   <entry>
@@ -1738,38 +1738,6 @@ wx<span class="token punctuation">.</span><span class="token function">getSystem
       <tags>
         <tag>vue</tag>
         <tag>小程序</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>前端插件集合收藏</title>
-    <url>/posts/8f9b49f0.html</url>
-    <content><![CDATA[<h2 id="vue图片剪栽组件"><a href="#vue图片剪栽组件" class="headerlink" title="vue图片剪栽组件"></a><a href="https://github.com/xyxiao001/vue-cropper">vue图片剪栽组件</a></h2><img src="http://qiniu.luzhidong.cn/static/images/011.png">
-
-<h2 id="Web酷炫特效"><a href="#Web酷炫特效" class="headerlink" title="Web酷炫特效"></a><a href="http://gnipbao.github.io/h5-test/menu.html">Web酷炫特效</a></h2><img src="http://qiniu.luzhidong.cn/static/images/005.png">
-
-<h2 id="Web酷炫特效2"><a href="#Web酷炫特效2" class="headerlink" title="Web酷炫特效2"></a><a href="https://gnipbao.github.io/h5-test/3dtag.html">Web酷炫特效2</a></h2><img src="http://qiniu.luzhidong.cn/static/images/006.gif">
-
-<h2 id="15个vue开发必不可少的指令"><a href="#15个vue开发必不可少的指令" class="headerlink" title="15个vue开发必不可少的指令"></a><a href="https://www.telerik.com/amp/15-must-have-vue-directives-that-will-significantly-maximize-your-productivity/WEx1ZE1sRUVUWkE5S0dNbEhBNXJyUkU3T1Q4PQ2?utm_campaign=Vue.js%20News&utm_medium=email&utm_source=Revue%20newsletter">15个vue开发必不可少的指令</a></h2><img src="http://qiniu.luzhidong.cn/static/images/009.png">
-
-<h2 id="数字之间的动画切换动效"><a href="#数字之间的动画切换动效" class="headerlink" title="数字之间的动画切换动效"></a><a href="https://dakerhub.github.io/vue-digital-transform/">数字之间的动画切换动效</a></h2><img src="http://qiniu.luzhidong.cn/static/images/008.gif">
-
-<h2 id="功能十分强大打字机插件"><a href="#功能十分强大打字机插件" class="headerlink" title="功能十分强大打字机插件"></a><a href="https://github.com/pengqiangsheng/easy-typer-js">功能十分强大打字机插件</a></h2><img src="http://qiniu.luzhidong.cn/static/images/007.gif">
-
-<h2 id="按钮点击效果样式集合"><a href="#按钮点击效果样式集合" class="headerlink" title="按钮点击效果样式集合"></a><a href="https://github.com/jolaleye/cssfx">按钮点击效果样式集合</a></h2><img src="http://qiniu.luzhidong.cn/static/images/010.gif">
-
-<h2 id="视频播放插件"><a href="#视频播放插件" class="headerlink" title="视频播放插件"></a><a href="http://h5player.bytedance.com/api/#%E5%B1%9E%E6%80%A7">视频播放插件</a></h2><img src="http://qiniu.luzhidong.cn/static/images/012.png">
-
-<h2 id="数字键盘"><a href="#数字键盘" class="headerlink" title="数字键盘"></a><a href="https://github.com/viclm/numeric-keyboard">数字键盘</a></h2><img src="http://qiniu.luzhidong.cn/static/images/013.gif">
-
-<h2 id="Vue-DEMO利器-在线运行-amp-编辑-Vue-单文件"><a href="#Vue-DEMO利器-在线运行-amp-编辑-Vue-单文件" class="headerlink" title="Vue DEMO利器, 在线运行 &amp; 编辑 Vue 单文件"></a><a href="https://github.com/dream2023/vue-run-sfc">Vue DEMO利器, 在线运行 &amp; 编辑 Vue 单文件</a></h2><img src="http://qiniu.luzhidong.cn/static/images/014.gif">
-
-<h2 id="微信小程序开发资源汇总"><a href="#微信小程序开发资源汇总" class="headerlink" title="微信小程序开发资源汇总"></a><a href="https://github.com/justjavac/awesome-wechat-weapp">微信小程序开发资源汇总</a></h2><img src="http://qiniu.luzhidong.cn/static/images/015.png">
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>tool</tag>
       </tags>
   </entry>
   <entry>
@@ -1864,6 +1832,38 @@ wx<span class="token punctuation">.</span><span class="token function">getSystem
       <tags>
         <tag>php</tag>
         <tag>vsCode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>前端插件集合收藏</title>
+    <url>/posts/8f9b49f0.html</url>
+    <content><![CDATA[<h2 id="vue图片剪栽组件"><a href="#vue图片剪栽组件" class="headerlink" title="vue图片剪栽组件"></a><a href="https://github.com/xyxiao001/vue-cropper">vue图片剪栽组件</a></h2><img src="http://qiniu.luzhidong.cn/static/images/011.png">
+
+<h2 id="Web酷炫特效"><a href="#Web酷炫特效" class="headerlink" title="Web酷炫特效"></a><a href="http://gnipbao.github.io/h5-test/menu.html">Web酷炫特效</a></h2><img src="http://qiniu.luzhidong.cn/static/images/005.png">
+
+<h2 id="Web酷炫特效2"><a href="#Web酷炫特效2" class="headerlink" title="Web酷炫特效2"></a><a href="https://gnipbao.github.io/h5-test/3dtag.html">Web酷炫特效2</a></h2><img src="http://qiniu.luzhidong.cn/static/images/006.gif">
+
+<h2 id="15个vue开发必不可少的指令"><a href="#15个vue开发必不可少的指令" class="headerlink" title="15个vue开发必不可少的指令"></a><a href="https://www.telerik.com/amp/15-must-have-vue-directives-that-will-significantly-maximize-your-productivity/WEx1ZE1sRUVUWkE5S0dNbEhBNXJyUkU3T1Q4PQ2?utm_campaign=Vue.js%20News&utm_medium=email&utm_source=Revue%20newsletter">15个vue开发必不可少的指令</a></h2><img src="http://qiniu.luzhidong.cn/static/images/009.png">
+
+<h2 id="数字之间的动画切换动效"><a href="#数字之间的动画切换动效" class="headerlink" title="数字之间的动画切换动效"></a><a href="https://dakerhub.github.io/vue-digital-transform/">数字之间的动画切换动效</a></h2><img src="http://qiniu.luzhidong.cn/static/images/008.gif">
+
+<h2 id="功能十分强大打字机插件"><a href="#功能十分强大打字机插件" class="headerlink" title="功能十分强大打字机插件"></a><a href="https://github.com/pengqiangsheng/easy-typer-js">功能十分强大打字机插件</a></h2><img src="http://qiniu.luzhidong.cn/static/images/007.gif">
+
+<h2 id="按钮点击效果样式集合"><a href="#按钮点击效果样式集合" class="headerlink" title="按钮点击效果样式集合"></a><a href="https://github.com/jolaleye/cssfx">按钮点击效果样式集合</a></h2><img src="http://qiniu.luzhidong.cn/static/images/010.gif">
+
+<h2 id="视频播放插件"><a href="#视频播放插件" class="headerlink" title="视频播放插件"></a><a href="http://h5player.bytedance.com/api/#%E5%B1%9E%E6%80%A7">视频播放插件</a></h2><img src="http://qiniu.luzhidong.cn/static/images/012.png">
+
+<h2 id="数字键盘"><a href="#数字键盘" class="headerlink" title="数字键盘"></a><a href="https://github.com/viclm/numeric-keyboard">数字键盘</a></h2><img src="http://qiniu.luzhidong.cn/static/images/013.gif">
+
+<h2 id="Vue-DEMO利器-在线运行-amp-编辑-Vue-单文件"><a href="#Vue-DEMO利器-在线运行-amp-编辑-Vue-单文件" class="headerlink" title="Vue DEMO利器, 在线运行 &amp; 编辑 Vue 单文件"></a><a href="https://github.com/dream2023/vue-run-sfc">Vue DEMO利器, 在线运行 &amp; 编辑 Vue 单文件</a></h2><img src="http://qiniu.luzhidong.cn/static/images/014.gif">
+
+<h2 id="微信小程序开发资源汇总"><a href="#微信小程序开发资源汇总" class="headerlink" title="微信小程序开发资源汇总"></a><a href="https://github.com/justjavac/awesome-wechat-weapp">微信小程序开发资源汇总</a></h2><img src="http://qiniu.luzhidong.cn/static/images/015.png">
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>tool</tag>
       </tags>
   </entry>
   <entry>
