@@ -935,8 +935,8 @@ ignoring_files:
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
         <tag>Markdown</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -1448,6 +1448,25 @@ ignoring_files:
       </tags>
   </entry>
   <entry>
+    <title>nodejs配置</title>
+    <url>/posts/b01f8ed2.html</url>
+    <content><![CDATA[<h2 id="node全局文件夹配置"><a href="#node全局文件夹配置" class="headerlink" title="node全局文件夹配置"></a>node全局文件夹配置</h2><p>我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【D:\Develop\nodejs】下创建两个文件夹【node_global】及【node_cache】</p>
+<p>创建完两个空文件夹之后，打开cmd命令窗口，输入</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token keyword">set</span> prefix D:\DevelopeTool\node-v8.11.3\node_global
+<span class="token function">npm</span> config <span class="token keyword">set</span> cache D:\DevelopeTool\node-v8.11.3\node_cache</code></pre>
+<p>接下来设置环境变量，关闭cmd窗口，“我的电脑”-右键-“属性”-“高级系统设置”-“高级”-“环境变量”</p>
+<p>进入环境变量对话框，在【系统变量】下新建【NODE_PATH】，<br>输入【D:\Develop\nodejs\node_global\node_modules】，<br>将【用户变量】下的【Path】修改为【D:\Develop\nodejs\node_global】</p>
+<p>淘宝 NPM 镜像</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g cnpm --registry<span class="token operator">=</span>https://registry.npm.taobao.org</code></pre>
+]]></content>
+      <categories>
+        <category>nodejs</category>
+      </categories>
+      <tags>
+        <tag>node</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>VUE自定义过滤器和指令</title>
     <url>/posts/a6e58f56.html</url>
     <content><![CDATA[<h2 id="自定义过滤器（filters）"><a href="#自定义过滤器（filters）" class="headerlink" title="自定义过滤器（filters）"></a>自定义过滤器（filters）</h2><p>1、过滤器可以串联：</p>
@@ -1520,25 +1539,6 @@ Object<span class="token punctuation">.</span><span class="token function">keys<
       </tags>
   </entry>
   <entry>
-    <title>nodejs配置</title>
-    <url>/posts/b01f8ed2.html</url>
-    <content><![CDATA[<h2 id="node全局文件夹配置"><a href="#node全局文件夹配置" class="headerlink" title="node全局文件夹配置"></a>node全局文件夹配置</h2><p>我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【D:\Develop\nodejs】下创建两个文件夹【node_global】及【node_cache】</p>
-<p>创建完两个空文件夹之后，打开cmd命令窗口，输入</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token keyword">set</span> prefix D:\DevelopeTool\node-v8.11.3\node_global
-<span class="token function">npm</span> config <span class="token keyword">set</span> cache D:\DevelopeTool\node-v8.11.3\node_cache</code></pre>
-<p>接下来设置环境变量，关闭cmd窗口，“我的电脑”-右键-“属性”-“高级系统设置”-“高级”-“环境变量”</p>
-<p>进入环境变量对话框，在【系统变量】下新建【NODE_PATH】，<br>输入【D:\Develop\nodejs\node_global\node_modules】，<br>将【用户变量】下的【Path】修改为【D:\Develop\nodejs\node_global】</p>
-<p>淘宝 NPM 镜像</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g cnpm --registry<span class="token operator">=</span>https://registry.npm.taobao.org</code></pre>
-]]></content>
-      <categories>
-        <category>nodejs</category>
-      </categories>
-      <tags>
-        <tag>node</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>重学前端</title>
     <url>/posts/c421a65c.html</url>
     <content><![CDATA[<h2 id="0-1-0-2为什么不等于0-3"><a href="#0-1-0-2为什么不等于0-3" class="headerlink" title="0.1+0.2为什么不等于0.3"></a>0.1+0.2为什么不等于0.3</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// 比较大小使用下面的方式</span>
@@ -1590,49 +1590,6 @@ Vue<span class="token punctuation">.</span><span class="token function">nextTick
       </tags>
   </entry>
   <entry>
-    <title>常用资源网站推荐</title>
-    <url>/posts/e2735779.html</url>
-    <content><![CDATA[<h2 id="MacOS-常用破解软件下载网站推荐"><a href="#MacOS-常用破解软件下载网站推荐" class="headerlink" title="MacOS 常用破解软件下载网站推荐"></a>MacOS 常用破解软件下载网站推荐</h2><p><a href="https://www.waitsun.com/">麦氪派(WaitsUn.com) 致力于分享优秀的Mac应用软件</a></p>
-<p><a href="https://www.digit77.com/">Digit77.com | 精品Mac应用免费分享</a></p>
-<p><a href="https://masuit.com/">懒得勤快，互联网分享精神，勤于发现，乐于分享</a></p>
-<p>都是些奇怪的外语网站，如有需要也请自行想办法解决语言障碍和网络障碍。</p>
-<p><a href="http://www.downloadsoftware.ir/">http://www.downloadsoftware.ir/</a></p>
-<p><a href="https://www.0daydown.com/">https://www.0daydown.com/</a></p>
-<p><a href="https://downloadly.ir/">https://downloadly.ir/</a></p>
-<p><a href="https://repack.me/">https://repack.me/</a></p>
-<p><a href="https://lrepacks.ru/">https://lrepacks.ru/</a></p>
-<p><a href="https://mac-torrents.io/">https://mac-torrents.io/</a></p>
-<p><a href="https://4howcrack.com/">https://4howcrack.com/</a></p>
-<p><a href="https://free4pc.org/">https://free4pc.org/</a></p>
-<h2 id="Windows常用破解软件下载网站推荐"><a href="#Windows常用破解软件下载网站推荐" class="headerlink" title="Windows常用破解软件下载网站推荐"></a>Windows常用破解软件下载网站推荐</h2><p><a href="http://www.wuleba.com/">吾乐吧软件站 | 打造一个高品质的绿色软件博客！</a></p>
-<p><a href="http://msdn.itellyou.cn/?lang=zh-cn">Windows系统下载</a></p>
-<p><a href="http://www.newxitong.com/">专注于win7,Win7纯净版下载,专注于win10,最新系统下载</a></p>
-<h2 id="网盘资源搜索"><a href="#网盘资源搜索" class="headerlink" title="网盘资源搜索"></a>网盘资源搜索</h2><p><a href="https://www.52sopan.com/">我爱搜盘 - 搜索百度网盘资源，查找提取密码</a></p>
-<p><a href="http://ifkdy.com/">疯狂影视搜索-最有用的影视搜索引擎</a></p>
-<p><a href="http://www.daysou.com/">网盘搜索,就上天天搜索-国内优秀网盘搜索引擎</a></p>
-<h2 id="VPN网站"><a href="#VPN网站" class="headerlink" title="VPN网站"></a>VPN网站</h2><p><a href="https://www.thatseed.org/">好用便宜的且稳定的vpn网站</a></p>
-<p><a href="https://github.com/Shadowsocks-Wiki/shadowsocks">vpn工具下载win、mac、ios、Android都有</a></p>
-<h2 id="实用网站"><a href="#实用网站" class="headerlink" title="实用网站"></a>实用网站</h2><p><a href="https://www.reg007.com/">你注册过哪些网站？,通过手机号和邮箱查询你注册过的网站</a></p>
-<p><a href="https://tinypng.com/">TinyPNG图片压缩网站</a></p>
-<p><a href="https://cubic-bezier.com/#.17,.67,.83,.67">cubic-bezier css动画工具</a></p>
-<p><a href="http://www.spritecow.com/">css图片精灵工具</a></p>
-<p><a href="https://www.pexels.com/">无版权图片下载网站</a></p>
-<p><a href="https://pixabay.com/zh/">惊人的免费图片 - Pixabay</a></p>
-<h2 id="一些好玩的网站"><a href="#一些好玩的网站" class="headerlink" title="一些好玩的网站"></a>一些好玩的网站</h2><img src="http://qiniu.luzhidong.cn/static/images/001.png">
-<p><a href="https://www.zwcsm.com/">中午吃什么？——今天中午吃什么？</a></p>
-<img src="http://qiniu.luzhidong.cn/static/images/002.png">
-<p><a href="https://happyhappyhardcore.com/">happy happy hardcore</a></p>
-<img src="http://qiniu.luzhidong.cn/static/images/003.png">
-<p><a href="http://www.spielzeugz.de/html5/liquid-particles-3D">Liquid Particles 3D | spielzeugz.de/lab </a></p>
-]]></content>
-      <categories>
-        <category>资源</category>
-      </categories>
-      <tags>
-        <tag>资源推荐</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>微信视频全屏方案</title>
     <url>/posts/7455f6fa.html</url>
     <content><![CDATA[<h2 id="微信视频播放全屏问题"><a href="#微信视频播放全屏问题" class="headerlink" title="微信视频播放全屏问题"></a>微信视频播放全屏问题</h2><p>   在ios和安卓手机里的微信下播放视频时，会遇到不少问题，例如需要手动点击，视频才会播放，并且视频会跳出微信框，出现控制条，如果视频不是腾讯视频，播放完毕会出现腾讯视频的广告推送，今天我们就来看一下如何规避这些问题。</p>
@@ -1677,6 +1634,49 @@ Vue<span class="token punctuation">.</span><span class="token function">nextTick
       </categories>
       <tags>
         <tag>微信公众号</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用资源网站推荐</title>
+    <url>/posts/e2735779.html</url>
+    <content><![CDATA[<h2 id="MacOS-常用破解软件下载网站推荐"><a href="#MacOS-常用破解软件下载网站推荐" class="headerlink" title="MacOS 常用破解软件下载网站推荐"></a>MacOS 常用破解软件下载网站推荐</h2><p><a href="https://www.waitsun.com/">麦氪派(WaitsUn.com) 致力于分享优秀的Mac应用软件</a></p>
+<p><a href="https://www.digit77.com/">Digit77.com | 精品Mac应用免费分享</a></p>
+<p><a href="https://masuit.com/">懒得勤快，互联网分享精神，勤于发现，乐于分享</a></p>
+<p>都是些奇怪的外语网站，如有需要也请自行想办法解决语言障碍和网络障碍。</p>
+<p><a href="http://www.downloadsoftware.ir/">http://www.downloadsoftware.ir/</a></p>
+<p><a href="https://www.0daydown.com/">https://www.0daydown.com/</a></p>
+<p><a href="https://downloadly.ir/">https://downloadly.ir/</a></p>
+<p><a href="https://repack.me/">https://repack.me/</a></p>
+<p><a href="https://lrepacks.ru/">https://lrepacks.ru/</a></p>
+<p><a href="https://mac-torrents.io/">https://mac-torrents.io/</a></p>
+<p><a href="https://4howcrack.com/">https://4howcrack.com/</a></p>
+<p><a href="https://free4pc.org/">https://free4pc.org/</a></p>
+<h2 id="Windows常用破解软件下载网站推荐"><a href="#Windows常用破解软件下载网站推荐" class="headerlink" title="Windows常用破解软件下载网站推荐"></a>Windows常用破解软件下载网站推荐</h2><p><a href="http://www.wuleba.com/">吾乐吧软件站 | 打造一个高品质的绿色软件博客！</a></p>
+<p><a href="http://msdn.itellyou.cn/?lang=zh-cn">Windows系统下载</a></p>
+<p><a href="http://www.newxitong.com/">专注于win7,Win7纯净版下载,专注于win10,最新系统下载</a></p>
+<h2 id="网盘资源搜索"><a href="#网盘资源搜索" class="headerlink" title="网盘资源搜索"></a>网盘资源搜索</h2><p><a href="https://www.52sopan.com/">我爱搜盘 - 搜索百度网盘资源，查找提取密码</a></p>
+<p><a href="http://ifkdy.com/">疯狂影视搜索-最有用的影视搜索引擎</a></p>
+<p><a href="http://www.daysou.com/">网盘搜索,就上天天搜索-国内优秀网盘搜索引擎</a></p>
+<h2 id="VPN网站"><a href="#VPN网站" class="headerlink" title="VPN网站"></a>VPN网站</h2><p><a href="https://www.thatseed.org/">好用便宜的且稳定的vpn网站</a></p>
+<p><a href="https://github.com/Shadowsocks-Wiki/shadowsocks">vpn工具下载win、mac、ios、Android都有</a></p>
+<h2 id="实用网站"><a href="#实用网站" class="headerlink" title="实用网站"></a>实用网站</h2><p><a href="https://www.reg007.com/">你注册过哪些网站？,通过手机号和邮箱查询你注册过的网站</a></p>
+<p><a href="https://tinypng.com/">TinyPNG图片压缩网站</a></p>
+<p><a href="https://cubic-bezier.com/#.17,.67,.83,.67">cubic-bezier css动画工具</a></p>
+<p><a href="http://www.spritecow.com/">css图片精灵工具</a></p>
+<p><a href="https://www.pexels.com/">无版权图片下载网站</a></p>
+<p><a href="https://pixabay.com/zh/">惊人的免费图片 - Pixabay</a></p>
+<h2 id="一些好玩的网站"><a href="#一些好玩的网站" class="headerlink" title="一些好玩的网站"></a>一些好玩的网站</h2><img src="http://qiniu.luzhidong.cn/static/images/001.png">
+<p><a href="https://www.zwcsm.com/">中午吃什么？——今天中午吃什么？</a></p>
+<img src="http://qiniu.luzhidong.cn/static/images/002.png">
+<p><a href="https://happyhappyhardcore.com/">happy happy hardcore</a></p>
+<img src="http://qiniu.luzhidong.cn/static/images/003.png">
+<p><a href="http://www.spielzeugz.de/html5/liquid-particles-3D">Liquid Particles 3D | spielzeugz.de/lab </a></p>
+]]></content>
+      <categories>
+        <category>资源</category>
+      </categories>
+      <tags>
+        <tag>资源推荐</tag>
       </tags>
   </entry>
   <entry>
