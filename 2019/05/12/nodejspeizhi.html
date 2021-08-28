@@ -4,11 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Markdown语法, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
-    <meta name="description" content="table语法| Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| ">
+    <meta name="keywords" content="nodejs配置, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
+    <meta name="description" content="node全局文件夹配置我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【D:\Develop\nodejs】下创建两个文件夹【node_global】及【node_cache】
+创建完两个空文件夹之后，">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Markdown语法 | 前端豆芽</title>
+    <title>nodejs配置 | 前端豆芽</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -37,8 +35,8 @@
     </script>
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism.css" type="text/css"><link rel="alternate" href="/atom.xml" title="前端豆芽" type="application/atom+xml">
-</head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="前端豆芽" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
 
 
 <body>
@@ -57,79 +55,109 @@
                 </div>
                 
 
-<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-navicon"></i></a>
-<ul class="right">
+<!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right nav-menu">
     
-    <li class="hide-on-med-and-down">
-        <a href="/" class="waves-effect waves-light">
-            
-            <i class="fa fa-home"></i>
-            
-            <span>首页</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/tags" class="waves-effect waves-light">
-            
-            <i class="fa fa-tags"></i>
-            
-            <span>文章标签</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/categories" class="waves-effect waves-light">
-            
-            <i class="fa fa-bookmark"></i>
-            
-            <span>文章分类</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/archives" class="waves-effect waves-light">
-            
-            <i class="fa fa-archive"></i>
-            
-            <span>文章归档</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/about" class="waves-effect waves-light">
-            
-            <i class="fa fa-user-circle-o"></i>
-            
-            <span>关于我</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/friends" class="waves-effect waves-light">
-            
-            <i class="fa fa-address-book"></i>
-            
-            <span>友情链接</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/tools" class="waves-effect waves-light">
-            
-            <i class="fa fa-cogs"></i>
-            
-            <span>工具箱</span>
-        </a>
-    </li>
-    
-    <li>
-        <a id="toggleSearch" class="waves-effect waves-light">
-            <i id="searchIcon" class="mdi-action-search" title="搜索"></i>
-        </a>
-    </li>
+      <li class="hide-on-med-and-down nav-item" >
 
+        
+            <a href="/" class="waves-effect waves-light">
+              
+                <i class="fa fa-home"></i>
+              
+              <span>首页</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/tags" class="waves-effect waves-light">
+              
+                <i class="fa fa-tags"></i>
+              
+              <span>文章标签</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/categories" class="waves-effect waves-light">
+              
+                <i class="fa fa-bookmark"></i>
+              
+              <span>文章分类</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/archives" class="waves-effect waves-light">
+              
+                <i class="fa fa-archive"></i>
+              
+              <span>文章归档</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/about" class="waves-effect waves-light">
+              
+                <i class="fa fa-user-circle-o"></i>
+              
+              <span>关于我</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/friends" class="waves-effect waves-light">
+              
+                <i class="fa fa-address-book"></i>
+              
+              <span>友情链接</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/tools" class="waves-effect waves-light">
+              
+                <i class="fa fa-cogs"></i>
+              
+              <span>工具箱</span>
+            </a>
+
+            
+      </li>
+    
+
+    <li>
+        <a href="#searchModal" id="toggleSearch" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
 </ul>
+
 
 <div class="side-nav" id="mobile-nav">
 
@@ -147,78 +175,94 @@
 
     
 
+    <!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
     <ul class="menu-list mobile-menu-list">
         
-        <li>
-            <a href="/" class="waves-effect waves-light">
+            <li class="m-nav-item">
+                    
+                        <a href="/" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-home"></i>
+                            
+                            首页
+                        </a>
                 
-                <i class="fa fa-fw fa-home"></i>
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/tags" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-tags"></i>
+                            
+                            文章标签
+                        </a>
                 
-                首页
-            </a>
-        </li>
-        
-        <li>
-            <a href="/tags" class="waves-effect waves-light">
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/categories" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-bookmark"></i>
+                            
+                            文章分类
+                        </a>
                 
-                <i class="fa fa-fw fa-tags"></i>
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/archives" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-archive"></i>
+                            
+                            文章归档
+                        </a>
                 
-                文章标签
-            </a>
-        </li>
-        
-        <li>
-            <a href="/categories" class="waves-effect waves-light">
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/about" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-user-circle-o"></i>
+                            
+                            关于我
+                        </a>
                 
-                <i class="fa fa-fw fa-bookmark"></i>
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/friends" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-address-book"></i>
+                            
+                            友情链接
+                        </a>
                 
-                文章分类
-            </a>
-        </li>
-        
-        <li>
-            <a href="/archives" class="waves-effect waves-light">
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/tools" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-cogs"></i>
+                            
+                            工具箱
+                        </a>
                 
-                <i class="fa fa-fw fa-archive"></i>
-                
-                文章归档
-            </a>
-        </li>
-        
-        <li>
-            <a href="/about" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-user-circle-o"></i>
-                
-                关于我
-            </a>
-        </li>
-        
-        <li>
-            <a href="/friends" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-address-book"></i>
-                
-                友情链接
-            </a>
-        </li>
-        
-        <li>
-            <a href="/tools" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-cogs"></i>
-                
-                工具箱
-            </a>
-        </li>
-        
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/douyalzd" class="waves-effect waves-light" target="_blank">
-                <i class="fa fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
+                </li>
+            
+
+            
+            <li><div class="divider"></div></li>
+            <li>
+                <a href="https://github.com/douyalzd" class="waves-effect waves-light" target="_blank">
+                    <i class="fa fa-github-square fa-fw"></i>Fork Me
+                </a>
+            </li>
         
     </ul>
 
@@ -314,7 +358,7 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('http://qiniu.luzhidong.cn/medias/featureimages/9.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('http://qiniu.luzhidong.cn/medias/featureimages/12.jpg')">
     <style type="text/css">
     #canvasBg {
         display: block;
@@ -718,7 +762,7 @@ start();
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Markdown语法
+                        nodejs配置
                     </div>
                 </div>
             </div>
@@ -834,12 +878,8 @@ start();
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Markdown/" target="_blank">
-                                <span class="chip bg-color">Markdown</span>
-                            </a>
-                        
-                            <a href="/tags/Typora/" target="_blank">
-                                <span class="chip bg-color">Typora</span>
+                            <a href="/tags/node/" target="_blank">
+                                <span class="chip bg-color">node</span>
                             </a>
                         
                     </div>
@@ -850,8 +890,8 @@ start();
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Markdown/" class="post-category" target="_blank">
-                                Markdown
+                            <a href="/categories/nodejs/" class="post-category" target="_blank">
+                                nodejs
                             </a>
                         
                     </div>
@@ -869,7 +909,7 @@ start();
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        321
+                        189
                     </div>
                     
 
@@ -892,480 +932,14 @@ start();
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="table语法"><a href="#table语法" class="headerlink" title="table语法"></a>table语法</h2><pre class=" language-markdown"><code class="language-markdown">| Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |</code></pre>
-<p>tips:<br><code>:-------------:</code>居中<br><code>-------------</code>左对齐<br><code>-----:</code>右对齐<br><code>-</code>至少有一个,否则默认左对齐;例如<code>::</code></p>
-<h2 id="Markdwon语法高亮"><a href="#Markdwon语法高亮" class="headerlink" title="Markdwon语法高亮"></a>Markdwon语法高亮</h2><table>
-<thead>
-<tr>
-<th>language</th>
-<th align="left">key</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>C</td>
-<td align="left">c</td>
-</tr>
-<tr>
-<td>ActionScript</td>
-<td align="left">actionscript</td>
-</tr>
-<tr>
-<td>Apache</td>
-<td align="left">apache</td>
-</tr>
-<tr>
-<td>AppleScript</td>
-<td align="left">applescript</td>
-</tr>
-<tr>
-<td>AsciiDoc</td>
-<td align="left">asciidoc</td>
-</tr>
-<tr>
-<td>AspectJ</td>
-<td align="left">asciidoc</td>
-</tr>
-<tr>
-<td>AutoHotkey</td>
-<td align="left">autohotkey</td>
-</tr>
-<tr>
-<td>AVR Assembler</td>
-<td align="left">avrasm</td>
-</tr>
-<tr>
-<td>Axapta</td>
-<td align="left">axapta</td>
-</tr>
-<tr>
-<td>Bash</td>
-<td align="left">bash</td>
-</tr>
-<tr>
-<td>BrainFuck</td>
-<td align="left">brainfuck</td>
-</tr>
-<tr>
-<td>Cap’n Proto</td>
-<td align="left">capnproto</td>
-</tr>
-<tr>
-<td>Clojure REPL</td>
-<td align="left">clojure</td>
-</tr>
-<tr>
-<td>Clojure</td>
-<td align="left">clojure</td>
-</tr>
-<tr>
-<td>CMake</td>
-<td align="left">cmake</td>
-</tr>
-<tr>
-<td>CoffeeScript</td>
-<td align="left">coffeescript</td>
-</tr>
-<tr>
-<td>C++</td>
-<td align="left">cpp</td>
-</tr>
-<tr>
-<td>C#</td>
-<td align="left">cs</td>
-</tr>
-<tr>
-<td>CSS</td>
-<td align="left">css</td>
-</tr>
-<tr>
-<td>D</td>
-<td align="left">d</td>
-</tr>
-<tr>
-<td>Dart</td>
-<td align="left">d</td>
-</tr>
-<tr>
-<td>Delphi</td>
-<td align="left">delphi</td>
-</tr>
-<tr>
-<td>Diff</td>
-<td align="left">diff</td>
-</tr>
-<tr>
-<td>Django</td>
-<td align="left">django</td>
-</tr>
-<tr>
-<td>DOS.bat</td>
-<td align="left">dos</td>
-</tr>
-<tr>
-<td>Dust</td>
-<td align="left">dust</td>
-</tr>
-<tr>
-<td>Elixir</td>
-<td align="left">elixir</td>
-</tr>
-<tr>
-<td>ERB(Embedded Ruby)</td>
-<td align="left">erb</td>
-</tr>
-<tr>
-<td>Erlang REPL</td>
-<td align="left">erlang-repl</td>
-</tr>
-<tr>
-<td>Erlang</td>
-<td align="left">erlang</td>
-</tr>
-<tr>
-<td>FIX</td>
-<td align="left">fix</td>
-</tr>
-<tr>
-<td>F#</td>
-<td align="left">fsharp</td>
-</tr>
-<tr>
-<td>G-code(ISO 6983)</td>
-<td align="left">gcode</td>
-</tr>
-<tr>
-<td>Gherkin</td>
-<td align="left">gherkin</td>
-</tr>
-<tr>
-<td>GLSL</td>
-<td align="left">glsl</td>
-</tr>
-<tr>
-<td>Go</td>
-<td align="left">go</td>
-</tr>
-<tr>
-<td>Gradle</td>
-<td align="left">gradle</td>
-</tr>
-<tr>
-<td>Groovy</td>
-<td align="left">groovy</td>
-</tr>
-<tr>
-<td>Haml</td>
-<td align="left">haml</td>
-</tr>
-<tr>
-<td>Handlebars</td>
-<td align="left">handlebars</td>
-</tr>
-<tr>
-<td>Haskell</td>
-<td align="left">haskell</td>
-</tr>
-<tr>
-<td>Haxe</td>
-<td align="left">haxe</td>
-</tr>
-<tr>
-<td>HTML</td>
-<td align="left">html</td>
-</tr>
-<tr>
-<td>HTTP</td>
-<td align="left">http</td>
-</tr>
-<tr>
-<td>Ini file</td>
-<td align="left">ini</td>
-</tr>
-<tr>
-<td>Java</td>
-<td align="left">java</td>
-</tr>
-<tr>
-<td>JavaScript</td>
-<td align="left">javascript</td>
-</tr>
-<tr>
-<td>JSON</td>
-<td align="left">json</td>
-</tr>
-<tr>
-<td>Lasso</td>
-<td align="left">lasso</td>
-</tr>
-<tr>
-<td>Less</td>
-<td align="left">less</td>
-</tr>
-<tr>
-<td>Lisp</td>
-<td align="left">lisp</td>
-</tr>
-<tr>
-<td>LiveCode</td>
-<td align="left">livecodeserver</td>
-</tr>
-<tr>
-<td>LiveScript</td>
-<td align="left">livescript</td>
-</tr>
-<tr>
-<td>Lua</td>
-<td align="left">lua</td>
-</tr>
-<tr>
-<td>Makefile</td>
-<td align="left">makefile</td>
-</tr>
-<tr>
-<td>Markdown</td>
-<td align="left">markdown</td>
-</tr>
-<tr>
-<td>Mathematica</td>
-<td align="left">mathematica</td>
-</tr>
-<tr>
-<td>Matlab</td>
-<td align="left">matlab</td>
-</tr>
-<tr>
-<td>MEL (Maya Embedded Language)</td>
-<td align="left">mel</td>
-</tr>
-<tr>
-<td>Mercury</td>
-<td align="left">mercury</td>
-</tr>
-<tr>
-<td>Mizar</td>
-<td align="left">mizar</td>
-</tr>
-<tr>
-<td>Monkey</td>
-<td align="left">monkey</td>
-</tr>
-<tr>
-<td>Nginx</td>
-<td align="left">nginx</td>
-</tr>
-<tr>
-<td>Nimrod</td>
-<td align="left">nimrod</td>
-</tr>
-<tr>
-<td>Nix</td>
-<td align="left">nix</td>
-</tr>
-<tr>
-<td>NSIS</td>
-<td align="left">nsis</td>
-</tr>
-<tr>
-<td>Objective C</td>
-<td align="left">objectivec</td>
-</tr>
-<tr>
-<td>OCaml</td>
-<td align="left">ocaml</td>
-</tr>
-<tr>
-<td>Oxygene</td>
-<td align="left">oxygene</td>
-</tr>
-<tr>
-<td>Parser 3</td>
-<td align="left">parser3</td>
-</tr>
-<tr>
-<td>Perl</td>
-<td align="left">perl</td>
-</tr>
-<tr>
-<td>PHP</td>
-<td align="left">php</td>
-</tr>
-<tr>
-<td>PowerShell</td>
-<td align="left">powershell</td>
-</tr>
-<tr>
-<td>Processing</td>
-<td align="left">processing</td>
-</tr>
-<tr>
-<td>Python’s profiler output</td>
-<td align="left">profile</td>
-</tr>
-<tr>
-<td>Protocol Buffers</td>
-<td align="left">protobuf</td>
-</tr>
-<tr>
-<td>Puppet</td>
-<td align="left">puppet</td>
-</tr>
-<tr>
-<td>Python</td>
-<td align="left">python</td>
-</tr>
-<tr>
-<td>Q</td>
-<td align="left">q</td>
-</tr>
-<tr>
-<td>R</td>
-<td align="left">r</td>
-</tr>
-<tr>
-<td>RenderMan RIB</td>
-<td align="left">rib</td>
-</tr>
-<tr>
-<td>Roboconf</td>
-<td align="left">roboconf</td>
-</tr>
-<tr>
-<td>RenderMan RSL</td>
-<td align="left">rsl</td>
-</tr>
-<tr>
-<td>Ruby</td>
-<td align="left">ruby</td>
-</tr>
-<tr>
-<td>Oracle Rules Language</td>
-<td align="left">ruleslanguage</td>
-</tr>
-<tr>
-<td>Rust</td>
-<td align="left">rust</td>
-</tr>
-<tr>
-<td>Scala</td>
-<td align="left">scala</td>
-</tr>
-<tr>
-<td>Scheme</td>
-<td align="left">scheme</td>
-</tr>
-<tr>
-<td>Scilab</td>
-<td align="left">scilab</td>
-</tr>
-<tr>
-<td>SCSS</td>
-<td align="left">scss</td>
-</tr>
-<tr>
-<td>Smali</td>
-<td align="left">smali</td>
-</tr>
-<tr>
-<td>SmallTalk</td>
-<td align="left">smalltalk</td>
-</tr>
-<tr>
-<td>SML</td>
-<td align="left">sml</td>
-</tr>
-<tr>
-<td>SQL</td>
-<td align="left">sql</td>
-</tr>
-<tr>
-<td>Stata</td>
-<td align="left">stata</td>
-</tr>
-<tr>
-<td>STEP Part21(ISO 10303-21)</td>
-<td align="left">step21</td>
-</tr>
-<tr>
-<td>Stylus</td>
-<td align="left">stylus</td>
-</tr>
-<tr>
-<td>Swift</td>
-<td align="left">swift</td>
-</tr>
-<tr>
-<td>Tcl</td>
-<td align="left">tcl</td>
-</tr>
-<tr>
-<td>Tex</td>
-<td align="left">tex</td>
-</tr>
-<tr>
-<td>text</td>
-<td align="left">text/plain</td>
-</tr>
-<tr>
-<td>Thrift</td>
-<td align="left">thrift</td>
-</tr>
-<tr>
-<td>Twig</td>
-<td align="left">twig</td>
-</tr>
-<tr>
-<td>TypeScript</td>
-<td align="left">typescript</td>
-</tr>
-<tr>
-<td>Vala</td>
-<td align="left">vala</td>
-</tr>
-<tr>
-<td>VB.NET</td>
-<td align="left">vbnet</td>
-</tr>
-<tr>
-<td>VBScript in HTML</td>
-<td align="left">vbscript-html</td>
-</tr>
-<tr>
-<td>VBScript</td>
-<td align="left">vbscript</td>
-</tr>
-<tr>
-<td>Verilog</td>
-<td align="left">verilog</td>
-</tr>
-<tr>
-<td>VHDL</td>
-<td align="left">vhdl</td>
-</tr>
-<tr>
-<td>Vim Script</td>
-<td align="left">vim</td>
-</tr>
-<tr>
-<td>Intel x86 Assembly</td>
-<td align="left">x86asm</td>
-</tr>
-<tr>
-<td>XL</td>
-<td align="left">xl</td>
-</tr>
-<tr>
-<td>XML</td>
-<td align="left">xml</td>
-</tr>
-<tr>
-<td>YAML</td>
-<td align="left">yml</td>
-</tr>
-</tbody></table>
+                <h2 id="node全局文件夹配置"><a href="#node全局文件夹配置" class="headerlink" title="node全局文件夹配置"></a>node全局文件夹配置</h2><p>我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【D:\Develop\nodejs】下创建两个文件夹【node_global】及【node_cache】</p>
+<p>创建完两个空文件夹之后，打开cmd命令窗口，输入</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token keyword">set</span> prefix D:\DevelopeTool\node-v8.11.3\node_global
+<span class="token function">npm</span> config <span class="token keyword">set</span> cache D:\DevelopeTool\node-v8.11.3\node_cache</code></pre>
+<p>接下来设置环境变量，关闭cmd窗口，“我的电脑”-右键-“属性”-“高级系统设置”-“高级”-“环境变量”</p>
+<p>进入环境变量对话框，在【系统变量】下新建【NODE_PATH】，<br>输入【D:\Develop\nodejs\node_global\node_modules】，<br>将【用户变量】下的【Path】修改为【D:\Develop\nodejs\node_global】</p>
+<p>淘宝 NPM 镜像</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g cnpm --registry<span class="token operator">=</span>https://registry.npm.taobao.org</code></pre>
 
             </div>
             <hr/>
@@ -1387,9 +961,9 @@ start();
                     <span class="reprint-tip">
                         <i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;转载请注明:
                     </span>
-                    <a href="https://luzhidong.cn" class="b-link-green">前端豆芽</a>
+                    <a href="http://luzhidong.cn" class="b-link-green">前端豆芽</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/05/12/markdownyufa/" class="b-link-green">Markdown语法</a>
+                    <a href="/2019/05/12/nodejspeizhi.html" class="b-link-green">nodejs配置</a>
                 </p>
             </div>
         </div>
@@ -1673,7 +1247,54 @@ start();
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/05/12/linuxchangyongmingling/">
+                <a href="/2019/05/22/vuezidingyiguoluqihezhiling.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/17.jpg" class="responsive-img" alt="VUE自定义过滤器和指令">
+                        
+                        <span class="card-title">VUE自定义过滤器和指令</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary">自定义过滤器（filters）1、过滤器可以串联：
+{{ message | filterA | filterB }}
+在这个例子中，filterA被定义为接收单个参数的过滤器函数，表达式message的值将作为参数传入到函数中。然后继续调</div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-22
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/VUE/" class="post-category" target="_blank">
+                                    VUE
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/vue/" target="_blank">
+                        <span class="chip bg-color">vue</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2019/05/12/linuxchangyongmingling.html">
                     <div class="card-image">
                         
                         
@@ -1688,9 +1309,9 @@ start();
 修改文件用户组chogrp -R 组名 文件名
 服务管理systemctl 操作名（sto</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-12
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -1708,58 +1329,6 @@ start();
                     
                     <a href="/tags/Linux/" target="_blank">
                         <span class="chip bg-color">Linux</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/05/12/hexominglingshiyong/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/4.jpg" class="responsive-img" alt="Hexo命令使用">
-                        
-                        <span class="card-title">Hexo命令使用</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary">新建文章你可以执行下列命令来创建一篇新文章。
-hexo new [layout] &lt;title>
-layout属性有： page（新建页面）、draft(新建草稿)、 post（新建文章）
-当你以draft新建文章时生成的文件在_dr</div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-12
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Hexo/" class="post-category" target="_blank">
-                                    Hexo
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Markdown/" target="_blank">
-                        <span class="chip bg-color">Markdown</span>
-                    </a>
-                    
-                    <a href="/tags/Hexo/" target="_blank">
-                        <span class="chip bg-color">Hexo</span>
                     </a>
                     
                 </div>

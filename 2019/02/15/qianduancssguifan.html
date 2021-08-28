@@ -4,11 +4,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="重学前端, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
-    <meta name="description" content="0.1+0.2为什么不等于0.3// 比较大小使用下面的方式
-0.1+0.2-0.3 &amp;lt;= Number.EPSILON
-我怎么去区分对象，数组和null呢?Object.prototype.toString.call(null);
-">
+    <meta name="keywords" content="前端-CSS规范, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
+    <meta name="description" content="class、id命名规则
+class 不能使用驼峰 使用(烤串写法) 
+
+命名建议：页面-属性-功能
+
+公用类：修饰符-功能
+例子：class=&amp;quot;login-dialog&amp;quot;  class=&amp;quot;login-form">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +19,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>重学前端 | 前端豆芽</title>
+    <title>前端-CSS规范 | 前端豆芽</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -37,8 +40,8 @@
     </script>
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism.css" type="text/css"><link rel="alternate" href="/atom.xml" title="前端豆芽" type="application/atom+xml">
-</head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="前端豆芽" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
 
 
 <body>
@@ -57,79 +60,109 @@
                 </div>
                 
 
-<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-navicon"></i></a>
-<ul class="right">
+<!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right nav-menu">
     
-    <li class="hide-on-med-and-down">
-        <a href="/" class="waves-effect waves-light">
-            
-            <i class="fa fa-home"></i>
-            
-            <span>首页</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/tags" class="waves-effect waves-light">
-            
-            <i class="fa fa-tags"></i>
-            
-            <span>文章标签</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/categories" class="waves-effect waves-light">
-            
-            <i class="fa fa-bookmark"></i>
-            
-            <span>文章分类</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/archives" class="waves-effect waves-light">
-            
-            <i class="fa fa-archive"></i>
-            
-            <span>文章归档</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/about" class="waves-effect waves-light">
-            
-            <i class="fa fa-user-circle-o"></i>
-            
-            <span>关于我</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/friends" class="waves-effect waves-light">
-            
-            <i class="fa fa-address-book"></i>
-            
-            <span>友情链接</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/tools" class="waves-effect waves-light">
-            
-            <i class="fa fa-cogs"></i>
-            
-            <span>工具箱</span>
-        </a>
-    </li>
-    
-    <li>
-        <a id="toggleSearch" class="waves-effect waves-light">
-            <i id="searchIcon" class="mdi-action-search" title="搜索"></i>
-        </a>
-    </li>
+      <li class="hide-on-med-and-down nav-item" >
 
+        
+            <a href="/" class="waves-effect waves-light">
+              
+                <i class="fa fa-home"></i>
+              
+              <span>首页</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/tags" class="waves-effect waves-light">
+              
+                <i class="fa fa-tags"></i>
+              
+              <span>文章标签</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/categories" class="waves-effect waves-light">
+              
+                <i class="fa fa-bookmark"></i>
+              
+              <span>文章分类</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/archives" class="waves-effect waves-light">
+              
+                <i class="fa fa-archive"></i>
+              
+              <span>文章归档</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/about" class="waves-effect waves-light">
+              
+                <i class="fa fa-user-circle-o"></i>
+              
+              <span>关于我</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/friends" class="waves-effect waves-light">
+              
+                <i class="fa fa-address-book"></i>
+              
+              <span>友情链接</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/tools" class="waves-effect waves-light">
+              
+                <i class="fa fa-cogs"></i>
+              
+              <span>工具箱</span>
+            </a>
+
+            
+      </li>
+    
+
+    <li>
+        <a href="#searchModal" id="toggleSearch" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
 </ul>
+
 
 <div class="side-nav" id="mobile-nav">
 
@@ -147,78 +180,94 @@
 
     
 
+    <!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
     <ul class="menu-list mobile-menu-list">
         
-        <li>
-            <a href="/" class="waves-effect waves-light">
+            <li class="m-nav-item">
+                    
+                        <a href="/" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-home"></i>
+                            
+                            首页
+                        </a>
                 
-                <i class="fa fa-fw fa-home"></i>
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/tags" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-tags"></i>
+                            
+                            文章标签
+                        </a>
                 
-                首页
-            </a>
-        </li>
-        
-        <li>
-            <a href="/tags" class="waves-effect waves-light">
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/categories" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-bookmark"></i>
+                            
+                            文章分类
+                        </a>
                 
-                <i class="fa fa-fw fa-tags"></i>
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/archives" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-archive"></i>
+                            
+                            文章归档
+                        </a>
                 
-                文章标签
-            </a>
-        </li>
-        
-        <li>
-            <a href="/categories" class="waves-effect waves-light">
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/about" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-user-circle-o"></i>
+                            
+                            关于我
+                        </a>
                 
-                <i class="fa fa-fw fa-bookmark"></i>
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/friends" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-address-book"></i>
+                            
+                            友情链接
+                        </a>
                 
-                文章分类
-            </a>
-        </li>
-        
-        <li>
-            <a href="/archives" class="waves-effect waves-light">
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/tools" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-cogs"></i>
+                            
+                            工具箱
+                        </a>
                 
-                <i class="fa fa-fw fa-archive"></i>
-                
-                文章归档
-            </a>
-        </li>
-        
-        <li>
-            <a href="/about" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-user-circle-o"></i>
-                
-                关于我
-            </a>
-        </li>
-        
-        <li>
-            <a href="/friends" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-address-book"></i>
-                
-                友情链接
-            </a>
-        </li>
-        
-        <li>
-            <a href="/tools" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-cogs"></i>
-                
-                工具箱
-            </a>
-        </li>
-        
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/douyalzd" class="waves-effect waves-light" target="_blank">
-                <i class="fa fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
+                </li>
+            
+
+            
+            <li><div class="divider"></div></li>
+            <li>
+                <a href="https://github.com/douyalzd" class="waves-effect waves-light" target="_blank">
+                    <i class="fa fa-github-square fa-fw"></i>Fork Me
+                </a>
+            </li>
         
     </ul>
 
@@ -314,7 +363,7 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('http://qiniu.luzhidong.cn/medias/featureimages/27.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('http://qiniu.luzhidong.cn/medias/featureimages/9.jpg')">
     <style type="text/css">
     #canvasBg {
         display: block;
@@ -718,7 +767,7 @@ start();
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        重学前端
+                        前端-CSS规范
                     </div>
                 </div>
             </div>
@@ -838,6 +887,10 @@ start();
                                 <span class="chip bg-color">前端</span>
                             </a>
                         
+                            <a href="/tags/CSS/" target="_blank">
+                                <span class="chip bg-color">CSS</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -858,21 +911,21 @@ start();
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-06-02
+                    2019-02-15
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        107
+                        830
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        3 分
                     </div>
                     
                 
@@ -888,11 +941,177 @@ start();
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="0-1-0-2为什么不等于0-3"><a href="#0-1-0-2为什么不等于0-3" class="headerlink" title="0.1+0.2为什么不等于0.3"></a>0.1+0.2为什么不等于0.3</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// 比较大小使用下面的方式</span>
-<span class="token number">0.1</span><span class="token operator">+</span><span class="token number">0.2</span><span class="token operator">-</span><span class="token number">0.3</span> <span class="token operator">&lt;=</span> Number<span class="token punctuation">.</span>EPSILON</code></pre>
-<h2 id="我怎么去区分对象，数组和null呢"><a href="#我怎么去区分对象，数组和null呢" class="headerlink" title="我怎么去区分对象，数组和null呢?"></a>我怎么去区分对象，数组和null呢?</h2><pre class=" language-javascript"><code class="language-javascript">Object<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>toString<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token comment" spellcheck="true">// console "[object Null]"</span></code></pre>
-<p>一个小练习：我们现在要实现一个红绿灯，把一个圆形 div 按照绿色 3 秒，黄色 1 秒，红色 2 秒循环改变背景色，你会怎样编写这个代码呢？</p>
+                <h2 id="class、id命名规则"><a href="#class、id命名规则" class="headerlink" title="class、id命名规则"></a>class、id命名规则</h2><ol>
+<li><p>class 不能使用驼峰 使用(烤串写法) </p>
+<ul>
+<li><p>命名建议：页面-属性-功能</p>
+</li>
+<li><p>公用类：修饰符-功能</p>
+<p>例子：<code>class=&quot;login-dialog&quot;</code>  <code>class=&quot;login-form-dialog&quot;</code></p>
+</li>
+</ul>
+</li>
+</ol>
+<ol start="2">
+<li>id 一般参与样式，命名的话使用驼峰。</li>
+</ol>
+<h2 id="页面布局"><a href="#页面布局" class="headerlink" title="页面布局"></a>页面布局</h2><p>页面布局均采用最新版 <code>flexbox</code> 进行布局，需兼容低版本 IE 项目除外。</p>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.selector</span> </span><span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+    <span class="token property">justify-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h2><p>使用 <code>4</code> 个空格作为一个缩进层级，不允许使用 <code>2</code> 个空格。</p>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.selector</span> </span><span class="token punctuation">{</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="分号"><a href="#分号" class="headerlink" title="分号"></a>分号</h2><p>每个属性声明末尾都要加分号</p>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.selector</span> </span><span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h2><ul>
+<li><p><code>:</code> 与属性值之间需要空格，与属性名之间不需要空格</p>
+</li>
+<li><p>属性值中的 <code>,</code> 后需要空格，<code>,</code> 前不需要空格</p>
+</li>
+<li><p>选择器 <code>&gt; + ~</code> 等前后需要空格</p>
+</li>
+<li><p>选择器与 <code>&#123;</code> 之间需要空格</p>
+</li>
+<li><p><code>/</code> 前后需要空格</p>
+</li>
+<li><p>注释 <code>/*</code> 后和 <code>*/</code> 前需要空格</p>
+</li>
+</ul>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.selector</span> > <span class="token class">.wrapper</span> </span><span class="token punctuation">{</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">"Hiragino Sans GB"</span>, sans-serif<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span>, <span class="token number">0</span>, <span class="token number">0</span>, <span class="token number">0.5</span><span class="token punctuation">)</span> <span class="token url">url(logo.png)</span> no-repeat center / contain<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="空行"><a href="#空行" class="headerlink" title="空行"></a>空行</h2><ul>
+<li><p>两个选择器属性块之间保留一个空行</p>
+</li>
+<li><p>代码块注释前与代码块后保留一个空行</p>
+</li>
+</ul>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.wrapper</span> </span><span class="token punctuation">{</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/* 字体相关 */</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'DINPro'</span><span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">16</span>px<span class="token punctuation">;</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> <span class="token number">700</span><span class="token punctuation">;</span>
+
+    <span class="token property">background</span><span class="token punctuation">:</span> <span class="token hexcode">#000</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector"><span class="token class">.selector</span> </span><span class="token punctuation">{</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h2><ul>
+<li><p>当一个规则包含多个选择器时，每个选择器声明必须独占一行</p>
+</li>
+<li><p>每个属性定义必须另起一行</p>
+</li>
+<li><p><code>&#123;</code> 后需要换行，<code>&#125;</code> 前需要换行</p>
+</li>
+</ul>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.wrapper</span>,
+<span class="token class">.selector</span> </span><span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><ul>
+<li><p>统一使用 <code>/* */</code> 进行注释</p>
+</li>
+<li><p>缩进与下一行代码保持一致</p>
+</li>
+<li><p>可位于一个代码行的末尾，与代码间隔一个空格</p>
+</li>
+</ul>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.wrapper</span>,
+<span class="token class">.selector</span> </span><span class="token punctuation">{</span>
+
+    <span class="token comment" spellcheck="true">/* 字体相关 */</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'DINPro'</span><span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">16</span>px<span class="token punctuation">;</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> <span class="token number">700</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/* 字重 */</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="引号"><a href="#引号" class="headerlink" title="引号"></a>引号</h2><ul>
+<li><p>引号统一使用双引号</p>
+</li>
+<li><p>属性选择器中的属性值需要引号</p>
+</li>
+</ul>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token attribute">[class="demo"]</span><span class="token pseudo-element">::after</span> </span><span class="token punctuation">{</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="颜色"><a href="#颜色" class="headerlink" title="颜色"></a>颜色</h2><ul>
+<li><p>16 进制颜色使用小写字母</p>
+</li>
+<li><p>16 进制颜色尽量使用简写</p>
+</li>
+</ul>
+<pre class=" language-css"><code class="language-css"><span class="token comment" spellcheck="true">/* good */</span>
+<span class="token selector"><span class="token class">.selector</span> </span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#abc</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">/* bad */</span>
+<span class="token selector"><span class="token class">.selector</span> </span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#AABBCC</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="属性简写"><a href="#属性简写" class="headerlink" title="属性简写"></a>属性简写</h2><p>支持简写的属性尽量使用简写<br>小数点前不需加<code>0</code></p>
+<pre class=" language-css"><code class="language-css"><span class="token comment" spellcheck="true">/* better */</span>
+<span class="token selector"><span class="token class">.selector</span> </span><span class="token punctuation">{</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span>, <span class="token number">0</span>, <span class="token number">0</span>, <span class="token number">0.5</span><span class="token punctuation">)</span> <span class="token url">url(logo.png)</span> no-repeat center / contain<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">/* bad */</span>
+<span class="token selector"><span class="token class">.selector</span> </span><span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span>, <span class="token number">0</span>, <span class="token number">0</span>, <span class="token number">0.5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url(logo.png)</span><span class="token punctuation">;</span>
+    <span class="token property">background-repeat</span><span class="token punctuation">:</span> no-repeat<span class="token punctuation">;</span>
+    <span class="token property">background-position</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token property">background-size</span><span class="token punctuation">:</span> contain<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="属性声明顺序"><a href="#属性声明顺序" class="headerlink" title="属性声明顺序"></a>属性声明顺序</h2><ol>
+<li>影响文档流的属性（比如：<code>display / position / float / clear / visibility</code> 等）</li>
+<li>自身盒模型的属性（比如：<code>width / height / margin / padding / border</code> 等）</li>
+<li>排版相关属性（比如：<code>font / line-height / text-align / vertical-align</code> 等）</li>
+<li>装饰性属性（比如：<code>color / background / opacity / cursor</code> 等） </li>
+<li>CSS3 新特性（比如：<code>transform / transition / animation</code> 等）<blockquote>
+<p>口诀: 显示大小文字背景</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><ul>
+<li><p>不允许有空的规则</p>
+</li>
+<li><p>元素选择器用小写字母</p>
+</li>
+<li><p>属性值 <code>0</code> 后面不要加单位</p>
+</li>
+<li><p>无前缀的标准属性应该写在有前缀的属性后面</p>
+</li>
+<li><p>不要在一个文件里出现两个相同的规则</p>
+</li>
+<li><p>发布的代码中不要有 <code>@import</code></p>
+</li>
+<li><p>尽量不用 <code>*</code> 选择器</p>
+</li>
+<li><p>禁止使用<code>!important</code></p>
+</li>
+<li><p>禁止使用<code>id</code>去修饰样式</p>
+</li>
+<li><p>position和float 能不用浮动就不要用浮动 尤其是float（使用float请保证父标签能被子标签内容撑开）</p>
+</li>
+<li><p>不要使用【标签做修饰符】-&gt;影响渲染速度 (除了万不得已的情况下)</p>
+</li>
+</ul>
+<h2 id="推荐文章"><a href="#推荐文章" class="headerlink" title="推荐文章"></a>推荐文章</h2><p>1、<a target="_blank" rel="noopener" href="https://guide.aotu.io/docs/">凹凸使用实验室的前端开发规范</a><br>2、<a target="_blank" rel="noopener" href="https://github.com/hardylinfee/styleguide">hardylinfee前端开发规范</a></p>
 
             </div>
             <hr/>
@@ -914,9 +1133,9 @@ start();
                     <span class="reprint-tip">
                         <i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;转载请注明:
                     </span>
-                    <a href="https://luzhidong.cn" class="b-link-green">前端豆芽</a>
+                    <a href="http://luzhidong.cn" class="b-link-green">前端豆芽</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/06/02/chongxueqianduan/" class="b-link-green">重学前端</a>
+                    <a href="/2019/02/15/qianduancssguifan.html" class="b-link-green">前端-CSS规范</a>
                 </p>
             </div>
         </div>
@@ -1200,27 +1419,34 @@ start();
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/06/29/weixinshipinquanpingfangan/">
+                <a href="/2019/02/15/qianduanhtmlguifan.html">
                     <div class="card-image">
                         
                         
-                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/20.jpg" class="responsive-img" alt="微信视频全屏方案">
+                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/11.jpg" class="responsive-img" alt="前端-HTML规范">
                         
-                        <span class="card-title">微信视频全屏方案</span>
+                        <span class="card-title">前端-HTML规范</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">微信视频播放全屏问题   在ios和安卓手机里的微信下播放视频时，会遇到不少问题，例如需要手动点击，视频才会播放，并且视频会跳出微信框，出现控制条，如果视频不是腾讯视频，播放完毕会出现腾讯视频的广告推送，今天我们就来看一下如何规避这些问题。</div>
+                    <div class="summary">class、id命名规则
+class 不能使用驼峰 使用(烤串写法) 例子：class=”login-dialog”  class=”login-form-dialog”  
+
+命名建议：页面-属性-功能
+公用类 修饰符-功能
+
+
+id 一</div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-06-29
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-15
                         </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%BE%AE%E4%BF%A1/" class="post-category" target="_blank">
-                                    微信
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category" target="_blank">
+                                    前端
                                 </a>
                             
                             
@@ -1230,8 +1456,12 @@ start();
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7/" target="_blank">
-                        <span class="chip bg-color">微信公众号</span>
+                    <a href="/tags/%E5%89%8D%E7%AB%AF/" target="_blank">
+                        <span class="chip bg-color">前端</span>
+                    </a>
+                    
+                    <a href="/tags/HTML/" target="_blank">
+                        <span class="chip bg-color">HTML</span>
                     </a>
                     
                 </div>
@@ -1242,43 +1472,52 @@ start();
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
             </div>
             <div class="card">
-                <a href="/2019/05/22/vuezidingyiguoluqihezhiling/">
+                <a href="/2019/02/15/qianduancssguifan.html">
                     <div class="card-image">
                         
                         
-                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/17.jpg" class="responsive-img" alt="VUE自定义过滤器和指令">
+                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/9.jpg" class="responsive-img" alt="前端-CSS规范">
                         
-                        <span class="card-title">VUE自定义过滤器和指令</span>
+                        <span class="card-title">前端-CSS规范</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">自定义过滤器（filters）1、过滤器可以串联：
-{{ message | filterA | filterB }}
-在这个例子中，filterA被定义为接收单个参数的过滤器函数，表达式message的值将作为参数传入到函数中。然后继续调</div>
+                    <div class="summary">class、id命名规则
+class 不能使用驼峰 使用(烤串写法) 
+
+命名建议：页面-属性-功能
+
+公用类：修饰符-功能
+例子：class=&quot;login-dialog&quot;  class=&quot;login-form</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-22
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-15
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/VUE/" class="post-category" target="_blank">
-                                    VUE
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category" target="_blank">
+                                    前端
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/vue/" target="_blank">
-                        <span class="chip bg-color">vue</span>
+                    <a href="/tags/%E5%89%8D%E7%AB%AF/" target="_blank">
+                        <span class="chip bg-color">前端</span>
+                    </a>
+                    
+                    <a href="/tags/CSS/" target="_blank">
+                        <span class="chip bg-color">CSS</span>
                     </a>
                     
                 </div>

@@ -4,11 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Linux常用命令, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
-    <meta name="description" content="修改文件读写权限r： 4（读权限）w： 2（写权限）x： 1（执行权限）chmod 777 文件名
-修改文件用户权限chown -R 用户 文件名称
-修改文件用户组chogrp -R 组名 文件名
-服务管理systemctl 操作名（sto">
+    <meta name="keywords" content="重学前端, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
+    <meta name="description" content="0.1+0.2为什么不等于0.3// 比较大小使用下面的方式
+0.1+0.2-0.3 &amp;lt;= Number.EPSILON
+我怎么去区分对象，数组和null呢?Object.prototype.toString.call(null);
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Linux常用命令 | 前端豆芽</title>
+    <title>重学前端 | 前端豆芽</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -37,8 +37,8 @@
     </script>
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism.css" type="text/css"><link rel="alternate" href="/atom.xml" title="前端豆芽" type="application/atom+xml">
-</head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="前端豆芽" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
 
 
 <body>
@@ -57,79 +57,109 @@
                 </div>
                 
 
-<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-navicon"></i></a>
-<ul class="right">
+<!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right nav-menu">
     
-    <li class="hide-on-med-and-down">
-        <a href="/" class="waves-effect waves-light">
-            
-            <i class="fa fa-home"></i>
-            
-            <span>首页</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/tags" class="waves-effect waves-light">
-            
-            <i class="fa fa-tags"></i>
-            
-            <span>文章标签</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/categories" class="waves-effect waves-light">
-            
-            <i class="fa fa-bookmark"></i>
-            
-            <span>文章分类</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/archives" class="waves-effect waves-light">
-            
-            <i class="fa fa-archive"></i>
-            
-            <span>文章归档</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/about" class="waves-effect waves-light">
-            
-            <i class="fa fa-user-circle-o"></i>
-            
-            <span>关于我</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/friends" class="waves-effect waves-light">
-            
-            <i class="fa fa-address-book"></i>
-            
-            <span>友情链接</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/tools" class="waves-effect waves-light">
-            
-            <i class="fa fa-cogs"></i>
-            
-            <span>工具箱</span>
-        </a>
-    </li>
-    
-    <li>
-        <a id="toggleSearch" class="waves-effect waves-light">
-            <i id="searchIcon" class="mdi-action-search" title="搜索"></i>
-        </a>
-    </li>
+      <li class="hide-on-med-and-down nav-item" >
 
+        
+            <a href="/" class="waves-effect waves-light">
+              
+                <i class="fa fa-home"></i>
+              
+              <span>首页</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/tags" class="waves-effect waves-light">
+              
+                <i class="fa fa-tags"></i>
+              
+              <span>文章标签</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/categories" class="waves-effect waves-light">
+              
+                <i class="fa fa-bookmark"></i>
+              
+              <span>文章分类</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/archives" class="waves-effect waves-light">
+              
+                <i class="fa fa-archive"></i>
+              
+              <span>文章归档</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/about" class="waves-effect waves-light">
+              
+                <i class="fa fa-user-circle-o"></i>
+              
+              <span>关于我</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/friends" class="waves-effect waves-light">
+              
+                <i class="fa fa-address-book"></i>
+              
+              <span>友情链接</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/tools" class="waves-effect waves-light">
+              
+                <i class="fa fa-cogs"></i>
+              
+              <span>工具箱</span>
+            </a>
+
+            
+      </li>
+    
+
+    <li>
+        <a href="#searchModal" id="toggleSearch" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
 </ul>
+
 
 <div class="side-nav" id="mobile-nav">
 
@@ -147,78 +177,94 @@
 
     
 
+    <!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
     <ul class="menu-list mobile-menu-list">
         
-        <li>
-            <a href="/" class="waves-effect waves-light">
+            <li class="m-nav-item">
+                    
+                        <a href="/" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-home"></i>
+                            
+                            首页
+                        </a>
                 
-                <i class="fa fa-fw fa-home"></i>
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/tags" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-tags"></i>
+                            
+                            文章标签
+                        </a>
                 
-                首页
-            </a>
-        </li>
-        
-        <li>
-            <a href="/tags" class="waves-effect waves-light">
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/categories" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-bookmark"></i>
+                            
+                            文章分类
+                        </a>
                 
-                <i class="fa fa-fw fa-tags"></i>
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/archives" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-archive"></i>
+                            
+                            文章归档
+                        </a>
                 
-                文章标签
-            </a>
-        </li>
-        
-        <li>
-            <a href="/categories" class="waves-effect waves-light">
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/about" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-user-circle-o"></i>
+                            
+                            关于我
+                        </a>
                 
-                <i class="fa fa-fw fa-bookmark"></i>
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/friends" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-address-book"></i>
+                            
+                            友情链接
+                        </a>
                 
-                文章分类
-            </a>
-        </li>
-        
-        <li>
-            <a href="/archives" class="waves-effect waves-light">
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/tools" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-cogs"></i>
+                            
+                            工具箱
+                        </a>
                 
-                <i class="fa fa-fw fa-archive"></i>
-                
-                文章归档
-            </a>
-        </li>
-        
-        <li>
-            <a href="/about" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-user-circle-o"></i>
-                
-                关于我
-            </a>
-        </li>
-        
-        <li>
-            <a href="/friends" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-address-book"></i>
-                
-                友情链接
-            </a>
-        </li>
-        
-        <li>
-            <a href="/tools" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-cogs"></i>
-                
-                工具箱
-            </a>
-        </li>
-        
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/douyalzd" class="waves-effect waves-light" target="_blank">
-                <i class="fa fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
+                </li>
+            
+
+            
+            <li><div class="divider"></div></li>
+            <li>
+                <a href="https://github.com/douyalzd" class="waves-effect waves-light" target="_blank">
+                    <i class="fa fa-github-square fa-fw"></i>Fork Me
+                </a>
+            </li>
         
     </ul>
 
@@ -314,7 +360,7 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('http://qiniu.luzhidong.cn/medias/featureimages/11.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('http://qiniu.luzhidong.cn/medias/featureimages/27.jpg')">
     <style type="text/css">
     #canvasBg {
         display: block;
@@ -718,7 +764,7 @@ start();
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Linux常用命令
+                        重学前端
                     </div>
                 </div>
             </div>
@@ -834,8 +880,8 @@ start();
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Linux/" target="_blank">
-                                <span class="chip bg-color">Linux</span>
+                            <a href="/tags/%E5%89%8D%E7%AB%AF/" target="_blank">
+                                <span class="chip bg-color">前端</span>
                             </a>
                         
                     </div>
@@ -846,8 +892,8 @@ start();
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Linux/" class="post-category" target="_blank">
-                                Linux
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category" target="_blank">
+                                前端
                             </a>
                         
                     </div>
@@ -858,14 +904,14 @@ start();
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-05-12
+                    2019-06-02
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        129
+                        107
                     </div>
                     
 
@@ -888,17 +934,11 @@ start();
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="修改文件读写权限"><a href="#修改文件读写权限" class="headerlink" title="修改文件读写权限"></a>修改文件读写权限</h2><p>r： 4（读权限）<br>w： 2（写权限）<br>x： 1（执行权限）<br>chmod 777 文件名</p>
-<h2 id="修改文件用户权限"><a href="#修改文件用户权限" class="headerlink" title="修改文件用户权限"></a>修改文件用户权限</h2><p>chown -R 用户 文件名称</p>
-<h2 id="修改文件用户组"><a href="#修改文件用户组" class="headerlink" title="修改文件用户组"></a>修改文件用户组</h2><p>chogrp -R 组名 文件名</p>
-<h2 id="服务管理"><a href="#服务管理" class="headerlink" title="服务管理"></a>服务管理</h2><p>systemctl 操作名（stop, start, restart） 服务名.service</p>
-<h2 id="查询服务"><a href="#查询服务" class="headerlink" title="查询服务"></a>查询服务</h2><pre class=" language-bash"><code class="language-bash"><span class="token function">ps</span> -aux ｜ <span class="token function">grep</span> 服务名</code></pre>
-<h2 id="ssh登录服务器"><a href="#ssh登录服务器" class="headerlink" title="ssh登录服务器"></a>ssh登录服务器</h2><pre class=" language-bash"><code class="language-bash"><span class="token function">ssh</span> -l root 212.64.101.100</code></pre>
-<h2 id="软件安装位置查找"><a href="#软件安装位置查找" class="headerlink" title="软件安装位置查找"></a>软件安装位置查找</h2><pre class=" language-bash"><code class="language-bash">mdfind -name 文件名</code></pre>
-<h2 id="npm-常用命名"><a href="#npm-常用命名" class="headerlink" title="npm 常用命名"></a>npm 常用命名</h2><ol>
-<li>查询可用升级的包 <code>npm outdated</code></li>
-<li>更新包 <code>npm update</code></li>
-</ol>
+                <h2 id="0-1-0-2为什么不等于0-3"><a href="#0-1-0-2为什么不等于0-3" class="headerlink" title="0.1+0.2为什么不等于0.3"></a>0.1+0.2为什么不等于0.3</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// 比较大小使用下面的方式</span>
+<span class="token number">0.1</span><span class="token operator">+</span><span class="token number">0.2</span><span class="token operator">-</span><span class="token number">0.3</span> <span class="token operator">&lt;=</span> Number<span class="token punctuation">.</span>EPSILON</code></pre>
+<h2 id="我怎么去区分对象，数组和null呢"><a href="#我怎么去区分对象，数组和null呢" class="headerlink" title="我怎么去区分对象，数组和null呢?"></a>我怎么去区分对象，数组和null呢?</h2><pre class=" language-javascript"><code class="language-javascript">Object<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>toString<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// console "[object Null]"</span></code></pre>
+<p>一个小练习：我们现在要实现一个红绿灯，把一个圆形 div 按照绿色 3 秒，黄色 1 秒，红色 2 秒循环改变背景色，你会怎样编写这个代码呢？</p>
 
             </div>
             <hr/>
@@ -920,9 +960,9 @@ start();
                     <span class="reprint-tip">
                         <i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;转载请注明:
                     </span>
-                    <a href="https://luzhidong.cn" class="b-link-green">前端豆芽</a>
+                    <a href="http://luzhidong.cn" class="b-link-green">前端豆芽</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/05/12/linuxchangyongmingling/" class="b-link-green">Linux常用命令</a>
+                    <a href="/2019/06/02/chongxueqianduan.html" class="b-link-green">重学前端</a>
                 </p>
             </div>
         </div>
@@ -1206,28 +1246,27 @@ start();
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/05/12/nodejspeizhi/">
+                <a href="/2019/06/29/weixinshipinquanpingfangan.html">
                     <div class="card-image">
                         
                         
-                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/12.jpg" class="responsive-img" alt="nodejs配置">
+                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/20.jpg" class="responsive-img" alt="微信视频全屏方案">
                         
-                        <span class="card-title">nodejs配置</span>
+                        <span class="card-title">微信视频全屏方案</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">node全局文件夹配置我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【D:\Develop\nodejs】下创建两个文件夹【node_global】及【node_cache】
-创建完两个空文件夹之后，</div>
+                    <div class="summary">微信视频播放全屏问题   在ios和安卓手机里的微信下播放视频时，会遇到不少问题，例如需要手动点击，视频才会播放，并且视频会跳出微信框，出现控制条，如果视频不是腾讯视频，播放完毕会出现腾讯视频的广告推送，今天我们就来看一下如何规避这些问题。</div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-12
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-06-29
                         </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/nodejs/" class="post-category" target="_blank">
-                                    nodejs
+                            <a href="/categories/%E5%BE%AE%E4%BF%A1/" class="post-category" target="_blank">
+                                    微信
                                 </a>
                             
                             
@@ -1237,8 +1276,8 @@ start();
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/node/" target="_blank">
-                        <span class="chip bg-color">node</span>
+                    <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7/" target="_blank">
+                        <span class="chip bg-color">微信公众号</span>
                     </a>
                     
                 </div>
@@ -1252,30 +1291,29 @@ start();
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/05/12/markdownyufa/">
+                <a href="/2019/05/22/vuezidingyiguoluqihezhiling.html">
                     <div class="card-image">
                         
                         
-                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/9.jpg" class="responsive-img" alt="Markdown语法">
+                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/17.jpg" class="responsive-img" alt="VUE自定义过滤器和指令">
                         
-                        <span class="card-title">Markdown语法</span>
+                        <span class="card-title">VUE自定义过滤器和指令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">table语法| Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| </div>
+                    <div class="summary">自定义过滤器（filters）1、过滤器可以串联：
+{{ message | filterA | filterB }}
+在这个例子中，filterA被定义为接收单个参数的过滤器函数，表达式message的值将作为参数传入到函数中。然后继续调</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-12
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-22
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Markdown/" class="post-category" target="_blank">
-                                    Markdown
+                            <a href="/categories/VUE/" class="post-category" target="_blank">
+                                    VUE
                                 </a>
                             
                             
@@ -1285,12 +1323,8 @@ start();
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Markdown/" target="_blank">
-                        <span class="chip bg-color">Markdown</span>
-                    </a>
-                    
-                    <a href="/tags/Typora/" target="_blank">
-                        <span class="chip bg-color">Typora</span>
+                    <a href="/tags/vue/" target="_blank">
+                        <span class="chip bg-color">vue</span>
                     </a>
                     
                 </div>

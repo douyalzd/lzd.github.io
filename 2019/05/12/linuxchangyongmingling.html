@@ -4,8 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="微信视频全屏方案, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
-    <meta name="description" content="微信视频播放全屏问题   在ios和安卓手机里的微信下播放视频时，会遇到不少问题，例如需要手动点击，视频才会播放，并且视频会跳出微信框，出现控制条，如果视频不是腾讯视频，播放完毕会出现腾讯视频的广告推送，今天我们就来看一下如何规避这些问题。">
+    <meta name="keywords" content="Linux常用命令, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
+    <meta name="description" content="修改文件读写权限r： 4（读权限）w： 2（写权限）x： 1（执行权限）chmod 777 文件名
+修改文件用户权限chown -R 用户 文件名称
+修改文件用户组chogrp -R 组名 文件名
+服务管理systemctl 操作名（sto">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>微信视频全屏方案 | 前端豆芽</title>
+    <title>Linux常用命令 | 前端豆芽</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -34,8 +37,8 @@
     </script>
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism.css" type="text/css"><link rel="alternate" href="/atom.xml" title="前端豆芽" type="application/atom+xml">
-</head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="前端豆芽" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
 
 
 <body>
@@ -54,79 +57,109 @@
                 </div>
                 
 
-<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-navicon"></i></a>
-<ul class="right">
+<!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right nav-menu">
     
-    <li class="hide-on-med-and-down">
-        <a href="/" class="waves-effect waves-light">
-            
-            <i class="fa fa-home"></i>
-            
-            <span>首页</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/tags" class="waves-effect waves-light">
-            
-            <i class="fa fa-tags"></i>
-            
-            <span>文章标签</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/categories" class="waves-effect waves-light">
-            
-            <i class="fa fa-bookmark"></i>
-            
-            <span>文章分类</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/archives" class="waves-effect waves-light">
-            
-            <i class="fa fa-archive"></i>
-            
-            <span>文章归档</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/about" class="waves-effect waves-light">
-            
-            <i class="fa fa-user-circle-o"></i>
-            
-            <span>关于我</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/friends" class="waves-effect waves-light">
-            
-            <i class="fa fa-address-book"></i>
-            
-            <span>友情链接</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/tools" class="waves-effect waves-light">
-            
-            <i class="fa fa-cogs"></i>
-            
-            <span>工具箱</span>
-        </a>
-    </li>
-    
-    <li>
-        <a id="toggleSearch" class="waves-effect waves-light">
-            <i id="searchIcon" class="mdi-action-search" title="搜索"></i>
-        </a>
-    </li>
+      <li class="hide-on-med-and-down nav-item" >
 
+        
+            <a href="/" class="waves-effect waves-light">
+              
+                <i class="fa fa-home"></i>
+              
+              <span>首页</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/tags" class="waves-effect waves-light">
+              
+                <i class="fa fa-tags"></i>
+              
+              <span>文章标签</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/categories" class="waves-effect waves-light">
+              
+                <i class="fa fa-bookmark"></i>
+              
+              <span>文章分类</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/archives" class="waves-effect waves-light">
+              
+                <i class="fa fa-archive"></i>
+              
+              <span>文章归档</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/about" class="waves-effect waves-light">
+              
+                <i class="fa fa-user-circle-o"></i>
+              
+              <span>关于我</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/friends" class="waves-effect waves-light">
+              
+                <i class="fa fa-address-book"></i>
+              
+              <span>友情链接</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/tools" class="waves-effect waves-light">
+              
+                <i class="fa fa-cogs"></i>
+              
+              <span>工具箱</span>
+            </a>
+
+            
+      </li>
+    
+
+    <li>
+        <a href="#searchModal" id="toggleSearch" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
 </ul>
+
 
 <div class="side-nav" id="mobile-nav">
 
@@ -144,78 +177,94 @@
 
     
 
+    <!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
     <ul class="menu-list mobile-menu-list">
         
-        <li>
-            <a href="/" class="waves-effect waves-light">
+            <li class="m-nav-item">
+                    
+                        <a href="/" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-home"></i>
+                            
+                            首页
+                        </a>
                 
-                <i class="fa fa-fw fa-home"></i>
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/tags" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-tags"></i>
+                            
+                            文章标签
+                        </a>
                 
-                首页
-            </a>
-        </li>
-        
-        <li>
-            <a href="/tags" class="waves-effect waves-light">
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/categories" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-bookmark"></i>
+                            
+                            文章分类
+                        </a>
                 
-                <i class="fa fa-fw fa-tags"></i>
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/archives" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-archive"></i>
+                            
+                            文章归档
+                        </a>
                 
-                文章标签
-            </a>
-        </li>
-        
-        <li>
-            <a href="/categories" class="waves-effect waves-light">
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/about" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-user-circle-o"></i>
+                            
+                            关于我
+                        </a>
                 
-                <i class="fa fa-fw fa-bookmark"></i>
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/friends" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-address-book"></i>
+                            
+                            友情链接
+                        </a>
                 
-                文章分类
-            </a>
-        </li>
-        
-        <li>
-            <a href="/archives" class="waves-effect waves-light">
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/tools" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-cogs"></i>
+                            
+                            工具箱
+                        </a>
                 
-                <i class="fa fa-fw fa-archive"></i>
-                
-                文章归档
-            </a>
-        </li>
-        
-        <li>
-            <a href="/about" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-user-circle-o"></i>
-                
-                关于我
-            </a>
-        </li>
-        
-        <li>
-            <a href="/friends" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-address-book"></i>
-                
-                友情链接
-            </a>
-        </li>
-        
-        <li>
-            <a href="/tools" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-cogs"></i>
-                
-                工具箱
-            </a>
-        </li>
-        
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/douyalzd" class="waves-effect waves-light" target="_blank">
-                <i class="fa fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
+                </li>
+            
+
+            
+            <li><div class="divider"></div></li>
+            <li>
+                <a href="https://github.com/douyalzd" class="waves-effect waves-light" target="_blank">
+                    <i class="fa fa-github-square fa-fw"></i>Fork Me
+                </a>
+            </li>
         
     </ul>
 
@@ -311,7 +360,7 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('http://qiniu.luzhidong.cn/medias/featureimages/20.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('http://qiniu.luzhidong.cn/medias/featureimages/11.jpg')">
     <style type="text/css">
     #canvasBg {
         display: block;
@@ -715,7 +764,7 @@ start();
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        微信视频全屏方案
+                        Linux常用命令
                     </div>
                 </div>
             </div>
@@ -831,8 +880,8 @@ start();
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7/" target="_blank">
-                                <span class="chip bg-color">微信公众号</span>
+                            <a href="/tags/Linux/" target="_blank">
+                                <span class="chip bg-color">Linux</span>
                             </a>
                         
                     </div>
@@ -843,8 +892,8 @@ start();
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%BE%AE%E4%BF%A1/" class="post-category" target="_blank">
-                                微信
+                            <a href="/categories/Linux/" class="post-category" target="_blank">
+                                Linux
                             </a>
                         
                     </div>
@@ -855,21 +904,21 @@ start();
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-06-29
+                    2019-05-12
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        1.2k
+                        129
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        4 分
+                        1 分
                     </div>
                     
                 
@@ -885,42 +934,17 @@ start();
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="微信视频播放全屏问题"><a href="#微信视频播放全屏问题" class="headerlink" title="微信视频播放全屏问题"></a>微信视频播放全屏问题</h2><p>   在ios和安卓手机里的微信下播放视频时，会遇到不少问题，例如需要手动点击，视频才会播放，并且视频会跳出微信框，出现控制条，如果视频不是腾讯视频，播放完毕会出现腾讯视频的广告推送，今天我们就来看一下如何规避这些问题。</p>
-<p>解决办法：给video标签加一些属性，调用h5原生video。<br>下面是我写的一个小例子的html核心部分：</p>
-<pre class=" language-html"><code class="language-html">&lt;video
-  id="videoALL" 
-  src="video/01.mp4" 
-  poster="images/1.jpg" /*视频封面*/
-  preload="auto" 
-  webkit-playsinline="true" /*这个属性是ios 10中设置可以让视频在小窗内播放，也就是不是全屏播放*/  
-  playsinline="true"  /*IOS微信浏览器支持小窗内播放*/ 
-  x-webkit-airplay="allow" 
-  x5-video-player-type="h5"  /*启用H5播放器,是wechat安卓版特性*/
-  x5-video-player-fullscreen="true" /*全屏设置，设置为 true 是防止横屏*/
-  x5-video-orientation="portraint" /*播放器支付的方向，andscape横屏，portraint竖屏，默认值为竖屏*/
-  style="object-fit:fill">
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>video</span><span class="token punctuation">></span></span></code></pre>
-<p>下面我们来看看这些属性的作用：</p>
-<ul>
-<li><p>poster=”images/1.jpg”:属性规定视频下载时显示的图像，或者在用户点击播放按钮前显示的图像。如果未设置该属性，则使用视频的第一帧来代替。</p>
-</li>
-<li><p>preload=”auto” ：属性规定在页面加载后载入视频。</p>
-</li>
-<li><p>webkit-playsinline和playsinline：视频播放时局域播放，不脱离文档流 。但是这个属性比较特别， 需要嵌入网页的APP比如WeChat中UIwebview 的allowsInlineMediaPlayback = YES webview.allowsInlineMediaPlayback = YES，才能生效。换句话说，如果APP不设置，你页面中加了这标签也无效，这也就是为什么安卓手机WeChat 播放视频总是全屏，因为APP不支持playsinline，而ISO的WeChat却支持。</p>
-</li>
-<li><p>这里就要补充下，如果是想做全屏直播或者全屏H5体验的用户，ISO需要设置删除 webkit-playsinline 标签，因为你设置 false 是不支持的 ，安卓则不需要，因为默认全屏。但这时候全屏是有播放控件的，无论你有没有设置control。 做直播的可能用得着播放控件，但是全屏H5是不需要的，那么去除全屏播放时候的控件，需要以下设置：同层播放。</p>
-</li>
-<li><p>x-webkit-airplay=”allow”暂时无法确切的知道其作用，但是小编猜测，这个属性应该是使此视频支持ios的AirPlay功能。使用AirPlay可以直接从使用iOS的设备上的不同位置播放视频、音乐还有照片文件，也就是说通过AirPlay功能可以实现影音文件的无线播放，当然前提是播放的终端设备也要支持相应的功能。</p>
-</li>
-<li><p>x5-video-player-type：启用同层H5播放器，就是在视频全屏的时候，div可以呈现在视频层上，也是WeChat安卓版特有的属性。同层播放别名也叫做沉浸式播放，播放的时候看似全屏，但是已经除去了control和微信的导航栏，只留下”X”和”&lt;”两键。目前的同层播放器只在Android（包括微信）上生效，暂时不支持iOS。至于为什么同层播放只对安卓开放，是因为安卓不能像ISO一样局域播放，默认的全屏会使得一些界面操作被阻拦，如果是全屏H5还好，但是做直播的话，诸如弹幕那样的功能就无法实现了，所以这时候同层播放的概念就解决了这个问题。不过在测试的过程中发现，不同版本的ISO和安卓效果略有不同。</p>
-</li>
-<li><p>x5-video-orientation：声明播放器支持的方向，可选值landscape 横屏, portraint竖屏。默认值portraint。无论是直播还是全屏H5一般都是竖屏播放，但是这个属性需要x5-video-player-type开启H5模式</p>
-</li>
-<li><p>x5­-video­-player­-fullscreen：全屏设置。它又两个属性值，ture和false，true支持全屏播放，false不支持全屏播放。<br>其实，ISO 微信浏览器是Chrome的内核，相关的属性都支持，也是为什么X5同层播放不支持的原因。安卓微信浏览器是X5内核，一些属性标签比如playsinline就不支持，所以始终全屏。</p>
-</li>
-<li><p>还有个问题，在Android的微信里面，就算加上了上面的属性，还会出现上下有黑边，不能全屏的问题。<br>解决办法：给video加上object-fit: fill;的style属性。如果还是有黑边有可能是视频尺寸不合适。</p>
-</li>
-</ul>
+                <h2 id="修改文件读写权限"><a href="#修改文件读写权限" class="headerlink" title="修改文件读写权限"></a>修改文件读写权限</h2><p>r： 4（读权限）<br>w： 2（写权限）<br>x： 1（执行权限）<br>chmod 777 文件名</p>
+<h2 id="修改文件用户权限"><a href="#修改文件用户权限" class="headerlink" title="修改文件用户权限"></a>修改文件用户权限</h2><p>chown -R 用户 文件名称</p>
+<h2 id="修改文件用户组"><a href="#修改文件用户组" class="headerlink" title="修改文件用户组"></a>修改文件用户组</h2><p>chogrp -R 组名 文件名</p>
+<h2 id="服务管理"><a href="#服务管理" class="headerlink" title="服务管理"></a>服务管理</h2><p>systemctl 操作名（stop, start, restart） 服务名.service</p>
+<h2 id="查询服务"><a href="#查询服务" class="headerlink" title="查询服务"></a>查询服务</h2><pre class=" language-bash"><code class="language-bash"><span class="token function">ps</span> -aux ｜ <span class="token function">grep</span> 服务名</code></pre>
+<h2 id="ssh登录服务器"><a href="#ssh登录服务器" class="headerlink" title="ssh登录服务器"></a>ssh登录服务器</h2><pre class=" language-bash"><code class="language-bash"><span class="token function">ssh</span> -l root 212.64.101.100</code></pre>
+<h2 id="软件安装位置查找"><a href="#软件安装位置查找" class="headerlink" title="软件安装位置查找"></a>软件安装位置查找</h2><pre class=" language-bash"><code class="language-bash">mdfind -name 文件名</code></pre>
+<h2 id="npm-常用命名"><a href="#npm-常用命名" class="headerlink" title="npm 常用命名"></a>npm 常用命名</h2><ol>
+<li>查询可用升级的包 <code>npm outdated</code></li>
+<li>更新包 <code>npm update</code></li>
+</ol>
 
             </div>
             <hr/>
@@ -942,9 +966,9 @@ start();
                     <span class="reprint-tip">
                         <i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;转载请注明:
                     </span>
-                    <a href="https://luzhidong.cn" class="b-link-green">前端豆芽</a>
+                    <a href="http://luzhidong.cn" class="b-link-green">前端豆芽</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/06/29/weixinshipinquanpingfangan/" class="b-link-green">微信视频全屏方案</a>
+                    <a href="/2019/05/12/linuxchangyongmingling.html" class="b-link-green">Linux常用命令</a>
                 </p>
             </div>
         </div>
@@ -1228,37 +1252,28 @@ start();
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/06/29/vuechangyongminglinghetiankengjiqiao/">
+                <a href="/2019/05/12/nodejspeizhi.html">
                     <div class="card-image">
                         
                         
-                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/28.jpg" class="responsive-img" alt="vue常用命令和填坑技巧">
+                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/12.jpg" class="responsive-img" alt="nodejs配置">
                         
-                        <span class="card-title">vue常用命令和填坑技巧</span>
+                        <span class="card-title">nodejs配置</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">
-阻止事件冒泡@click.stop
-
-阻止默认事件@contextmenu.prevent 
-
-模板:
-{{msg}}        数据更新模板变化
-{{*msg}}    数据只绑定一次
-{{{msg}}}    HTML转意输出
-
-</div>
+                    <div class="summary">node全局文件夹配置我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【D:\Develop\nodejs】下创建两个文件夹【node_global】及【node_cache】
+创建完两个空文件夹之后，</div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-06-29
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-12
                         </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/VUE/" class="post-category" target="_blank">
-                                    VUE
+                            <a href="/categories/nodejs/" class="post-category" target="_blank">
+                                    nodejs
                                 </a>
                             
                             
@@ -1268,8 +1283,8 @@ start();
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/vue/" target="_blank">
-                        <span class="chip bg-color">vue</span>
+                    <a href="/tags/node/" target="_blank">
+                        <span class="chip bg-color">node</span>
                     </a>
                     
                 </div>
@@ -1283,30 +1298,30 @@ start();
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/06/02/chongxueqianduan/">
+                <a href="/2019/05/12/markdownyufa.html">
                     <div class="card-image">
                         
                         
-                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/27.jpg" class="responsive-img" alt="重学前端">
+                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/9.jpg" class="responsive-img" alt="Markdown语法">
                         
-                        <span class="card-title">重学前端</span>
+                        <span class="card-title">Markdown语法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">0.1+0.2为什么不等于0.3// 比较大小使用下面的方式
-0.1+0.2-0.3 &lt;= Number.EPSILON
-我怎么去区分对象，数组和null呢?Object.prototype.toString.call(null);
-</div>
+                    <div class="summary">table语法| Tables   |      Are      |  Cool |
+|----------|:-------------:|------:|
+| col 1 is |  left-aligned | $1600 |
+| </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-06-02
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-12
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category" target="_blank">
-                                    前端
+                            <a href="/categories/Markdown/" class="post-category" target="_blank">
+                                    Markdown
                                 </a>
                             
                             
@@ -1316,8 +1331,12 @@ start();
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%89%8D%E7%AB%AF/" target="_blank">
-                        <span class="chip bg-color">前端</span>
+                    <a href="/tags/Markdown/" target="_blank">
+                        <span class="chip bg-color">Markdown</span>
+                    </a>
+                    
+                    <a href="/tags/Typora/" target="_blank">
+                        <span class="chip bg-color">Typora</span>
                     </a>
                     
                 </div>

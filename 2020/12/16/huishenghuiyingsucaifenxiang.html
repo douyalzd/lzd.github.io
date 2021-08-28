@@ -4,18 +4,19 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="vue常用命令和填坑技巧, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
-    <meta name="description" content="
-阻止事件冒泡@click.stop
+    <meta name="keywords" content="绘声绘影素材分享, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
+    <meta name="description" content="大概文件目录多年收集的绘声绘影素材集合，分享给有需要的你
+素材集合1
 
-阻止默认事件@contextmenu.prevent 
+素材集合2
 
-模板:
-{{msg}}        数据更新模板变化
-{{*msg}}    数据只绑定一次
-{{{msg}}}    HTML转意输出
+素材集合3
 
-">
+素材集合4
+
+下载地址链接:https://pan.baidu.com/s/11sUw2uCjpo4O27AYjr3P3A 
+
+  提取码6">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -23,7 +24,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>vue常用命令和填坑技巧 | 前端豆芽</title>
+    <title>绘声绘影素材分享 | 前端豆芽</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -44,8 +45,8 @@
     </script>
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism.css" type="text/css"><link rel="alternate" href="/atom.xml" title="前端豆芽" type="application/atom+xml">
-</head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="前端豆芽" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
 
 
 <body>
@@ -64,79 +65,109 @@
                 </div>
                 
 
-<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-navicon"></i></a>
-<ul class="right">
+<!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right nav-menu">
     
-    <li class="hide-on-med-and-down">
-        <a href="/" class="waves-effect waves-light">
-            
-            <i class="fa fa-home"></i>
-            
-            <span>首页</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/tags" class="waves-effect waves-light">
-            
-            <i class="fa fa-tags"></i>
-            
-            <span>文章标签</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/categories" class="waves-effect waves-light">
-            
-            <i class="fa fa-bookmark"></i>
-            
-            <span>文章分类</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/archives" class="waves-effect waves-light">
-            
-            <i class="fa fa-archive"></i>
-            
-            <span>文章归档</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/about" class="waves-effect waves-light">
-            
-            <i class="fa fa-user-circle-o"></i>
-            
-            <span>关于我</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/friends" class="waves-effect waves-light">
-            
-            <i class="fa fa-address-book"></i>
-            
-            <span>友情链接</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/tools" class="waves-effect waves-light">
-            
-            <i class="fa fa-cogs"></i>
-            
-            <span>工具箱</span>
-        </a>
-    </li>
-    
-    <li>
-        <a id="toggleSearch" class="waves-effect waves-light">
-            <i id="searchIcon" class="mdi-action-search" title="搜索"></i>
-        </a>
-    </li>
+      <li class="hide-on-med-and-down nav-item" >
 
+        
+            <a href="/" class="waves-effect waves-light">
+              
+                <i class="fa fa-home"></i>
+              
+              <span>首页</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/tags" class="waves-effect waves-light">
+              
+                <i class="fa fa-tags"></i>
+              
+              <span>文章标签</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/categories" class="waves-effect waves-light">
+              
+                <i class="fa fa-bookmark"></i>
+              
+              <span>文章分类</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/archives" class="waves-effect waves-light">
+              
+                <i class="fa fa-archive"></i>
+              
+              <span>文章归档</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/about" class="waves-effect waves-light">
+              
+                <i class="fa fa-user-circle-o"></i>
+              
+              <span>关于我</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/friends" class="waves-effect waves-light">
+              
+                <i class="fa fa-address-book"></i>
+              
+              <span>友情链接</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/tools" class="waves-effect waves-light">
+              
+                <i class="fa fa-cogs"></i>
+              
+              <span>工具箱</span>
+            </a>
+
+            
+      </li>
+    
+
+    <li>
+        <a href="#searchModal" id="toggleSearch" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
 </ul>
+
 
 <div class="side-nav" id="mobile-nav">
 
@@ -154,78 +185,94 @@
 
     
 
+    <!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
     <ul class="menu-list mobile-menu-list">
         
-        <li>
-            <a href="/" class="waves-effect waves-light">
+            <li class="m-nav-item">
+                    
+                        <a href="/" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-home"></i>
+                            
+                            首页
+                        </a>
                 
-                <i class="fa fa-fw fa-home"></i>
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/tags" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-tags"></i>
+                            
+                            文章标签
+                        </a>
                 
-                首页
-            </a>
-        </li>
-        
-        <li>
-            <a href="/tags" class="waves-effect waves-light">
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/categories" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-bookmark"></i>
+                            
+                            文章分类
+                        </a>
                 
-                <i class="fa fa-fw fa-tags"></i>
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/archives" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-archive"></i>
+                            
+                            文章归档
+                        </a>
                 
-                文章标签
-            </a>
-        </li>
-        
-        <li>
-            <a href="/categories" class="waves-effect waves-light">
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/about" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-user-circle-o"></i>
+                            
+                            关于我
+                        </a>
                 
-                <i class="fa fa-fw fa-bookmark"></i>
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/friends" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-address-book"></i>
+                            
+                            友情链接
+                        </a>
                 
-                文章分类
-            </a>
-        </li>
-        
-        <li>
-            <a href="/archives" class="waves-effect waves-light">
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/tools" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-cogs"></i>
+                            
+                            工具箱
+                        </a>
                 
-                <i class="fa fa-fw fa-archive"></i>
-                
-                文章归档
-            </a>
-        </li>
-        
-        <li>
-            <a href="/about" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-user-circle-o"></i>
-                
-                关于我
-            </a>
-        </li>
-        
-        <li>
-            <a href="/friends" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-address-book"></i>
-                
-                友情链接
-            </a>
-        </li>
-        
-        <li>
-            <a href="/tools" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-cogs"></i>
-                
-                工具箱
-            </a>
-        </li>
-        
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/douyalzd" class="waves-effect waves-light" target="_blank">
-                <i class="fa fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
+                </li>
+            
+
+            
+            <li><div class="divider"></div></li>
+            <li>
+                <a href="https://github.com/douyalzd" class="waves-effect waves-light" target="_blank">
+                    <i class="fa fa-github-square fa-fw"></i>Fork Me
+                </a>
+            </li>
         
     </ul>
 
@@ -321,7 +368,7 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('http://qiniu.luzhidong.cn/medias/featureimages/28.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('http://qiniu.luzhidong.cn/static/images/044.png')">
     <style type="text/css">
     #canvasBg {
         display: block;
@@ -725,7 +772,7 @@ start();
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        vue常用命令和填坑技巧
+                        绘声绘影素材分享
                     </div>
                 </div>
             </div>
@@ -841,8 +888,8 @@ start();
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/vue/" target="_blank">
-                                <span class="chip bg-color">vue</span>
+                            <a href="/tags/%E7%BB%98%E5%A3%B0%E7%BB%98%E5%BD%B1/" target="_blank">
+                                <span class="chip bg-color">绘声绘影</span>
                             </a>
                         
                     </div>
@@ -853,8 +900,8 @@ start();
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/VUE/" class="post-category" target="_blank">
-                                VUE
+                            <a href="/categories/%E7%BB%98%E5%A3%B0%E7%BB%98%E5%BD%B1/" class="post-category" target="_blank">
+                                绘声绘影
                             </a>
                         
                     </div>
@@ -865,14 +912,14 @@ start();
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-06-29
+                    2020-12-16
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        96
+                        63
                     </div>
                     
 
@@ -895,31 +942,19 @@ start();
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <ul>
-<li><p>阻止事件冒泡<br>@click.stop</p>
-</li>
-<li><p>阻止默认事件<br>@contextmenu.prevent </p>
-</li>
-<li><p>模板:</p>
-<pre class=" language-html"><code class="language-html">{{msg}}        数据更新模板变化
-{{*msg}}    数据只绑定一次
-{{{msg}}}    HTML转意输出</code></pre>
-</li>
-<li><p>用户会看到花括号标记:</p>
-<pre class=" language-html"><code class="language-html">v-cloak        防止闪烁, 比较大段落
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>{{msg}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>        ->   v-text
-{{{msg}}}            ->   v-html</code></pre>
-</li>
-<li><p>Vue.nextTick( [callback, context] )</p>
-<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 修改数据</span>
-vm<span class="token punctuation">.</span>msg <span class="token operator">=</span> <span class="token string">'Hello'</span>
-<span class="token comment" spellcheck="true">// DOM 还没有更新</span>
-Vue<span class="token punctuation">.</span><span class="token function">nextTick</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-<span class="token comment" spellcheck="true">// DOM 更新了</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
-</li>
-</ul>
+                <h2 id="大概文件目录"><a href="#大概文件目录" class="headerlink" title="大概文件目录"></a>大概文件目录</h2><p>多年收集的绘声绘影素材集合，分享给有需要的你</p>
+<h3 id="素材集合1"><a href="#素材集合1" class="headerlink" title="素材集合1"></a>素材集合1</h3><img src="http://qiniu.luzhidong.cn/static/images/044.png">
 
+<h3 id="素材集合2"><a href="#素材集合2" class="headerlink" title="素材集合2"></a>素材集合2</h3><img src="http://qiniu.luzhidong.cn/static/images/045.png">
+
+<h3 id="素材集合3"><a href="#素材集合3" class="headerlink" title="素材集合3"></a>素材集合3</h3><img src="http://qiniu.luzhidong.cn/static/images/046.png">
+
+<h3 id="素材集合4"><a href="#素材集合4" class="headerlink" title="素材集合4"></a>素材集合4</h3><img src="http://qiniu.luzhidong.cn/static/images/047.png">
+
+<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>链接:<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/11sUw2uCjpo4O27AYjr3P3A">https://pan.baidu.com/s/11sUw2uCjpo4O27AYjr3P3A</a> </p>
+<details>
+  <summary>提取码</summary><p>6kac</p>
+</details>
             </div>
             <hr/>
 
@@ -940,9 +975,9 @@ Vue<span class="token punctuation">.</span><span class="token function">nextTick
                     <span class="reprint-tip">
                         <i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;转载请注明:
                     </span>
-                    <a href="https://luzhidong.cn" class="b-link-green">前端豆芽</a>
+                    <a href="http://luzhidong.cn" class="b-link-green">前端豆芽</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/06/29/vuechangyongminglinghetiankengjiqiao/" class="b-link-green">vue常用命令和填坑技巧</a>
+                    <a href="/2020/12/16/huishenghuiyingsucaifenxiang.html" class="b-link-green">绘声绘影素材分享</a>
                 </p>
             </div>
         </div>
@@ -1222,44 +1257,54 @@ Vue<span class="token punctuation">.</span><span class="token function">nextTick
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/06/30/changyongziyuanwangzhantuijian/">
+                <a href="/2020/12/16/huishenghuiyingsucaifenxiang.html">
                     <div class="card-image">
                         
-                        <img src="http://qiniu.luzhidong.cn/static/images/cover/001.jpeg" class="responsive-img" alt="常用资源网站推荐">
+                        <img src="http://qiniu.luzhidong.cn/static/images/044.png" class="responsive-img" alt="绘声绘影素材分享">
                         
-                        <span class="card-title">常用资源网站推荐</span>
+                        <span class="card-title">绘声绘影素材分享</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">MacOS 常用破解软件下载网站推荐麦氪派(WaitsUn.com) 致力于分享优秀的Mac应用软件
-Digit77.com | 精品Mac应用免费分享
-懒得勤快，互联网分享精神，勤于发现，乐于分享
-都是些奇怪的外语网站，如有需要也请自行想</div>
+                    <div class="summary">大概文件目录多年收集的绘声绘影素材集合，分享给有需要的你
+素材集合1
+
+素材集合2
+
+素材集合3
+
+素材集合4
+
+下载地址链接:https://pan.baidu.com/s/11sUw2uCjpo4O27AYjr3P3A 
+
+  提取码6</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-06-30
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-12-16
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%B5%84%E6%BA%90/" class="post-category" target="_blank">
-                                    资源
+                            <a href="/categories/%E7%BB%98%E5%A3%B0%E7%BB%98%E5%BD%B1/" class="post-category" target="_blank">
+                                    绘声绘影
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%B5%84%E6%BA%90%E6%8E%A8%E8%8D%90/" target="_blank">
-                        <span class="chip bg-color">资源推荐</span>
+                    <a href="/tags/%E7%BB%98%E5%A3%B0%E7%BB%98%E5%BD%B1/" target="_blank">
+                        <span class="chip bg-color">绘声绘影</span>
                     </a>
                     
                 </div>
@@ -1273,27 +1318,32 @@ Digit77.com | 精品Mac应用免费分享
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/06/29/weixinshipinquanpingfangan/">
+                <a href="/2020/05/22/vscodephphuanjingpeizhiwindows.html">
                     <div class="card-image">
                         
+                        <img src="http://qiniu.luzhidong.cn/static/images/cover/002.jpg" class="responsive-img" alt="vsCode-PHP环境配置-windows">
                         
-                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/20.jpg" class="responsive-img" alt="微信视频全屏方案">
-                        
-                        <span class="card-title">微信视频全屏方案</span>
+                        <span class="card-title">vsCode-PHP环境配置-windows</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">微信视频播放全屏问题   在ios和安卓手机里的微信下播放视频时，会遇到不少问题，例如需要手动点击，视频才会播放，并且视频会跳出微信框，出现控制条，如果视频不是腾讯视频，播放完毕会出现腾讯视频的广告推送，今天我们就来看一下如何规避这些问题。</div>
+                    <div class="summary">安装Wampserver
+Wampserver点击下载集成了Apache、mysql、php(多个版本的)等环境  
+
+
+安装Wampserver，直接下一步就可以了 
+  
+这里可以选择要安装的应用，下面的是我选择，因为我本地已经安装了m</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-06-29
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-22
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%BE%AE%E4%BF%A1/" class="post-category" target="_blank">
-                                    微信
+                            <a href="/categories/php/" class="post-category" target="_blank">
+                                    php
                                 </a>
                             
                             
@@ -1303,8 +1353,12 @@ Digit77.com | 精品Mac应用免费分享
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7/" target="_blank">
-                        <span class="chip bg-color">微信公众号</span>
+                    <a href="/tags/php/" target="_blank">
+                        <span class="chip bg-color">php</span>
+                    </a>
+                    
+                    <a href="/tags/vsCode/" target="_blank">
+                        <span class="chip bg-color">vsCode</span>
                     </a>
                     
                 </div>

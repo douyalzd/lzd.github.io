@@ -34,8 +34,8 @@
     </script>
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism.css" type="text/css"><link rel="alternate" href="/atom.xml" title="前端豆芽" type="application/atom+xml">
-</head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="前端豆芽" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
 
 
 <body>
@@ -54,79 +54,109 @@
                 </div>
                 
 
-<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-navicon"></i></a>
-<ul class="right">
+<!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right nav-menu">
     
-    <li class="hide-on-med-and-down">
-        <a href="/" class="waves-effect waves-light">
-            
-            <i class="fa fa-home"></i>
-            
-            <span>首页</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/tags" class="waves-effect waves-light">
-            
-            <i class="fa fa-tags"></i>
-            
-            <span>文章标签</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/categories" class="waves-effect waves-light">
-            
-            <i class="fa fa-bookmark"></i>
-            
-            <span>文章分类</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/archives" class="waves-effect waves-light">
-            
-            <i class="fa fa-archive"></i>
-            
-            <span>文章归档</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/about" class="waves-effect waves-light">
-            
-            <i class="fa fa-user-circle-o"></i>
-            
-            <span>关于我</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/friends" class="waves-effect waves-light">
-            
-            <i class="fa fa-address-book"></i>
-            
-            <span>友情链接</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/tools" class="waves-effect waves-light">
-            
-            <i class="fa fa-cogs"></i>
-            
-            <span>工具箱</span>
-        </a>
-    </li>
-    
-    <li>
-        <a id="toggleSearch" class="waves-effect waves-light">
-            <i id="searchIcon" class="mdi-action-search" title="搜索"></i>
-        </a>
-    </li>
+      <li class="hide-on-med-and-down nav-item" >
 
+        
+            <a href="/" class="waves-effect waves-light">
+              
+                <i class="fa fa-home"></i>
+              
+              <span>首页</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/tags" class="waves-effect waves-light">
+              
+                <i class="fa fa-tags"></i>
+              
+              <span>文章标签</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/categories" class="waves-effect waves-light">
+              
+                <i class="fa fa-bookmark"></i>
+              
+              <span>文章分类</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/archives" class="waves-effect waves-light">
+              
+                <i class="fa fa-archive"></i>
+              
+              <span>文章归档</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/about" class="waves-effect waves-light">
+              
+                <i class="fa fa-user-circle-o"></i>
+              
+              <span>关于我</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/friends" class="waves-effect waves-light">
+              
+                <i class="fa fa-address-book"></i>
+              
+              <span>友情链接</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/tools" class="waves-effect waves-light">
+              
+                <i class="fa fa-cogs"></i>
+              
+              <span>工具箱</span>
+            </a>
+
+            
+      </li>
+    
+
+    <li>
+        <a href="#searchModal" id="toggleSearch" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
 </ul>
+
 
 <div class="side-nav" id="mobile-nav">
 
@@ -144,78 +174,94 @@
 
     
 
+    <!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
     <ul class="menu-list mobile-menu-list">
         
-        <li>
-            <a href="/" class="waves-effect waves-light">
+            <li class="m-nav-item">
+                    
+                        <a href="/" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-home"></i>
+                            
+                            首页
+                        </a>
                 
-                <i class="fa fa-fw fa-home"></i>
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/tags" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-tags"></i>
+                            
+                            文章标签
+                        </a>
                 
-                首页
-            </a>
-        </li>
-        
-        <li>
-            <a href="/tags" class="waves-effect waves-light">
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/categories" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-bookmark"></i>
+                            
+                            文章分类
+                        </a>
                 
-                <i class="fa fa-fw fa-tags"></i>
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/archives" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-archive"></i>
+                            
+                            文章归档
+                        </a>
                 
-                文章标签
-            </a>
-        </li>
-        
-        <li>
-            <a href="/categories" class="waves-effect waves-light">
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/about" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-user-circle-o"></i>
+                            
+                            关于我
+                        </a>
                 
-                <i class="fa fa-fw fa-bookmark"></i>
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/friends" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-address-book"></i>
+                            
+                            友情链接
+                        </a>
                 
-                文章分类
-            </a>
-        </li>
-        
-        <li>
-            <a href="/archives" class="waves-effect waves-light">
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/tools" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-cogs"></i>
+                            
+                            工具箱
+                        </a>
                 
-                <i class="fa fa-fw fa-archive"></i>
-                
-                文章归档
-            </a>
-        </li>
-        
-        <li>
-            <a href="/about" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-user-circle-o"></i>
-                
-                关于我
-            </a>
-        </li>
-        
-        <li>
-            <a href="/friends" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-address-book"></i>
-                
-                友情链接
-            </a>
-        </li>
-        
-        <li>
-            <a href="/tools" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-cogs"></i>
-                
-                工具箱
-            </a>
-        </li>
-        
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/douyalzd" class="waves-effect waves-light" target="_blank">
-                <i class="fa fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
+                </li>
+            
+
+            
+            <li><div class="divider"></div></li>
+            <li>
+                <a href="https://github.com/douyalzd" class="waves-effect waves-light" target="_blank">
+                    <i class="fa fa-github-square fa-fw"></i>Fork Me
+                </a>
+            </li>
         
     </ul>
 
@@ -800,7 +846,7 @@ $('.bg-cover').css('background-image', 'url(http://qiniu.luzhidong.cn/medias/ban
     
     <div class="row">
         <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            一生能够积累多少财富，不取决于你能够赚多少钱，而取决于你如何投资理财，钱找人胜过人找钱，要懂得钱为你工作，而不是你为钱工作！  ——巴菲特
+            
         </div>
     </div>
 </div>
@@ -831,11 +877,11 @@ $('.bg-cover').css('background-image', 'url(http://qiniu.luzhidong.cn/medias/ban
                     <a href="/categories/%E8%B5%84%E6%BA%90/" class="category" target="_blank">资源</a>
                     
                 </div>
-                <a href="/2019/06/30/changyongziyuanwangzhantuijian/" target="_blank">
+                <a href="/2019/06/30/changyongziyuanwangzhantuijian.html" target="_blank">
                     <h3 class="post-title">常用资源网站推荐</h3>
                 </a>
                 <p class="post-description">这里放一些常用好用的网站，有需要的自己存书签哦！</p>
-                <a href="/2019/06/30/changyongziyuanwangzhantuijian/" target="_blank"
+                <a href="/2019/06/30/changyongziyuanwangzhantuijian.html" target="_blank"
                         class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)">
                     <i class="icon fa fa-eye fa-fw"></i>阅读更多
                 </a>
@@ -862,7 +908,7 @@ $('.bg-cover').css('background-image', 'url(http://qiniu.luzhidong.cn/medias/ban
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2020/12/16/huishenghuiyingsucaifenxiang/">
+                    <a href="/2020/12/16/huishenghuiyingsucaifenxiang.html">
                         <div class="card-image">
                             
                             <img src="http://qiniu.luzhidong.cn/static/images/044.png" class="responsive-img" alt="绘声绘影素材分享">
@@ -908,7 +954,7 @@ $('.bg-cover').css('background-image', 'url(http://qiniu.luzhidong.cn/medias/ban
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2020/05/22/vscodephphuanjingpeizhiwindows/">
+                    <a href="/2020/05/22/vscodephphuanjingpeizhiwindows.html">
                         <div class="card-image">
                             
                             <img src="http://qiniu.luzhidong.cn/static/images/cover/002.jpg" class="responsive-img" alt="vsCode-PHP环境配置-windows">
@@ -958,7 +1004,7 @@ $('.bg-cover').css('background-image', 'url(http://qiniu.luzhidong.cn/medias/ban
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2020/05/20/qianduanchajianjiheshoucang/">
+                    <a href="/2020/05/20/qianduanchajianjiheshoucang.html">
                         <div class="card-image">
                             
                             
@@ -1005,7 +1051,7 @@ $('.bg-cover').css('background-image', 'url(http://qiniu.luzhidong.cn/medias/ban
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2019/09/03/kaifayudaodeyixiekengjilu/">
+                    <a href="/2019/09/03/kaifayudaodeyixiekengjilu.html">
                         <div class="card-image">
                             
                             
@@ -1056,7 +1102,7 @@ $('.bg-cover').css('background-image', 'url(http://qiniu.luzhidong.cn/medias/ban
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2019/06/30/changyongziyuanwangzhantuijian/">
+                    <a href="/2019/06/30/changyongziyuanwangzhantuijian.html">
                         <div class="card-image">
                             
                             <img src="http://qiniu.luzhidong.cn/static/images/cover/001.jpeg" class="responsive-img" alt="常用资源网站推荐">
@@ -1102,7 +1148,7 @@ $('.bg-cover').css('background-image', 'url(http://qiniu.luzhidong.cn/medias/ban
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2019/06/29/vuechangyongminglinghetiankengjiqiao/">
+                    <a href="/2019/06/29/vuechangyongminglinghetiankengjiqiao.html">
                         <div class="card-image">
                             
                             
@@ -1149,7 +1195,7 @@ $('.bg-cover').css('background-image', 'url(http://qiniu.luzhidong.cn/medias/ban
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2019/06/29/weixinshipinquanpingfangan/">
+                    <a href="/2019/06/29/weixinshipinquanpingfangan.html">
                         <div class="card-image">
                             
                             
@@ -1196,7 +1242,7 @@ $('.bg-cover').css('background-image', 'url(http://qiniu.luzhidong.cn/medias/ban
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2019/06/02/chongxueqianduan/">
+                    <a href="/2019/06/02/chongxueqianduan.html">
                         <div class="card-image">
                             
                             
@@ -1243,7 +1289,7 @@ $('.bg-cover').css('background-image', 'url(http://qiniu.luzhidong.cn/medias/ban
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2019/05/22/vuezidingyiguoluqihezhiling/">
+                    <a href="/2019/05/22/vuezidingyiguoluqihezhiling.html">
                         <div class="card-image">
                             
                             
@@ -1290,7 +1336,7 @@ $('.bg-cover').css('background-image', 'url(http://qiniu.luzhidong.cn/medias/ban
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2019/05/12/nodejspeizhi/">
+                    <a href="/2019/05/12/nodejspeizhi.html">
                         <div class="card-image">
                             
                             
@@ -1337,7 +1383,7 @@ $('.bg-cover').css('background-image', 'url(http://qiniu.luzhidong.cn/medias/ban
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2019/05/12/linuxchangyongmingling/">
+                    <a href="/2019/05/12/linuxchangyongmingling.html">
                         <div class="card-image">
                             
                             
@@ -1384,7 +1430,7 @@ $('.bg-cover').css('background-image', 'url(http://qiniu.luzhidong.cn/medias/ban
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2019/05/12/markdownyufa/">
+                    <a href="/2019/05/12/markdownyufa.html">
                         <div class="card-image">
                             
                             

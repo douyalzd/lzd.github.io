@@ -4,9 +4,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="nodejs配置, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
-    <meta name="description" content="node全局文件夹配置我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【D:\Develop\nodejs】下创建两个文件夹【node_global】及【node_cache】
-创建完两个空文件夹之后，">
+    <meta name="keywords" content="vsCode-PHP环境配置-windows, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
+    <meta name="description" content="安装Wampserver
+Wampserver点击下载集成了Apache、mysql、php(多个版本的)等环境  
+
+
+安装Wampserver，直接下一步就可以了 
+  
+这里可以选择要安装的应用，下面的是我选择，因为我本地已经安装了m">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +19,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>nodejs配置 | 前端豆芽</title>
+    <title>vsCode-PHP环境配置-windows | 前端豆芽</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -35,8 +40,8 @@
     </script>
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism.css" type="text/css"><link rel="alternate" href="/atom.xml" title="前端豆芽" type="application/atom+xml">
-</head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="前端豆芽" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
 
 
 <body>
@@ -55,79 +60,109 @@
                 </div>
                 
 
-<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-navicon"></i></a>
-<ul class="right">
+<!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right nav-menu">
     
-    <li class="hide-on-med-and-down">
-        <a href="/" class="waves-effect waves-light">
-            
-            <i class="fa fa-home"></i>
-            
-            <span>首页</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/tags" class="waves-effect waves-light">
-            
-            <i class="fa fa-tags"></i>
-            
-            <span>文章标签</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/categories" class="waves-effect waves-light">
-            
-            <i class="fa fa-bookmark"></i>
-            
-            <span>文章分类</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/archives" class="waves-effect waves-light">
-            
-            <i class="fa fa-archive"></i>
-            
-            <span>文章归档</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/about" class="waves-effect waves-light">
-            
-            <i class="fa fa-user-circle-o"></i>
-            
-            <span>关于我</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/friends" class="waves-effect waves-light">
-            
-            <i class="fa fa-address-book"></i>
-            
-            <span>友情链接</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/tools" class="waves-effect waves-light">
-            
-            <i class="fa fa-cogs"></i>
-            
-            <span>工具箱</span>
-        </a>
-    </li>
-    
-    <li>
-        <a id="toggleSearch" class="waves-effect waves-light">
-            <i id="searchIcon" class="mdi-action-search" title="搜索"></i>
-        </a>
-    </li>
+      <li class="hide-on-med-and-down nav-item" >
 
+        
+            <a href="/" class="waves-effect waves-light">
+              
+                <i class="fa fa-home"></i>
+              
+              <span>首页</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/tags" class="waves-effect waves-light">
+              
+                <i class="fa fa-tags"></i>
+              
+              <span>文章标签</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/categories" class="waves-effect waves-light">
+              
+                <i class="fa fa-bookmark"></i>
+              
+              <span>文章分类</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/archives" class="waves-effect waves-light">
+              
+                <i class="fa fa-archive"></i>
+              
+              <span>文章归档</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/about" class="waves-effect waves-light">
+              
+                <i class="fa fa-user-circle-o"></i>
+              
+              <span>关于我</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/friends" class="waves-effect waves-light">
+              
+                <i class="fa fa-address-book"></i>
+              
+              <span>友情链接</span>
+            </a>
+
+            
+      </li>
+    
+      <li class="hide-on-med-and-down nav-item" >
+
+        
+            <a href="/tools" class="waves-effect waves-light">
+              
+                <i class="fa fa-cogs"></i>
+              
+              <span>工具箱</span>
+            </a>
+
+            
+      </li>
+    
+
+    <li>
+        <a href="#searchModal" id="toggleSearch" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
 </ul>
+
 
 <div class="side-nav" id="mobile-nav">
 
@@ -145,78 +180,94 @@
 
     
 
+    <!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
     <ul class="menu-list mobile-menu-list">
         
-        <li>
-            <a href="/" class="waves-effect waves-light">
+            <li class="m-nav-item">
+                    
+                        <a href="/" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-home"></i>
+                            
+                            首页
+                        </a>
                 
-                <i class="fa fa-fw fa-home"></i>
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/tags" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-tags"></i>
+                            
+                            文章标签
+                        </a>
                 
-                首页
-            </a>
-        </li>
-        
-        <li>
-            <a href="/tags" class="waves-effect waves-light">
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/categories" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-bookmark"></i>
+                            
+                            文章分类
+                        </a>
                 
-                <i class="fa fa-fw fa-tags"></i>
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/archives" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-archive"></i>
+                            
+                            文章归档
+                        </a>
                 
-                文章标签
-            </a>
-        </li>
-        
-        <li>
-            <a href="/categories" class="waves-effect waves-light">
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/about" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-user-circle-o"></i>
+                            
+                            关于我
+                        </a>
                 
-                <i class="fa fa-fw fa-bookmark"></i>
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/friends" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-address-book"></i>
+                            
+                            友情链接
+                        </a>
                 
-                文章分类
-            </a>
-        </li>
-        
-        <li>
-            <a href="/archives" class="waves-effect waves-light">
+                </li>
+            
+            <li class="m-nav-item">
+                    
+                        <a href="/tools" class="waves-effect waves-light">
+                            
+                            <i class="fa fa-fw fa-cogs"></i>
+                            
+                            工具箱
+                        </a>
                 
-                <i class="fa fa-fw fa-archive"></i>
-                
-                文章归档
-            </a>
-        </li>
-        
-        <li>
-            <a href="/about" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-user-circle-o"></i>
-                
-                关于我
-            </a>
-        </li>
-        
-        <li>
-            <a href="/friends" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-address-book"></i>
-                
-                友情链接
-            </a>
-        </li>
-        
-        <li>
-            <a href="/tools" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-cogs"></i>
-                
-                工具箱
-            </a>
-        </li>
-        
-        
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/douyalzd" class="waves-effect waves-light" target="_blank">
-                <i class="fa fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
+                </li>
+            
+
+            
+            <li><div class="divider"></div></li>
+            <li>
+                <a href="https://github.com/douyalzd" class="waves-effect waves-light" target="_blank">
+                    <i class="fa fa-github-square fa-fw"></i>Fork Me
+                </a>
+            </li>
         
     </ul>
 
@@ -312,7 +363,7 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('http://qiniu.luzhidong.cn/medias/featureimages/12.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('http://qiniu.luzhidong.cn/static/images/cover/002.jpg')">
     <style type="text/css">
     #canvasBg {
         display: block;
@@ -716,7 +767,7 @@ start();
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        nodejs配置
+                        vsCode-PHP环境配置-windows
                     </div>
                 </div>
             </div>
@@ -832,8 +883,12 @@ start();
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/node/" target="_blank">
-                                <span class="chip bg-color">node</span>
+                            <a href="/tags/php/" target="_blank">
+                                <span class="chip bg-color">php</span>
+                            </a>
+                        
+                            <a href="/tags/vsCode/" target="_blank">
+                                <span class="chip bg-color">vsCode</span>
                             </a>
                         
                     </div>
@@ -844,8 +899,8 @@ start();
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/nodejs/" class="post-category" target="_blank">
-                                nodejs
+                            <a href="/categories/php/" class="post-category" target="_blank">
+                                php
                             </a>
                         
                     </div>
@@ -856,21 +911,21 @@ start();
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-05-12
+                    2020-05-22
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        189
+                        791
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        2 分
                     </div>
                     
                 
@@ -886,14 +941,88 @@ start();
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="node全局文件夹配置"><a href="#node全局文件夹配置" class="headerlink" title="node全局文件夹配置"></a>node全局文件夹配置</h2><p>我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【D:\Develop\nodejs】下创建两个文件夹【node_global】及【node_cache】</p>
-<p>创建完两个空文件夹之后，打开cmd命令窗口，输入</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token keyword">set</span> prefix D:\DevelopeTool\node-v8.11.3\node_global
-<span class="token function">npm</span> config <span class="token keyword">set</span> cache D:\DevelopeTool\node-v8.11.3\node_cache</code></pre>
-<p>接下来设置环境变量，关闭cmd窗口，“我的电脑”-右键-“属性”-“高级系统设置”-“高级”-“环境变量”</p>
-<p>进入环境变量对话框，在【系统变量】下新建【NODE_PATH】，<br>输入【D:\Develop\nodejs\node_global\node_modules】，<br>将【用户变量】下的【Path】修改为【D:\Develop\nodejs\node_global】</p>
-<p>淘宝 NPM 镜像</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g cnpm --registry<span class="token operator">=</span>https://registry.npm.taobao.org</code></pre>
+                <h2 id="安装Wampserver"><a href="#安装Wampserver" class="headerlink" title="安装Wampserver"></a>安装Wampserver</h2><ol>
+<li><p>Wampserver<a target="_blank" rel="noopener" href="https://sourceforge.net/projects/wampserver/">点击下载</a>集成了Apache、mysql、php(多个版本的)等环境  </p>
+<img src="http://qiniu.luzhidong.cn/static/images/016.jpg">
+</li>
+<li><p>安装Wampserver，直接下一步就可以了 </p>
+<img src="http://qiniu.luzhidong.cn/static/images/021.jpg">  
+<p>这里可以选择要安装的应用，下面的是我选择，因为我本地已经安装了mysql所以我没有勾选mysql，如果你没有安装的话建议你勾选上mysql5.7，然后直接下一步就可以了   </p>
+<img src="http://qiniu.luzhidong.cn/static/images/022.jpg">  
+
+
+</li>
+</ol>
+<ol start="3">
+<li><p>安装完成后，直接打开Wampserver, 任务栏的图标由红变绿说明已经启动成功，鼠标右键打开下图可以看到Apache启动的服务默认监听端口是80端口，如果你发现没启动成功很有可能就是你的电脑80端口已经被占用  </p>
+<img src="http://qiniu.luzhidong.cn/static/images/017.jpg">
+<p>浏览器直接输入localhost，看到下图说明已经安装并启动成功了  </p>
+<img src="http://qiniu.luzhidong.cn/static/images/020.jpg">
+</li>
+<li><p>如果你的端口被占用可以这样修改，指着Wampserver图标点击鼠标左键可以看到下图  </p>
+<img src="http://qiniu.luzhidong.cn/static/images/018.png">  
+<img src="http://qiniu.luzhidong.cn/static/images/019.jpg"></li>
+</ol>
+<p><strong>注：修改完后重新启动服务，浏览器打开localhost:8089看是否能访问</strong></p>
+<p>到这里Wampserver就安装完了</p>
+<h2 id="Wampserver配置PHP环境"><a href="#Wampserver配置PHP环境" class="headerlink" title="Wampserver配置PHP环境"></a>Wampserver配置PHP环境</h2><ol>
+<li>这里我用这个php项目做测试<a target="_blank" rel="noopener" href="https://github.com/crmeb/CRMEB">CRMEB</a>，我们先把项目clone下来，把项目复制复制到www目录<br>怎么知道www目录在哪呢，看下图直接点击就可以进入该目录  <img src="http://qiniu.luzhidong.cn/static/images/023.jpg">  
+
+</li>
+</ol>
+<p>复制的项目的目录结构如下  </p>
+<img src="http://qiniu.luzhidong.cn/static/images/024.jpg">  
+
+<p>到这里已经成功一半的，下一步吧Apache默认打开目录指定到这个项目目录 </p>
+<img src="http://qiniu.luzhidong.cn/static/images/025.jpg">  
+<p>点击上图指定的，打开文档把路径修改如下就可以了  <strong>注：修改完后要重启Apache服务才能生效</strong>  </p>
+<img src="http://qiniu.luzhidong.cn/static/images/026.jpg">  
+<p>我们打开浏览，输入localhost就可以看到我们项目的页面了  </p>
+<img src="http://qiniu.luzhidong.cn/static/images/027.jpg">  
+
+<h2 id="vscode调试PHP项目"><a href="#vscode调试PHP项目" class="headerlink" title="vscode调试PHP项目"></a>vscode调试PHP项目</h2><ol>
+<li><p>vscode打开刚才我复制到www目录的项目  </p>
+<img src="http://qiniu.luzhidong.cn/static/images/028.jpg">  
+</li>
+<li><p>vscode安装<code>PHP Debug</code>和<code>PHP IntelliSense</code>  </p>
+<img src="http://qiniu.luzhidong.cn/static/images/029.jpg">  
+<p>并给他们配置php安装路径</p>
+<img src="http://qiniu.luzhidong.cn/static/images/030.jpg">  
+</li>
+<li><p>然后我去看看Wampserver的想php-xdebug是否已经启用  </p>
+<img src="http://qiniu.luzhidong.cn/static/images/031.jpg">  
+<img src="http://qiniu.luzhidong.cn/static/images/032.jpg">  
+<img src="http://qiniu.luzhidong.cn/static/images/033.jpg">  
+<p>如果上面的几个勾是时好的，就没问题</p>
+</li>
+<li><p>回到我们的vscode，创建调试文件，如下图  </p>
+<img src="http://qiniu.luzhidong.cn/static/images/034.jpg">  
+<img src="http://qiniu.luzhidong.cn/static/images/035.jpg">  
+<p>上面可以不做任何改动，这里说下<code>&quot;port&quot;: 9000</code>参数，为什么是9000<br>我们去下面目录创建一个phpinfo文件，如下图：</p>
+<img src="http://qiniu.luzhidong.cn/static/images/036.jpg">  
+<p>然后在浏览器打开<code>localhost/phpInfo.php</code>找到<code>xdebug.remote_port</code><br>这里的数字和上面的创建调试文件对应就可以了  </p>
+<img src="http://qiniu.luzhidong.cn/static/images/037.jpg">  
+</li>
+<li><p>我这里用登录接口做调试，点击登录我的开发工具就可以捕获到断点了</p>
+<img src="http://qiniu.luzhidong.cn/static/images/038.jpg">  
+</li>
+<li><p>如果你的没有自动获取不到断点，那还需要改下Apache配置文件，点击打开下面文件，滚动条拉到最底部或者搜索【xdebug】</p>
+<img src="http://qiniu.luzhidong.cn/static/images/039.jpg">  
+<p>配置<code>xdebug.remote_autostart = On</code>  </p>
+<img src="http://qiniu.luzhidong.cn/static/images/040.jpg">  
+
+</li>
+</ol>
+<h2 id="Xdebug配置"><a href="#Xdebug配置" class="headerlink" title="Xdebug配置"></a>Xdebug配置</h2><blockquote>
+<p>如果Wampserve没有自带php-xdebug的话才需要进行改步骤   </p>
+</blockquote>
+<p>复制phpinfo整个网页内容,粘贴到<a target="_blank" rel="noopener" href="https://xdebug.org/wizard">https://xdebug.org/wizard</a>确定Xdebug版本  </p>
+<img src="http://qiniu.luzhidong.cn/static/images/041.jpg">  
+<p>点击按钮生成PHP版本对应的XDebug安装文件和说明  </p>
+<img src="http://qiniu.luzhidong.cn/static/images/042.jpg">  
+<img src="http://qiniu.luzhidong.cn/static/images/043.jpg">  
+<p>相信你能懂上面说的，去配置下就可以了，然后检查xdebug是否安装成，怎么检查上面已经有说到  </p>
+<p><strong>有其他问题可以在下面留言，看到了我会回复你的</strong></p>
 
             </div>
             <hr/>
@@ -915,9 +1044,9 @@ start();
                     <span class="reprint-tip">
                         <i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;转载请注明:
                     </span>
-                    <a href="https://luzhidong.cn" class="b-link-green">前端豆芽</a>
+                    <a href="http://luzhidong.cn" class="b-link-green">前端豆芽</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/05/12/nodejspeizhi/" class="b-link-green">nodejs配置</a>
+                    <a href="/2020/05/22/vscodephphuanjingpeizhiwindows.html" class="b-link-green">vsCode-PHP环境配置-windows</a>
                 </p>
             </div>
         </div>
@@ -1201,29 +1330,37 @@ start();
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/05/22/vuezidingyiguoluqihezhiling/">
+                <a href="/2020/12/16/huishenghuiyingsucaifenxiang.html">
                     <div class="card-image">
                         
+                        <img src="http://qiniu.luzhidong.cn/static/images/044.png" class="responsive-img" alt="绘声绘影素材分享">
                         
-                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/17.jpg" class="responsive-img" alt="VUE自定义过滤器和指令">
-                        
-                        <span class="card-title">VUE自定义过滤器和指令</span>
+                        <span class="card-title">绘声绘影素材分享</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">自定义过滤器（filters）1、过滤器可以串联：
-{{ message | filterA | filterB }}
-在这个例子中，filterA被定义为接收单个参数的过滤器函数，表达式message的值将作为参数传入到函数中。然后继续调</div>
+                    <div class="summary">大概文件目录多年收集的绘声绘影素材集合，分享给有需要的你
+素材集合1
+
+素材集合2
+
+素材集合3
+
+素材集合4
+
+下载地址链接:https://pan.baidu.com/s/11sUw2uCjpo4O27AYjr3P3A 
+
+  提取码6</div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-22
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-12-16
                         </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/VUE/" class="post-category" target="_blank">
-                                    VUE
+                            <a href="/categories/%E7%BB%98%E5%A3%B0%E7%BB%98%E5%BD%B1/" class="post-category" target="_blank">
+                                    绘声绘影
                                 </a>
                             
                             
@@ -1233,8 +1370,8 @@ start();
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/vue/" target="_blank">
-                        <span class="chip bg-color">vue</span>
+                    <a href="/tags/%E7%BB%98%E5%A3%B0%E7%BB%98%E5%BD%B1/" target="_blank">
+                        <span class="chip bg-color">绘声绘影</span>
                     </a>
                     
                 </div>
@@ -1248,30 +1385,45 @@ start();
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/05/12/linuxchangyongmingling/">
+                <a href="/2020/05/20/qianduanchajianjiheshoucang.html">
                     <div class="card-image">
                         
                         
-                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/11.jpg" class="responsive-img" alt="Linux常用命令">
+                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/1.jpg" class="responsive-img" alt="前端插件集合收藏">
                         
-                        <span class="card-title">Linux常用命令</span>
+                        <span class="card-title">前端插件集合收藏</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">修改文件读写权限r： 4（读权限）w： 2（写权限）x： 1（执行权限）chmod 777 文件名
-修改文件用户权限chown -R 用户 文件名称
-修改文件用户组chogrp -R 组名 文件名
-服务管理systemctl 操作名（sto</div>
+                    <div class="summary">vue图片剪栽组件
+
+Web酷炫特效
+
+Web酷炫特效2
+
+15个vue开发必不可少的指令
+
+数字之间的动画切换动效
+
+功能十分强大打字机插件
+
+按钮点击效果样式集合
+
+视频播放插件
+
+数字键盘
+
+Vue DEMO利器, 在线运行 &amp</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-12
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-20
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Linux/" class="post-category" target="_blank">
-                                    Linux
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category" target="_blank">
+                                    前端
                                 </a>
                             
                             
@@ -1281,8 +1433,8 @@ start();
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Linux/" target="_blank">
-                        <span class="chip bg-color">Linux</span>
+                    <a href="/tags/tool/" target="_blank">
+                        <span class="chip bg-color">tool</span>
                     </a>
                     
                 </div>
