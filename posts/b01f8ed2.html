@@ -4,25 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="前端-JS规范, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
-    <meta name="description" content="命名
-变量
-
-命名方式：小驼峰
-
-命名规范：前缀名词
-
-命名建议：语义化
-
-
-
-
-// bad
-let setCount = 10;
-let getTitle = &#34;loginTable&#34;;
-
-// good
-let maxCount = ">
+    <meta name="keywords" content="nodejs配置, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
+    <meta name="description" content="node全局文件夹配置我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【D:\Develop\nodejs】下创建两个文件夹【node_global】及【node_cache】
+创建完两个空文件夹之后，">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -30,7 +14,7 @@ let maxCount = ">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>前端-JS规范 | 前端豆芽</title>
+    <title>nodejs配置 | 前端豆芽</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -374,7 +358,7 @@ let maxCount = ">
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('http://qiniu.luzhidong.cn/medias/featureimages/19.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('http://qiniu.luzhidong.cn/medias/featureimages/12.jpg')">
     <style type="text/css">
     #canvasBg {
         display: block;
@@ -778,7 +762,7 @@ start();
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        前端-JS规范
+                        nodejs配置
                     </div>
                 </div>
             </div>
@@ -894,12 +878,8 @@ start();
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%89%8D%E7%AB%AF/" target="_blank">
-                                <span class="chip bg-color">前端</span>
-                            </a>
-                        
-                            <a href="/tags/JS/" target="_blank">
-                                <span class="chip bg-color">JS</span>
+                            <a href="/tags/node/" target="_blank">
+                                <span class="chip bg-color">node</span>
                             </a>
                         
                     </div>
@@ -910,8 +890,8 @@ start();
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category" target="_blank">
-                                前端
+                            <a href="/categories/nodejs/" class="post-category" target="_blank">
+                                nodejs
                             </a>
                         
                     </div>
@@ -922,21 +902,21 @@ start();
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-02-15
+                    2019-05-12
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        1.5k
+                        189
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        6 分
+                        1 分
                     </div>
                     
                 
@@ -952,377 +932,14 @@ start();
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="命名"><a href="#命名" class="headerlink" title="命名"></a>命名</h2><ul>
-<li><p>变量</p>
-<ul>
-<li><p>命名方式：小驼峰</p>
-</li>
-<li><p>命名规范：前缀名词</p>
-</li>
-<li><p>命名建议：语义化</p>
-</li>
-</ul>
-</li>
-</ul>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// bad</span>
-<span class="token keyword">let</span> setCount <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
-<span class="token keyword">let</span> getTitle <span class="token operator">=</span> <span class="token string">"loginTable"</span><span class="token punctuation">;</span>
-
-<span class="token comment" spellcheck="true">// good</span>
-<span class="token keyword">let</span> maxCount <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
-<span class="token keyword">let</span> tableTitle <span class="token operator">=</span> <span class="token string">"loginTable"</span></code></pre>
-<ul>
-<li><p>常量</p>
-<ul>
-<li>常量全大写，用下划线连接</li>
-</ul>
-</li>
-</ul>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">const</span> MAX_COUNT <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span></code></pre>
-<ul>
-<li><p>函数</p>
-<ul>
-<li><p>命名方式：小驼峰式命名法。</p>
-</li>
-<li><p>命名规范：前缀应当为动词。</p>
-</li>
-<li><p>命名建议：语义化</p>
-</li>
-</ul>
-</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>动词</th>
-<th>含义</th>
-<th>返回值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>can</td>
-<td>判断是否可执行某个动作（权限）</td>
-<td>函数返回一个布尔值。 true: 可执行， false: 不可执行</td>
-</tr>
-<tr>
-<td>has</td>
-<td>判断是否含有某个词</td>
-<td>函数返回一个布尔值。 true: 含有此值， false: 不含有此值</td>
-</tr>
-<tr>
-<td>is</td>
-<td>判断是否为某个词</td>
-<td>函数返回一个布尔值。 true: 为此值， false: 不为此值</td>
-</tr>
-<tr>
-<td>get</td>
-<td>获取某个词</td>
-<td>函数返回一个非布尔值</td>
-</tr>
-<tr>
-<td>set</td>
-<td>设置某个词</td>
-<td>无返回值，返回是否设置或返回链式对象</td>
-</tr>
-<tr>
-<td>load</td>
-<td>加载某些数据</td>
-<td>无返回值或返回是否加载完成的结果</td>
-</tr>
-</tbody></table>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// 是否可阅读</span>
-<span class="token keyword">function</span> <span class="token function">canRead</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token comment" spellcheck="true">// 获取名称</span>
-<span class="token keyword">function</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<ul>
-<li><p>类 / 构造函数</p>
-<ul>
-<li><p>命名方式：大驼峰式命名法（每个单词首字母大写），首字母大写</p>
-</li>
-<li><p>命名规范：前缀为名称。</p>
-</li>
-<li><p>命名建议：语义化</p>
-</li>
-</ul>
-</li>
-</ul>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
-    <span class="token keyword">public</span> name<span class="token punctuation">:</span> string<span class="token punctuation">;</span>
-    <span class="token function">constructor</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">const</span> person <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">'mevyn'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<ul>
-<li>类的成员</li>
-</ul>
-<p>类的成员包含：<br>    * 公共属性和方法：跟变量和函数的命名一样。<br>    * 私有属性和方法：前缀为_(下划线)，后面跟公共属性和方法一样的命名方式。</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
-    <span class="token keyword">private</span> _name<span class="token punctuation">:</span> string<span class="token punctuation">;</span>
-    <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
-
-    <span class="token comment" spellcheck="true">// 公共方法</span>
-    <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_name<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token comment" spellcheck="true">// 公共方法</span>
-    <span class="token function">setName</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>_name <span class="token operator">=</span> name<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">const</span> person <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-person<span class="token punctuation">.</span><span class="token function">setName</span><span class="token punctuation">(</span><span class="token string">'mervyn'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-person<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// ->mervyn</span></code></pre>
-<ul>
-<li><p>jquery 对象</p>
-<ul>
-<li>jquery 对象必须以 <code>$</code> 开头命名</li>
-</ul>
-</li>
-</ul>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> $body <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h2 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h2><ul>
-<li><p>模块应该以 ! 开始。这样确保了当一个不好的模块忘记包含最后的分号时，在合并代码到生产环境后不会产生错误。详细说明</p>
-</li>
-<li><p>文件应该以驼峰式命名，并放在同名的文件夹里，且与导出的名字一致。</p>
-</li>
-<li><p>增加一个名为 noConflict() 的方法来设置导出的模块为前一个版本并返回它。</p>
-</li>
-<li><p>永远在模块顶部声明 ‘use strict’;。</p>
-</li>
-</ul>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// fancyInput/fancyInput.js</span>
-
-<span class="token operator">!</span><span class="token keyword">function</span> <span class="token punctuation">(</span>global<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token string">'use strict'</span><span class="token punctuation">;</span>
-
-    <span class="token keyword">var</span> previousFancyInput <span class="token operator">=</span> global<span class="token punctuation">.</span>FancyInput<span class="token punctuation">;</span>
-
-    <span class="token keyword">function</span> <span class="token function">FancyInput</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>options <span class="token operator">=</span> options <span class="token operator">||</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    FancyInput<span class="token punctuation">.</span>noConflict <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">noConflict</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        global<span class="token punctuation">.</span>FancyInput <span class="token operator">=</span> previousFancyInput<span class="token punctuation">;</span>
-        <span class="token keyword">return</span> FancyInput<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">;</span>
-
-    global<span class="token punctuation">.</span>FancyInput <span class="token operator">=</span> FancyInput<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<ul>
-<li>构造函数<ul>
-<li>给对象原型分配方法，而不是使用一个新对象覆盖原型。覆盖原型将导致继承出现问题：重设原型将覆盖原有原型！</li>
-</ul>
-</li>
-</ul>
-<pre class=" language-javascript"><code class="language-javascript">    <span class="token keyword">function</span> <span class="token function">Jedi</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'new jedi'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token comment" spellcheck="true">// bad</span>
-    Jedi<span class="token punctuation">.</span>prototype <span class="token operator">=</span> <span class="token punctuation">{</span>
-        fight<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token function">fight</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'fighting'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-
-        block<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token function">block</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'blocking'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span><span class="token punctuation">;</span>
-
-    <span class="token comment" spellcheck="true">// good</span>
-    Jedi<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>fight <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">fight</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'fighting'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">;</span>
-
-    Jedi<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>block <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">block</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'blocking'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
-<p>方法可以返回 this 来实现方法链式使用。</p>
-<pre class=" language-javascript"><code class="language-javascript">    <span class="token comment" spellcheck="true">// bad</span>
-    Jedi<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>jump <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">jump</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>jumping <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">;</span>
-
-    Jedi<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>setHeight <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">setHeight</span><span class="token punctuation">(</span>height<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>height <span class="token operator">=</span> height<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">;</span>
-
-    <span class="token keyword">var</span> luke <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Jedi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    luke<span class="token punctuation">.</span><span class="token function">jump</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// => true</span>
-    luke<span class="token punctuation">.</span><span class="token function">setHeight</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// => undefined</span>
-
-    <span class="token comment" spellcheck="true">// good</span>
-    Jedi<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>jump <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">jump</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>jumping <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">;</span>
-
-    Jedi<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>setHeight <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">setHeight</span><span class="token punctuation">(</span>height<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>height <span class="token operator">=</span> height<span class="token punctuation">;</span>
-        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">;</span>
-
-    <span class="token keyword">var</span> luke <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Jedi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    luke<span class="token punctuation">.</span><span class="token function">jump</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setHeight</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h2 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h2><ul>
-<li><p>使用 <code>4</code> 个空格做为一个缩进层级，不允许使用 <code>2</code> 个空格 或 <code>tab</code> 字符</p>
-</li>
-<li><p><code>switch</code> 下的 <code>case</code> 和 <code>default</code> 必须增加一个缩进层级</p>
-</li>
-</ul>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">switch</span> <span class="token punctuation">(</span>variable<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">case</span> <span class="token number">1</span><span class="token punctuation">:</span>
-        <span class="token keyword">break</span><span class="token punctuation">;</span>
-    <span class="token keyword">default</span><span class="token punctuation">:</span>
-        <span class="token keyword">break</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<ul>
-<li>对象以缩进的形式书写，不要写在一行</li>
-</ul>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// better</span>
-<span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
-    a<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
-    b<span class="token punctuation">:</span> <span class="token number">2</span>
-<span class="token punctuation">}</span>
-
-<span class="token comment" spellcheck="true">// bad</span>
-<span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span> a<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> b<span class="token punctuation">:</span> <span class="token number">2</span> <span class="token punctuation">}</span></code></pre>
-<h2 id="分号"><a href="#分号" class="headerlink" title="分号"></a>分号</h2><p>任何语句结尾都需要加分号 <code>;</code></p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">do</span> <span class="token punctuation">{</span>
-    x<span class="token operator">++</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span> <span class="token keyword">while</span> <span class="token punctuation">(</span>x <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h2 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h2><ul>
-<li><p>二元运算符两侧必须有一个空格，一元运算符与操作对象之间不允许有空格</p>
-</li>
-<li><p>用作代码块起始的左花括号 <code>&#123;</code> 前必须有一个空格</p>
-</li>
-<li><p><code>if / else / for / while / function / switch / do / try / catch / finally</code> 等关键字后，必须有一个空格</p>
-</li>
-<li><p>在非三目运算符中，<code>:</code> 之后必须有空格，之前不允许有空格</p>
-</li>
-<li><p><code>,</code> 和 <code>;</code> 之前不允许有空格，之后必须有空格</p>
-</li>
-<li><p>函数名和 <code>(</code> 之间不允许有空格</p>
-</li>
-<li><p>单行注释 <code>//</code> 后需要空格（若单行注释和代码同行，则 <code>//</code> 前也需要）</p>
-</li>
-<li><p>行尾不得有多余的空格</p>
-</li>
-</ul>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> len <span class="token operator">=</span> <span class="token operator">!</span>arr<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
-<span class="token keyword">if</span> <span class="token punctuation">(</span>len<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token function">Demo</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-
-<span class="token comment" spellcheck="true">// 函数</span>
-<span class="token keyword">function</span> <span class="token function">Demo</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// 对象</span>
-        a<span class="token punctuation">:</span> <span class="token number">1</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre>
-<h2 id="空行"><a href="#空行" class="headerlink" title="空行"></a>空行</h2><ul>
-<li>代码块注释前与代码块后保留一个空行</li>
-</ul>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-
-<span class="token comment" spellcheck="true">// 注释</span>
-<span class="token keyword">if</span> <span class="token punctuation">(</span>a <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-
-a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span></code></pre>
-<h2 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h2><ul>
-<li><p>每个语句必须另起一行</p>
-</li>
-<li><p>变量赋值后需要换行</p>
-</li>
-<li><p>左大括号 <code>&#123;</code> 后需要换行，右大括号 <code>&#125;</code> 前需要换行</p>
-</li>
-</ul>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> a<span class="token punctuation">,</span> b<span class="token punctuation">,</span>
-    c <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-<span class="token keyword">if</span> <span class="token punctuation">(</span>c<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><ul>
-<li><p>单行注释使用 <code>//</code>，多行注释使用 <code>/* */</code></p>
-</li>
-<li><p>缩进与下一行代码保持一致</p>
-</li>
-<li><p>文档 / 接口注释使用以下写法</p>
-</li>
-</ul>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">/**
- * 文档描述
- * @author 作者
- * @date 创建时间
- * @update 更新者 更新时间
- */</span>
-
-<span class="token comment" spellcheck="true">/**
- * 接口描述
- * @param {String} title - 弹窗标题内容
- * @param {String} cancelBtnText = '默认值' - 取消按钮文本
- * @param {object} obj - 参数 obj 为一个对象
- * @param {String} obj.str - 参数 obj 的 str 属性
- */</span>
-<span class="token keyword">function</span> <span class="token punctuation">(</span>title<span class="token punctuation">,</span> cancelBtnText<span class="token punctuation">,</span> obj<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-<span class="token punctuation">}</span></code></pre>
-<h2 id="引号"><a href="#引号" class="headerlink" title="引号"></a>引号</h2><p>最外层统一使用单引号 <code>&#39;&#39;</code></p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> str <span class="token operator">=</span> <span class="token string">'&lt;div id="test">&lt;/div>'</span><span class="token punctuation">;</span></code></pre>
-<h2 id="变量声明"><a href="#变量声明" class="headerlink" title="变量声明"></a>变量声明</h2><ul>
-<li><p>变量在使用前必须通过 <code>var / let / const</code> 定义</p>
-</li>
-<li><p>不要使用未声明的变量，也不要先使用后声明</p>
-</li>
-</ul>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> name <span class="token operator">=</span> <span class="token string">'MyName'</span><span class="token punctuation">;</span></code></pre>
-<h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><p>对象属性名不需要加引号，有特殊字符除外</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
-    name<span class="token punctuation">:</span> <span class="token string">'test'</span><span class="token punctuation">,</span>
-    age<span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
-    <span class="token string">'max-weight'</span><span class="token punctuation">:</span> <span class="token number">60</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
-<h2 id="大括号"><a href="#大括号" class="headerlink" title="大括号"></a>大括号</h2><p><code>if / else / for / while / do / switch / try / catch</code> 等关键字后必须有大括号（即使代码块的内容只有一行）</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<h2 id="undefined"><a href="#undefined" class="headerlink" title="undefined"></a>undefined</h2><ul>
-<li><p>永远不要直接使用undefined进行变量判断</p>
-</li>
-<li><p>使用 typeof 和字符串 <code>&#39;undefined&#39;</code> 对变量进行判断</p>
-</li>
-</ul>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// good</span>
-<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> person <span class="token operator">===</span> <span class="token string">'undefined'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-
-<span class="token comment" spellcheck="true">// bad</span>
-<span class="token keyword">if</span> <span class="token punctuation">(</span>person <span class="token operator">===</span> undefined<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
-<li><p>用 <code>===</code>, <code>!==</code> 代替 <code>==</code>, <code>!=</code></p>
-</li>
-<li><p>debugger 不要出现在生产环境的代码里</p>
-</li>
-<li><p>不要在循环内部声明函数</p>
-</li>
-<li><p>不允许有空的代码块</p>
-</li>
-<li><p>注释的大段代码 不需要的删除；如果需要请注释说明</p>
-</li>
-</ul>
-<h2 id="推荐文章"><a href="#推荐文章" class="headerlink" title="推荐文章"></a>推荐文章</h2><p>1、<a target="_blank" rel="noopener" href="https://guide.aotu.io/docs/">凹凸使用实验室的前端开发规范</a><br>2、<a target="_blank" rel="noopener" href="https://github.com/hardylinfee/styleguide">hardylinfee前端开发规范</a></p>
+                <h2 id="node全局文件夹配置"><a href="#node全局文件夹配置" class="headerlink" title="node全局文件夹配置"></a>node全局文件夹配置</h2><p>我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【D:\Develop\nodejs】下创建两个文件夹【node_global】及【node_cache】</p>
+<p>创建完两个空文件夹之后，打开cmd命令窗口，输入</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token keyword">set</span> prefix D:\DevelopeTool\node-v8.11.3\node_global
+<span class="token function">npm</span> config <span class="token keyword">set</span> cache D:\DevelopeTool\node-v8.11.3\node_cache</code></pre>
+<p>接下来设置环境变量，关闭cmd窗口，“我的电脑”-右键-“属性”-“高级系统设置”-“高级”-“环境变量”</p>
+<p>进入环境变量对话框，在【系统变量】下新建【NODE_PATH】，<br>输入【D:\Develop\nodejs\node_global\node_modules】，<br>将【用户变量】下的【Path】修改为【D:\Develop\nodejs\node_global】</p>
+<p>淘宝 NPM 镜像</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g cnpm --registry<span class="token operator">=</span>https://registry.npm.taobao.org</code></pre>
 
             </div>
             <hr/>
@@ -1346,7 +963,7 @@ a <span class="token operator">=</span> <span class="token number">2</span><span
                     </span>
                     <a href="http://luzhidong.cn" class="b-link-green">前端豆芽</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/02/15/qianduanjsguifan.html" class="b-link-green">前端-JS规范</a>
+                    <a href="/posts/b01f8ed2.html" class="b-link-green">nodejs配置</a>
                 </p>
             </div>
         </div>
@@ -1630,27 +1247,29 @@ a <span class="token operator">=</span> <span class="token number">2</span><span
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/02/15/qianduanvueguifan.html">
+                <a href="/posts/a6e58f56.html">
                     <div class="card-image">
                         
                         
-                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/6.jpg" class="responsive-img" alt="前端-VUE规范">
+                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/17.jpg" class="responsive-img" alt="VUE自定义过滤器和指令">
                         
-                        <span class="card-title">前端-VUE规范</span>
+                        <span class="card-title">VUE自定义过滤器和指令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">命名分类camelCase（驼峰式，也叫小驼峰命名，e.g. userInfo）PascalCase（帕斯卡命名式，也叫大驼峰命名，e.g. UserInfo）kebab-case（短横线连接式，e.g. user-info）snake_c</div>
+                    <div class="summary">自定义过滤器（filters）1、过滤器可以串联：
+{{ message | filterA | filterB }}
+在这个例子中，filterA被定义为接收单个参数的过滤器函数，表达式message的值将作为参数传入到函数中。然后继续调</div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-15
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-22
                         </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category" target="_blank">
-                                    前端
+                            <a href="/categories/VUE/" class="post-category" target="_blank">
+                                    VUE
                                 </a>
                             
                             
@@ -1660,12 +1279,8 @@ a <span class="token operator">=</span> <span class="token number">2</span><span
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%89%8D%E7%AB%AF/" target="_blank">
-                        <span class="chip bg-color">前端</span>
-                    </a>
-                    
-                    <a href="/tags/VUE/" target="_blank">
-                        <span class="chip bg-color">VUE</span>
+                    <a href="/tags/vue/" target="_blank">
+                        <span class="chip bg-color">vue</span>
                     </a>
                     
                 </div>
@@ -1679,34 +1294,30 @@ a <span class="token operator">=</span> <span class="token number">2</span><span
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/02/15/qianduanhtmlguifan.html">
+                <a href="/posts/d0edc1ed.html">
                     <div class="card-image">
                         
                         
-                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/11.jpg" class="responsive-img" alt="前端-HTML规范">
+                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/11.jpg" class="responsive-img" alt="Linux常用命令">
                         
-                        <span class="card-title">前端-HTML规范</span>
+                        <span class="card-title">Linux常用命令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">class、id命名规则
-class 不能使用驼峰 使用(烤串写法) 例子：class=”login-dialog”  class=”login-form-dialog”  
-
-命名建议：页面-属性-功能
-公用类 修饰符-功能
-
-
-id 一</div>
+                    <div class="summary">修改文件读写权限r： 4（读权限）w： 2（写权限）x： 1（执行权限）chmod 777 文件名
+修改文件用户权限chown -R 用户 文件名称
+修改文件用户组chogrp -R 组名 文件名
+服务管理systemctl 操作名（sto</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-15
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-12
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category" target="_blank">
-                                    前端
+                            <a href="/categories/Linux/" class="post-category" target="_blank">
+                                    Linux
                                 </a>
                             
                             
@@ -1716,12 +1327,8 @@ id 一</div>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%89%8D%E7%AB%AF/" target="_blank">
-                        <span class="chip bg-color">前端</span>
-                    </a>
-                    
-                    <a href="/tags/HTML/" target="_blank">
-                        <span class="chip bg-color">HTML</span>
+                    <a href="/tags/Linux/" target="_blank">
+                        <span class="chip bg-color">Linux</span>
                     </a>
                     
                 </div>

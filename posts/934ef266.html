@@ -4,8 +4,15 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="微信视频全屏方案, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
-    <meta name="description" content="微信视频播放全屏问题   在ios和安卓手机里的微信下播放视频时，会遇到不少问题，例如需要手动点击，视频才会播放，并且视频会跳出微信框，出现控制条，如果视频不是腾讯视频，播放完毕会出现腾讯视频的广告推送，今天我们就来看一下如何规避这些问题。">
+    <meta name="keywords" content="前端-HTML规范, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
+    <meta name="description" content="class、id命名规则
+class 不能使用驼峰 使用(烤串写法) 例子：class=”login-dialog”  class=”login-form-dialog”  
+
+命名建议：页面-属性-功能
+公用类 修饰符-功能
+
+
+id 一">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +20,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>微信视频全屏方案 | 前端豆芽</title>
+    <title>前端-HTML规范 | 前端豆芽</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -357,7 +364,7 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('http://qiniu.luzhidong.cn/medias/featureimages/20.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('http://qiniu.luzhidong.cn/medias/featureimages/11.jpg')">
     <style type="text/css">
     #canvasBg {
         display: block;
@@ -761,7 +768,7 @@ start();
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        微信视频全屏方案
+                        前端-HTML规范
                     </div>
                 </div>
             </div>
@@ -877,8 +884,12 @@ start();
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7/" target="_blank">
-                                <span class="chip bg-color">微信公众号</span>
+                            <a href="/tags/%E5%89%8D%E7%AB%AF/" target="_blank">
+                                <span class="chip bg-color">前端</span>
+                            </a>
+                        
+                            <a href="/tags/HTML/" target="_blank">
+                                <span class="chip bg-color">HTML</span>
                             </a>
                         
                     </div>
@@ -889,8 +900,8 @@ start();
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%BE%AE%E4%BF%A1/" class="post-category" target="_blank">
-                                微信
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category" target="_blank">
+                                前端
                             </a>
                         
                     </div>
@@ -901,21 +912,21 @@ start();
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-06-29
+                    2019-02-15
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        1.2k
+                        850
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        4 分
+                        3 分
                     </div>
                     
                 
@@ -931,42 +942,107 @@ start();
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="微信视频播放全屏问题"><a href="#微信视频播放全屏问题" class="headerlink" title="微信视频播放全屏问题"></a>微信视频播放全屏问题</h2><p>   在ios和安卓手机里的微信下播放视频时，会遇到不少问题，例如需要手动点击，视频才会播放，并且视频会跳出微信框，出现控制条，如果视频不是腾讯视频，播放完毕会出现腾讯视频的广告推送，今天我们就来看一下如何规避这些问题。</p>
-<p>解决办法：给video标签加一些属性，调用h5原生video。<br>下面是我写的一个小例子的html核心部分：</p>
-<pre class=" language-html"><code class="language-html">&lt;video
-  id="videoALL" 
-  src="video/01.mp4" 
-  poster="images/1.jpg" /*视频封面*/
-  preload="auto" 
-  webkit-playsinline="true" /*这个属性是ios 10中设置可以让视频在小窗内播放，也就是不是全屏播放*/  
-  playsinline="true"  /*IOS微信浏览器支持小窗内播放*/ 
-  x-webkit-airplay="allow" 
-  x5-video-player-type="h5"  /*启用H5播放器,是wechat安卓版特性*/
-  x5-video-player-fullscreen="true" /*全屏设置，设置为 true 是防止横屏*/
-  x5-video-orientation="portraint" /*播放器支付的方向，andscape横屏，portraint竖屏，默认值为竖屏*/
-  style="object-fit:fill">
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>video</span><span class="token punctuation">></span></span></code></pre>
-<p>下面我们来看看这些属性的作用：</p>
+                <h2 id="class、id命名规则"><a href="#class、id命名规则" class="headerlink" title="class、id命名规则"></a>class、id命名规则</h2><ul>
+<li><p>class 不能使用驼峰 使用(烤串写法) 例子：class=”login-dialog”  class=”login-form-dialog”  </p>
 <ul>
-<li><p>poster=”images/1.jpg”:属性规定视频下载时显示的图像，或者在用户点击播放按钮前显示的图像。如果未设置该属性，则使用视频的第一帧来代替。</p>
+<li>命名建议：页面-属性-功能</li>
+<li>公用类 修饰符-功能</li>
+</ul>
 </li>
-<li><p>preload=”auto” ：属性规定在页面加载后载入视频。</p>
-</li>
-<li><p>webkit-playsinline和playsinline：视频播放时局域播放，不脱离文档流 。但是这个属性比较特别， 需要嵌入网页的APP比如WeChat中UIwebview 的allowsInlineMediaPlayback = YES webview.allowsInlineMediaPlayback = YES，才能生效。换句话说，如果APP不设置，你页面中加了这标签也无效，这也就是为什么安卓手机WeChat 播放视频总是全屏，因为APP不支持playsinline，而ISO的WeChat却支持。</p>
-</li>
-<li><p>这里就要补充下，如果是想做全屏直播或者全屏H5体验的用户，ISO需要设置删除 webkit-playsinline 标签，因为你设置 false 是不支持的 ，安卓则不需要，因为默认全屏。但这时候全屏是有播放控件的，无论你有没有设置control。 做直播的可能用得着播放控件，但是全屏H5是不需要的，那么去除全屏播放时候的控件，需要以下设置：同层播放。</p>
-</li>
-<li><p>x-webkit-airplay=”allow”暂时无法确切的知道其作用，但是小编猜测，这个属性应该是使此视频支持ios的AirPlay功能。使用AirPlay可以直接从使用iOS的设备上的不同位置播放视频、音乐还有照片文件，也就是说通过AirPlay功能可以实现影音文件的无线播放，当然前提是播放的终端设备也要支持相应的功能。</p>
-</li>
-<li><p>x5-video-player-type：启用同层H5播放器，就是在视频全屏的时候，div可以呈现在视频层上，也是WeChat安卓版特有的属性。同层播放别名也叫做沉浸式播放，播放的时候看似全屏，但是已经除去了control和微信的导航栏，只留下”X”和”&lt;”两键。目前的同层播放器只在Android（包括微信）上生效，暂时不支持iOS。至于为什么同层播放只对安卓开放，是因为安卓不能像ISO一样局域播放，默认的全屏会使得一些界面操作被阻拦，如果是全屏H5还好，但是做直播的话，诸如弹幕那样的功能就无法实现了，所以这时候同层播放的概念就解决了这个问题。不过在测试的过程中发现，不同版本的ISO和安卓效果略有不同。</p>
-</li>
-<li><p>x5-video-orientation：声明播放器支持的方向，可选值landscape 横屏, portraint竖屏。默认值portraint。无论是直播还是全屏H5一般都是竖屏播放，但是这个属性需要x5-video-player-type开启H5模式</p>
-</li>
-<li><p>x5­-video­-player­-fullscreen：全屏设置。它又两个属性值，ture和false，true支持全屏播放，false不支持全屏播放。<br>其实，ISO 微信浏览器是Chrome的内核，相关的属性都支持，也是为什么X5同层播放不支持的原因。安卓微信浏览器是X5内核，一些属性标签比如playsinline就不支持，所以始终全屏。</p>
-</li>
-<li><p>还有个问题，在Android的微信里面，就算加上了上面的属性，还会出现上下有黑边，不能全屏的问题。<br>解决办法：给video加上object-fit: fill;的style属性。如果还是有黑边有可能是视频尺寸不合适。</p>
+<li><p>id 一般参与样式，命名的话使用驼峰。</p>
 </li>
 </ul>
+<h2 id="标签使用"><a href="#标签使用" class="headerlink" title="标签使用"></a>标签使用</h2><ul>
+<li>内联元素内不能有块级元素</li>
+<li>标签里面的样式超过2个需要提出来</li>
+</ul>
+<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><ul>
+<li><p>使用 <code>4</code> 个空格做为一个缩进层级，不允许使用 <code>2</code></p>
+</li>
+<li><p>在属性上，使用双引号 <code>&quot;&quot;</code>，不要使用单引号 <code>&#39;&#39;</code></p>
+</li>
+<li><p>属性名 / 属性值全小写，用中划线 <code>-</code> 做分隔符</p>
+</li>
+<li><p>不要忽略可选的关闭标签，例：<code>&lt;/li&gt;</code> 和 <code>&lt;/body&gt;</code></p>
+</li>
+</ul>
+<pre class=" language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- good --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>logo.png<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>logo<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>first-child<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>first<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">data-index</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>second<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span></code></pre>
+<h2 id="HTML5-doctype"><a href="#HTML5-doctype" class="headerlink" title="HTML5 doctype"></a>HTML5 doctype</h2><p>在页面开头使用这个简单的 doctype 来启用标准模式，使其在每个浏览器中尽可能一致的展现</p>
+<p>虽然 doctype 不区分大小写，但是按照惯例，doctype 使用全大写</p>
+<pre class=" language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- good --></span>
+<span class="token doctype">&lt;!DOCTYPE html></span></code></pre>
+<h2 id="lang-属性"><a href="#lang-属性" class="headerlink" title="lang 属性"></a>lang 属性</h2><p>根据HTML5规范：</p>
+<blockquote>
+<p>应在 html 标签上加上 lang 属性。这会给语音工具和翻译工具帮助，告诉它们应当怎么去发音和翻译。</p>
+</blockquote>
+<p>在 sitepoint 上可以查到 <a target="_blank" rel="noopener" href="https://www.sitepoint.com/web-foundations/iso-2-letter-language-codes/">语言列表</a></p>
+<p>但 sitepoint 只是给出了语言的大类，例如中文只给出了 zh，但是没有区分香港，台湾，大陆。而微软给出了一份更加详细的 <a target="_blank" rel="noopener" href="https://msdn.microsoft.com/en-us/library/ms533052(v=vs.85).aspx">语言列表</a>，其中细分了 zh-cn, zh-hk, zh-tw</p>
+<pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>zh-cn<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
+<h2 id="字符编码"><a href="#字符编码" class="headerlink" title="字符编码"></a>字符编码</h2><p>通过声明一个明确的字符编码，让浏览器轻松、快速的确定适合网页内容的渲染方式，通常指定为 “utf-8”</p>
+<pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
+<h2 id="IE-兼容模式"><a href="#IE-兼容模式" class="headerlink" title="IE 兼容模式"></a>IE 兼容模式</h2><p>用 <code>&lt;meta&gt;</code> 标签可以指定页面应该用什么版本的 IE 来渲染，PC 端项目，建议启用 IE Edge 模式</p>
+<pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+        <span class="token comment" spellcheck="true">&lt;!-- 极速模式 --></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>renderer<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>webkit<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+        <span class="token comment" spellcheck="true">&lt;!-- IE兼容 --></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>X-UA-Compatible<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>IE<span class="token punctuation">=</span>Edge<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
+<h2 id="引入-CSS、JS"><a href="#引入-CSS、JS" class="headerlink" title="引入 CSS、JS"></a>引入 CSS、JS</h2><ul>
+<li><p>根据 HTML5 规范, 通常在引入 CSS 和 JS 时不需要指明 <code>type</code>，因为 <code>text/css</code> 和 <code>text/javascript</code> 分别是他们的默认值</p>
+</li>
+<li><p>在引入 CSS 时，必须指明 <code>rel=&quot;stylesheet&quot;</code></p>
+</li>
+<li><p>将 script 放在页面中间将阻断页面的渲染，出于性能方面的考虑，如非必要，JavaScript 应当放在页面末尾</p>
+</li>
+</ul>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>index.css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>index.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
+<h2 id="boolean-属性"><a href="#boolean-属性" class="headerlink" title="boolean 属性"></a>boolean 属性</h2><p>boolean 属性指不需要声明取值的属性，XHTML 需要每个属性声明取值，但是 HTML5 并不需要</p>
+<pre class=" language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- good --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">disabled</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>1<span class="token punctuation">"</span></span> <span class="token attr-name">checked</span><span class="token punctuation">></span></span>
+
+<span class="token comment" spellcheck="true">&lt;!-- bad --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">disabled</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>disabled<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>1<span class="token punctuation">"</span></span> <span class="token attr-name">checked</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre>
+<h2 id="减少标签数量"><a href="#减少标签数量" class="headerlink" title="减少标签数量"></a>减少标签数量</h2><p>在编写HTML代码时，需要尽量避免多余的父节点</p>
+<pre class=" language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- good --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>logo<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>logo.png<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+
+<span class="token comment" spellcheck="true">&lt;!-- bad --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>logo<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>logo.png<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span></code></pre>
+<h2 id="实用高于完美"><a href="#实用高于完美" class="headerlink" title="实用高于完美"></a>实用高于完美</h2><ul>
+<li><p>尽量遵循 HTML 标准和语义，但是不应该以浪费实用性作为代价</p>
+</li>
+<li><p>任何时候都要用尽量小的复杂度和尽量少的标签来解决问题</p>
+</li>
+</ul>
+<h2 id="推荐文章"><a href="#推荐文章" class="headerlink" title="推荐文章"></a>推荐文章</h2><p>1、<a target="_blank" rel="noopener" href="https://guide.aotu.io/docs/">凹凸使用实验室的前端开发规范</a><br>2、<a target="_blank" rel="noopener" href="https://github.com/hardylinfee/styleguide">hardylinfee前端开发规范</a></p>
 
             </div>
             <hr/>
@@ -990,7 +1066,7 @@ start();
                     </span>
                     <a href="http://luzhidong.cn" class="b-link-green">前端豆芽</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/06/29/weixinshipinquanpingfangan.html" class="b-link-green">微信视频全屏方案</a>
+                    <a href="/posts/934ef266.html" class="b-link-green">前端-HTML规范</a>
                 </p>
             </div>
         </div>
@@ -1274,37 +1350,44 @@ start();
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/06/29/vuechangyongminglinghetiankengjiqiao.html">
+                <a href="/posts/530fecf3.html">
                     <div class="card-image">
                         
                         
-                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/28.jpg" class="responsive-img" alt="vue常用命令和填坑技巧">
+                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/19.jpg" class="responsive-img" alt="前端-JS规范">
                         
-                        <span class="card-title">vue常用命令和填坑技巧</span>
+                        <span class="card-title">前端-JS规范</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">
-阻止事件冒泡@click.stop
+                    <div class="summary">命名
+变量
 
-阻止默认事件@contextmenu.prevent 
+命名方式：小驼峰
 
-模板:
-{{msg}}        数据更新模板变化
-{{*msg}}    数据只绑定一次
-{{{msg}}}    HTML转意输出
+命名规范：前缀名词
 
-</div>
+命名建议：语义化
+
+
+
+
+// bad
+let setCount = 10;
+let getTitle = "loginTable";
+
+// good
+let maxCount = </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-06-29
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-15
                         </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/VUE/" class="post-category" target="_blank">
-                                    VUE
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category" target="_blank">
+                                    前端
                                 </a>
                             
                             
@@ -1314,8 +1397,12 @@ start();
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/vue/" target="_blank">
-                        <span class="chip bg-color">vue</span>
+                    <a href="/tags/%E5%89%8D%E7%AB%AF/" target="_blank">
+                        <span class="chip bg-color">前端</span>
+                    </a>
+                    
+                    <a href="/tags/JS/" target="_blank">
+                        <span class="chip bg-color">JS</span>
                     </a>
                     
                 </div>
@@ -1329,23 +1416,26 @@ start();
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/06/02/chongxueqianduan.html">
+                <a href="/posts/cd5ce6b9.html">
                     <div class="card-image">
                         
                         
-                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/27.jpg" class="responsive-img" alt="重学前端">
+                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/9.jpg" class="responsive-img" alt="前端-CSS规范">
                         
-                        <span class="card-title">重学前端</span>
+                        <span class="card-title">前端-CSS规范</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">0.1+0.2为什么不等于0.3// 比较大小使用下面的方式
-0.1+0.2-0.3 &lt;= Number.EPSILON
-我怎么去区分对象，数组和null呢?Object.prototype.toString.call(null);
-</div>
+                    <div class="summary">class、id命名规则
+class 不能使用驼峰 使用(烤串写法) 
+
+命名建议：页面-属性-功能
+
+公用类：修饰符-功能
+例子：class=&quot;login-dialog&quot;  class=&quot;login-form</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-06-02
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-15
                             </span>
                         <span class="publish-author">
                             
@@ -1364,6 +1454,10 @@ start();
                     
                     <a href="/tags/%E5%89%8D%E7%AB%AF/" target="_blank">
                         <span class="chip bg-color">前端</span>
+                    </a>
+                    
+                    <a href="/tags/CSS/" target="_blank">
+                        <span class="chip bg-color">CSS</span>
                     </a>
                     
                 </div>

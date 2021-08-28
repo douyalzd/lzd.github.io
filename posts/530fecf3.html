@@ -4,11 +4,25 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Markdown语法, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
-    <meta name="description" content="table语法| Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| ">
+    <meta name="keywords" content="前端-JS规范, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
+    <meta name="description" content="命名
+变量
+
+命名方式：小驼峰
+
+命名规范：前缀名词
+
+命名建议：语义化
+
+
+
+
+// bad
+let setCount = 10;
+let getTitle = &#34;loginTable&#34;;
+
+// good
+let maxCount = ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +30,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Markdown语法 | 前端豆芽</title>
+    <title>前端-JS规范 | 前端豆芽</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -360,7 +374,7 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('http://qiniu.luzhidong.cn/medias/featureimages/9.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('http://qiniu.luzhidong.cn/medias/featureimages/19.jpg')">
     <style type="text/css">
     #canvasBg {
         display: block;
@@ -764,7 +778,7 @@ start();
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Markdown语法
+                        前端-JS规范
                     </div>
                 </div>
             </div>
@@ -880,12 +894,12 @@ start();
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Markdown/" target="_blank">
-                                <span class="chip bg-color">Markdown</span>
+                            <a href="/tags/%E5%89%8D%E7%AB%AF/" target="_blank">
+                                <span class="chip bg-color">前端</span>
                             </a>
                         
-                            <a href="/tags/Typora/" target="_blank">
-                                <span class="chip bg-color">Typora</span>
+                            <a href="/tags/JS/" target="_blank">
+                                <span class="chip bg-color">JS</span>
                             </a>
                         
                     </div>
@@ -896,8 +910,8 @@ start();
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Markdown/" class="post-category" target="_blank">
-                                Markdown
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category" target="_blank">
+                                前端
                             </a>
                         
                     </div>
@@ -908,21 +922,21 @@ start();
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-05-12
+                    2019-02-15
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        321
+                        1.5k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        6 分
                     </div>
                     
                 
@@ -938,480 +952,377 @@ start();
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="table语法"><a href="#table语法" class="headerlink" title="table语法"></a>table语法</h2><pre class=" language-markdown"><code class="language-markdown">| Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |</code></pre>
-<p>tips:<br><code>:-------------:</code>居中<br><code>-------------</code>左对齐<br><code>-----:</code>右对齐<br><code>-</code>至少有一个,否则默认左对齐;例如<code>::</code></p>
-<h2 id="Markdwon语法高亮"><a href="#Markdwon语法高亮" class="headerlink" title="Markdwon语法高亮"></a>Markdwon语法高亮</h2><table>
+                <h2 id="命名"><a href="#命名" class="headerlink" title="命名"></a>命名</h2><ul>
+<li><p>变量</p>
+<ul>
+<li><p>命名方式：小驼峰</p>
+</li>
+<li><p>命名规范：前缀名词</p>
+</li>
+<li><p>命名建议：语义化</p>
+</li>
+</ul>
+</li>
+</ul>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// bad</span>
+<span class="token keyword">let</span> setCount <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> getTitle <span class="token operator">=</span> <span class="token string">"loginTable"</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// good</span>
+<span class="token keyword">let</span> maxCount <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> tableTitle <span class="token operator">=</span> <span class="token string">"loginTable"</span></code></pre>
+<ul>
+<li><p>常量</p>
+<ul>
+<li>常量全大写，用下划线连接</li>
+</ul>
+</li>
+</ul>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">const</span> MAX_COUNT <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span></code></pre>
+<ul>
+<li><p>函数</p>
+<ul>
+<li><p>命名方式：小驼峰式命名法。</p>
+</li>
+<li><p>命名规范：前缀应当为动词。</p>
+</li>
+<li><p>命名建议：语义化</p>
+</li>
+</ul>
+</li>
+</ul>
+<table>
 <thead>
 <tr>
-<th>language</th>
-<th align="left">key</th>
+<th>动词</th>
+<th>含义</th>
+<th>返回值</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>C</td>
-<td align="left">c</td>
+<td>can</td>
+<td>判断是否可执行某个动作（权限）</td>
+<td>函数返回一个布尔值。 true: 可执行， false: 不可执行</td>
 </tr>
 <tr>
-<td>ActionScript</td>
-<td align="left">actionscript</td>
+<td>has</td>
+<td>判断是否含有某个词</td>
+<td>函数返回一个布尔值。 true: 含有此值， false: 不含有此值</td>
 </tr>
 <tr>
-<td>Apache</td>
-<td align="left">apache</td>
+<td>is</td>
+<td>判断是否为某个词</td>
+<td>函数返回一个布尔值。 true: 为此值， false: 不为此值</td>
 </tr>
 <tr>
-<td>AppleScript</td>
-<td align="left">applescript</td>
+<td>get</td>
+<td>获取某个词</td>
+<td>函数返回一个非布尔值</td>
 </tr>
 <tr>
-<td>AsciiDoc</td>
-<td align="left">asciidoc</td>
+<td>set</td>
+<td>设置某个词</td>
+<td>无返回值，返回是否设置或返回链式对象</td>
 </tr>
 <tr>
-<td>AspectJ</td>
-<td align="left">asciidoc</td>
-</tr>
-<tr>
-<td>AutoHotkey</td>
-<td align="left">autohotkey</td>
-</tr>
-<tr>
-<td>AVR Assembler</td>
-<td align="left">avrasm</td>
-</tr>
-<tr>
-<td>Axapta</td>
-<td align="left">axapta</td>
-</tr>
-<tr>
-<td>Bash</td>
-<td align="left">bash</td>
-</tr>
-<tr>
-<td>BrainFuck</td>
-<td align="left">brainfuck</td>
-</tr>
-<tr>
-<td>Cap’n Proto</td>
-<td align="left">capnproto</td>
-</tr>
-<tr>
-<td>Clojure REPL</td>
-<td align="left">clojure</td>
-</tr>
-<tr>
-<td>Clojure</td>
-<td align="left">clojure</td>
-</tr>
-<tr>
-<td>CMake</td>
-<td align="left">cmake</td>
-</tr>
-<tr>
-<td>CoffeeScript</td>
-<td align="left">coffeescript</td>
-</tr>
-<tr>
-<td>C++</td>
-<td align="left">cpp</td>
-</tr>
-<tr>
-<td>C#</td>
-<td align="left">cs</td>
-</tr>
-<tr>
-<td>CSS</td>
-<td align="left">css</td>
-</tr>
-<tr>
-<td>D</td>
-<td align="left">d</td>
-</tr>
-<tr>
-<td>Dart</td>
-<td align="left">d</td>
-</tr>
-<tr>
-<td>Delphi</td>
-<td align="left">delphi</td>
-</tr>
-<tr>
-<td>Diff</td>
-<td align="left">diff</td>
-</tr>
-<tr>
-<td>Django</td>
-<td align="left">django</td>
-</tr>
-<tr>
-<td>DOS.bat</td>
-<td align="left">dos</td>
-</tr>
-<tr>
-<td>Dust</td>
-<td align="left">dust</td>
-</tr>
-<tr>
-<td>Elixir</td>
-<td align="left">elixir</td>
-</tr>
-<tr>
-<td>ERB(Embedded Ruby)</td>
-<td align="left">erb</td>
-</tr>
-<tr>
-<td>Erlang REPL</td>
-<td align="left">erlang-repl</td>
-</tr>
-<tr>
-<td>Erlang</td>
-<td align="left">erlang</td>
-</tr>
-<tr>
-<td>FIX</td>
-<td align="left">fix</td>
-</tr>
-<tr>
-<td>F#</td>
-<td align="left">fsharp</td>
-</tr>
-<tr>
-<td>G-code(ISO 6983)</td>
-<td align="left">gcode</td>
-</tr>
-<tr>
-<td>Gherkin</td>
-<td align="left">gherkin</td>
-</tr>
-<tr>
-<td>GLSL</td>
-<td align="left">glsl</td>
-</tr>
-<tr>
-<td>Go</td>
-<td align="left">go</td>
-</tr>
-<tr>
-<td>Gradle</td>
-<td align="left">gradle</td>
-</tr>
-<tr>
-<td>Groovy</td>
-<td align="left">groovy</td>
-</tr>
-<tr>
-<td>Haml</td>
-<td align="left">haml</td>
-</tr>
-<tr>
-<td>Handlebars</td>
-<td align="left">handlebars</td>
-</tr>
-<tr>
-<td>Haskell</td>
-<td align="left">haskell</td>
-</tr>
-<tr>
-<td>Haxe</td>
-<td align="left">haxe</td>
-</tr>
-<tr>
-<td>HTML</td>
-<td align="left">html</td>
-</tr>
-<tr>
-<td>HTTP</td>
-<td align="left">http</td>
-</tr>
-<tr>
-<td>Ini file</td>
-<td align="left">ini</td>
-</tr>
-<tr>
-<td>Java</td>
-<td align="left">java</td>
-</tr>
-<tr>
-<td>JavaScript</td>
-<td align="left">javascript</td>
-</tr>
-<tr>
-<td>JSON</td>
-<td align="left">json</td>
-</tr>
-<tr>
-<td>Lasso</td>
-<td align="left">lasso</td>
-</tr>
-<tr>
-<td>Less</td>
-<td align="left">less</td>
-</tr>
-<tr>
-<td>Lisp</td>
-<td align="left">lisp</td>
-</tr>
-<tr>
-<td>LiveCode</td>
-<td align="left">livecodeserver</td>
-</tr>
-<tr>
-<td>LiveScript</td>
-<td align="left">livescript</td>
-</tr>
-<tr>
-<td>Lua</td>
-<td align="left">lua</td>
-</tr>
-<tr>
-<td>Makefile</td>
-<td align="left">makefile</td>
-</tr>
-<tr>
-<td>Markdown</td>
-<td align="left">markdown</td>
-</tr>
-<tr>
-<td>Mathematica</td>
-<td align="left">mathematica</td>
-</tr>
-<tr>
-<td>Matlab</td>
-<td align="left">matlab</td>
-</tr>
-<tr>
-<td>MEL (Maya Embedded Language)</td>
-<td align="left">mel</td>
-</tr>
-<tr>
-<td>Mercury</td>
-<td align="left">mercury</td>
-</tr>
-<tr>
-<td>Mizar</td>
-<td align="left">mizar</td>
-</tr>
-<tr>
-<td>Monkey</td>
-<td align="left">monkey</td>
-</tr>
-<tr>
-<td>Nginx</td>
-<td align="left">nginx</td>
-</tr>
-<tr>
-<td>Nimrod</td>
-<td align="left">nimrod</td>
-</tr>
-<tr>
-<td>Nix</td>
-<td align="left">nix</td>
-</tr>
-<tr>
-<td>NSIS</td>
-<td align="left">nsis</td>
-</tr>
-<tr>
-<td>Objective C</td>
-<td align="left">objectivec</td>
-</tr>
-<tr>
-<td>OCaml</td>
-<td align="left">ocaml</td>
-</tr>
-<tr>
-<td>Oxygene</td>
-<td align="left">oxygene</td>
-</tr>
-<tr>
-<td>Parser 3</td>
-<td align="left">parser3</td>
-</tr>
-<tr>
-<td>Perl</td>
-<td align="left">perl</td>
-</tr>
-<tr>
-<td>PHP</td>
-<td align="left">php</td>
-</tr>
-<tr>
-<td>PowerShell</td>
-<td align="left">powershell</td>
-</tr>
-<tr>
-<td>Processing</td>
-<td align="left">processing</td>
-</tr>
-<tr>
-<td>Python’s profiler output</td>
-<td align="left">profile</td>
-</tr>
-<tr>
-<td>Protocol Buffers</td>
-<td align="left">protobuf</td>
-</tr>
-<tr>
-<td>Puppet</td>
-<td align="left">puppet</td>
-</tr>
-<tr>
-<td>Python</td>
-<td align="left">python</td>
-</tr>
-<tr>
-<td>Q</td>
-<td align="left">q</td>
-</tr>
-<tr>
-<td>R</td>
-<td align="left">r</td>
-</tr>
-<tr>
-<td>RenderMan RIB</td>
-<td align="left">rib</td>
-</tr>
-<tr>
-<td>Roboconf</td>
-<td align="left">roboconf</td>
-</tr>
-<tr>
-<td>RenderMan RSL</td>
-<td align="left">rsl</td>
-</tr>
-<tr>
-<td>Ruby</td>
-<td align="left">ruby</td>
-</tr>
-<tr>
-<td>Oracle Rules Language</td>
-<td align="left">ruleslanguage</td>
-</tr>
-<tr>
-<td>Rust</td>
-<td align="left">rust</td>
-</tr>
-<tr>
-<td>Scala</td>
-<td align="left">scala</td>
-</tr>
-<tr>
-<td>Scheme</td>
-<td align="left">scheme</td>
-</tr>
-<tr>
-<td>Scilab</td>
-<td align="left">scilab</td>
-</tr>
-<tr>
-<td>SCSS</td>
-<td align="left">scss</td>
-</tr>
-<tr>
-<td>Smali</td>
-<td align="left">smali</td>
-</tr>
-<tr>
-<td>SmallTalk</td>
-<td align="left">smalltalk</td>
-</tr>
-<tr>
-<td>SML</td>
-<td align="left">sml</td>
-</tr>
-<tr>
-<td>SQL</td>
-<td align="left">sql</td>
-</tr>
-<tr>
-<td>Stata</td>
-<td align="left">stata</td>
-</tr>
-<tr>
-<td>STEP Part21(ISO 10303-21)</td>
-<td align="left">step21</td>
-</tr>
-<tr>
-<td>Stylus</td>
-<td align="left">stylus</td>
-</tr>
-<tr>
-<td>Swift</td>
-<td align="left">swift</td>
-</tr>
-<tr>
-<td>Tcl</td>
-<td align="left">tcl</td>
-</tr>
-<tr>
-<td>Tex</td>
-<td align="left">tex</td>
-</tr>
-<tr>
-<td>text</td>
-<td align="left">text/plain</td>
-</tr>
-<tr>
-<td>Thrift</td>
-<td align="left">thrift</td>
-</tr>
-<tr>
-<td>Twig</td>
-<td align="left">twig</td>
-</tr>
-<tr>
-<td>TypeScript</td>
-<td align="left">typescript</td>
-</tr>
-<tr>
-<td>Vala</td>
-<td align="left">vala</td>
-</tr>
-<tr>
-<td>VB.NET</td>
-<td align="left">vbnet</td>
-</tr>
-<tr>
-<td>VBScript in HTML</td>
-<td align="left">vbscript-html</td>
-</tr>
-<tr>
-<td>VBScript</td>
-<td align="left">vbscript</td>
-</tr>
-<tr>
-<td>Verilog</td>
-<td align="left">verilog</td>
-</tr>
-<tr>
-<td>VHDL</td>
-<td align="left">vhdl</td>
-</tr>
-<tr>
-<td>Vim Script</td>
-<td align="left">vim</td>
-</tr>
-<tr>
-<td>Intel x86 Assembly</td>
-<td align="left">x86asm</td>
-</tr>
-<tr>
-<td>XL</td>
-<td align="left">xl</td>
-</tr>
-<tr>
-<td>XML</td>
-<td align="left">xml</td>
-</tr>
-<tr>
-<td>YAML</td>
-<td align="left">yml</td>
+<td>load</td>
+<td>加载某些数据</td>
+<td>无返回值或返回是否加载完成的结果</td>
 </tr>
 </tbody></table>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// 是否可阅读</span>
+<span class="token keyword">function</span> <span class="token function">canRead</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">// 获取名称</span>
+<span class="token keyword">function</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<ul>
+<li><p>类 / 构造函数</p>
+<ul>
+<li><p>命名方式：大驼峰式命名法（每个单词首字母大写），首字母大写</p>
+</li>
+<li><p>命名规范：前缀为名称。</p>
+</li>
+<li><p>命名建议：语义化</p>
+</li>
+</ul>
+</li>
+</ul>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> name<span class="token punctuation">:</span> string<span class="token punctuation">;</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> person <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">'mevyn'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<ul>
+<li>类的成员</li>
+</ul>
+<p>类的成员包含：<br>    * 公共属性和方法：跟变量和函数的命名一样。<br>    * 私有属性和方法：前缀为_(下划线)，后面跟公共属性和方法一样的命名方式。</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> _name<span class="token punctuation">:</span> string<span class="token punctuation">;</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">// 公共方法</span>
+    <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_name<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">// 公共方法</span>
+    <span class="token function">setName</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>_name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> person <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+person<span class="token punctuation">.</span><span class="token function">setName</span><span class="token punctuation">(</span><span class="token string">'mervyn'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+person<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// ->mervyn</span></code></pre>
+<ul>
+<li><p>jquery 对象</p>
+<ul>
+<li>jquery 对象必须以 <code>$</code> 开头命名</li>
+</ul>
+</li>
+</ul>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> $body <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h2 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h2><ul>
+<li><p>模块应该以 ! 开始。这样确保了当一个不好的模块忘记包含最后的分号时，在合并代码到生产环境后不会产生错误。详细说明</p>
+</li>
+<li><p>文件应该以驼峰式命名，并放在同名的文件夹里，且与导出的名字一致。</p>
+</li>
+<li><p>增加一个名为 noConflict() 的方法来设置导出的模块为前一个版本并返回它。</p>
+</li>
+<li><p>永远在模块顶部声明 ‘use strict’;。</p>
+</li>
+</ul>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// fancyInput/fancyInput.js</span>
+
+<span class="token operator">!</span><span class="token keyword">function</span> <span class="token punctuation">(</span>global<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token string">'use strict'</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">var</span> previousFancyInput <span class="token operator">=</span> global<span class="token punctuation">.</span>FancyInput<span class="token punctuation">;</span>
+
+    <span class="token keyword">function</span> <span class="token function">FancyInput</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>options <span class="token operator">=</span> options <span class="token operator">||</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    FancyInput<span class="token punctuation">.</span>noConflict <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">noConflict</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        global<span class="token punctuation">.</span>FancyInput <span class="token operator">=</span> previousFancyInput<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> FancyInput<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    global<span class="token punctuation">.</span>FancyInput <span class="token operator">=</span> FancyInput<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<ul>
+<li>构造函数<ul>
+<li>给对象原型分配方法，而不是使用一个新对象覆盖原型。覆盖原型将导致继承出现问题：重设原型将覆盖原有原型！</li>
+</ul>
+</li>
+</ul>
+<pre class=" language-javascript"><code class="language-javascript">    <span class="token keyword">function</span> <span class="token function">Jedi</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'new jedi'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">// bad</span>
+    Jedi<span class="token punctuation">.</span>prototype <span class="token operator">=</span> <span class="token punctuation">{</span>
+        fight<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token function">fight</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'fighting'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+        block<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token function">block</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'blocking'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">// good</span>
+    Jedi<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>fight <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">fight</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'fighting'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    Jedi<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>block <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">block</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'blocking'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<p>方法可以返回 this 来实现方法链式使用。</p>
+<pre class=" language-javascript"><code class="language-javascript">    <span class="token comment" spellcheck="true">// bad</span>
+    Jedi<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>jump <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">jump</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>jumping <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    Jedi<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>setHeight <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">setHeight</span><span class="token punctuation">(</span>height<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>height <span class="token operator">=</span> height<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">var</span> luke <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Jedi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    luke<span class="token punctuation">.</span><span class="token function">jump</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// => true</span>
+    luke<span class="token punctuation">.</span><span class="token function">setHeight</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// => undefined</span>
+
+    <span class="token comment" spellcheck="true">// good</span>
+    Jedi<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>jump <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">jump</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>jumping <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    Jedi<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>setHeight <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">setHeight</span><span class="token punctuation">(</span>height<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>height <span class="token operator">=</span> height<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">var</span> luke <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Jedi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    luke<span class="token punctuation">.</span><span class="token function">jump</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setHeight</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h2 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h2><ul>
+<li><p>使用 <code>4</code> 个空格做为一个缩进层级，不允许使用 <code>2</code> 个空格 或 <code>tab</code> 字符</p>
+</li>
+<li><p><code>switch</code> 下的 <code>case</code> 和 <code>default</code> 必须增加一个缩进层级</p>
+</li>
+</ul>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">switch</span> <span class="token punctuation">(</span>variable<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token number">1</span><span class="token punctuation">:</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">default</span><span class="token punctuation">:</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<ul>
+<li>对象以缩进的形式书写，不要写在一行</li>
+</ul>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// better</span>
+<span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+    a<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    b<span class="token punctuation">:</span> <span class="token number">2</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">// bad</span>
+<span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span> a<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> b<span class="token punctuation">:</span> <span class="token number">2</span> <span class="token punctuation">}</span></code></pre>
+<h2 id="分号"><a href="#分号" class="headerlink" title="分号"></a>分号</h2><p>任何语句结尾都需要加分号 <code>;</code></p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">do</span> <span class="token punctuation">{</span>
+    x<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">while</span> <span class="token punctuation">(</span>x <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h2 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h2><ul>
+<li><p>二元运算符两侧必须有一个空格，一元运算符与操作对象之间不允许有空格</p>
+</li>
+<li><p>用作代码块起始的左花括号 <code>&#123;</code> 前必须有一个空格</p>
+</li>
+<li><p><code>if / else / for / while / function / switch / do / try / catch / finally</code> 等关键字后，必须有一个空格</p>
+</li>
+<li><p>在非三目运算符中，<code>:</code> 之后必须有空格，之前不允许有空格</p>
+</li>
+<li><p><code>,</code> 和 <code>;</code> 之前不允许有空格，之后必须有空格</p>
+</li>
+<li><p>函数名和 <code>(</code> 之间不允许有空格</p>
+</li>
+<li><p>单行注释 <code>//</code> 后需要空格（若单行注释和代码同行，则 <code>//</code> 前也需要）</p>
+</li>
+<li><p>行尾不得有多余的空格</p>
+</li>
+</ul>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> len <span class="token operator">=</span> <span class="token operator">!</span>arr<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>len<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">Demo</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">// 函数</span>
+<span class="token keyword">function</span> <span class="token function">Demo</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// 对象</span>
+        a<span class="token punctuation">:</span> <span class="token number">1</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="空行"><a href="#空行" class="headerlink" title="空行"></a>空行</h2><ul>
+<li>代码块注释前与代码块后保留一个空行</li>
+</ul>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// 注释</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>a <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span></code></pre>
+<h2 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h2><ul>
+<li><p>每个语句必须另起一行</p>
+</li>
+<li><p>变量赋值后需要换行</p>
+</li>
+<li><p>左大括号 <code>&#123;</code> 后需要换行，右大括号 <code>&#125;</code> 前需要换行</p>
+</li>
+</ul>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> a<span class="token punctuation">,</span> b<span class="token punctuation">,</span>
+    c <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>c<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><ul>
+<li><p>单行注释使用 <code>//</code>，多行注释使用 <code>/* */</code></p>
+</li>
+<li><p>缩进与下一行代码保持一致</p>
+</li>
+<li><p>文档 / 接口注释使用以下写法</p>
+</li>
+</ul>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">/**
+ * 文档描述
+ * @author 作者
+ * @date 创建时间
+ * @update 更新者 更新时间
+ */</span>
+
+<span class="token comment" spellcheck="true">/**
+ * 接口描述
+ * @param {String} title - 弹窗标题内容
+ * @param {String} cancelBtnText = '默认值' - 取消按钮文本
+ * @param {object} obj - 参数 obj 为一个对象
+ * @param {String} obj.str - 参数 obj 的 str 属性
+ */</span>
+<span class="token keyword">function</span> <span class="token punctuation">(</span>title<span class="token punctuation">,</span> cancelBtnText<span class="token punctuation">,</span> obj<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="引号"><a href="#引号" class="headerlink" title="引号"></a>引号</h2><p>最外层统一使用单引号 <code>&#39;&#39;</code></p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> str <span class="token operator">=</span> <span class="token string">'&lt;div id="test">&lt;/div>'</span><span class="token punctuation">;</span></code></pre>
+<h2 id="变量声明"><a href="#变量声明" class="headerlink" title="变量声明"></a>变量声明</h2><ul>
+<li><p>变量在使用前必须通过 <code>var / let / const</code> 定义</p>
+</li>
+<li><p>不要使用未声明的变量，也不要先使用后声明</p>
+</li>
+</ul>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> name <span class="token operator">=</span> <span class="token string">'MyName'</span><span class="token punctuation">;</span></code></pre>
+<h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><p>对象属性名不需要加引号，有特殊字符除外</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">'test'</span><span class="token punctuation">,</span>
+    age<span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+    <span class="token string">'max-weight'</span><span class="token punctuation">:</span> <span class="token number">60</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<h2 id="大括号"><a href="#大括号" class="headerlink" title="大括号"></a>大括号</h2><p><code>if / else / for / while / do / switch / try / catch</code> 等关键字后必须有大括号（即使代码块的内容只有一行）</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="undefined"><a href="#undefined" class="headerlink" title="undefined"></a>undefined</h2><ul>
+<li><p>永远不要直接使用undefined进行变量判断</p>
+</li>
+<li><p>使用 typeof 和字符串 <code>&#39;undefined&#39;</code> 对变量进行判断</p>
+</li>
+</ul>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// good</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> person <span class="token operator">===</span> <span class="token string">'undefined'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">// bad</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>person <span class="token operator">===</span> undefined<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
+<li><p>用 <code>===</code>, <code>!==</code> 代替 <code>==</code>, <code>!=</code></p>
+</li>
+<li><p>debugger 不要出现在生产环境的代码里</p>
+</li>
+<li><p>不要在循环内部声明函数</p>
+</li>
+<li><p>不允许有空的代码块</p>
+</li>
+<li><p>注释的大段代码 不需要的删除；如果需要请注释说明</p>
+</li>
+</ul>
+<h2 id="推荐文章"><a href="#推荐文章" class="headerlink" title="推荐文章"></a>推荐文章</h2><p>1、<a target="_blank" rel="noopener" href="https://guide.aotu.io/docs/">凹凸使用实验室的前端开发规范</a><br>2、<a target="_blank" rel="noopener" href="https://github.com/hardylinfee/styleguide">hardylinfee前端开发规范</a></p>
 
             </div>
             <hr/>
@@ -1435,7 +1346,7 @@ start();
                     </span>
                     <a href="http://luzhidong.cn" class="b-link-green">前端豆芽</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/05/12/markdownyufa.html" class="b-link-green">Markdown语法</a>
+                    <a href="/posts/530fecf3.html" class="b-link-green">前端-JS规范</a>
                 </p>
             </div>
         </div>
@@ -1719,30 +1630,27 @@ start();
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/05/12/linuxchangyongmingling.html">
+                <a href="/posts/e96a41f4.html">
                     <div class="card-image">
                         
                         
-                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/11.jpg" class="responsive-img" alt="Linux常用命令">
+                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/6.jpg" class="responsive-img" alt="前端-VUE规范">
                         
-                        <span class="card-title">Linux常用命令</span>
+                        <span class="card-title">前端-VUE规范</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">修改文件读写权限r： 4（读权限）w： 2（写权限）x： 1（执行权限）chmod 777 文件名
-修改文件用户权限chown -R 用户 文件名称
-修改文件用户组chogrp -R 组名 文件名
-服务管理systemctl 操作名（sto</div>
+                    <div class="summary">命名分类camelCase（驼峰式，也叫小驼峰命名，e.g. userInfo）PascalCase（帕斯卡命名式，也叫大驼峰命名，e.g. UserInfo）kebab-case（短横线连接式，e.g. user-info）snake_c</div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-12
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-15
                         </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Linux/" class="post-category" target="_blank">
-                                    Linux
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category" target="_blank">
+                                    前端
                                 </a>
                             
                             
@@ -1752,8 +1660,12 @@ start();
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Linux/" target="_blank">
-                        <span class="chip bg-color">Linux</span>
+                    <a href="/tags/%E5%89%8D%E7%AB%AF/" target="_blank">
+                        <span class="chip bg-color">前端</span>
+                    </a>
+                    
+                    <a href="/tags/VUE/" target="_blank">
+                        <span class="chip bg-color">VUE</span>
                     </a>
                     
                 </div>
@@ -1767,30 +1679,34 @@ start();
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/05/12/hexominglingshiyong.html">
+                <a href="/posts/934ef266.html">
                     <div class="card-image">
                         
                         
-                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/4.jpg" class="responsive-img" alt="Hexo命令使用">
+                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/11.jpg" class="responsive-img" alt="前端-HTML规范">
                         
-                        <span class="card-title">Hexo命令使用</span>
+                        <span class="card-title">前端-HTML规范</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">新建文章你可以执行下列命令来创建一篇新文章。
-hexo new [layout] &lt;title>
-layout属性有： page（新建页面）、draft(新建草稿)、 post（新建文章）
-当你以draft新建文章时生成的文件在_dr</div>
+                    <div class="summary">class、id命名规则
+class 不能使用驼峰 使用(烤串写法) 例子：class=”login-dialog”  class=”login-form-dialog”  
+
+命名建议：页面-属性-功能
+公用类 修饰符-功能
+
+
+id 一</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-12
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-15
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Hexo/" class="post-category" target="_blank">
-                                    Hexo
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category" target="_blank">
+                                    前端
                                 </a>
                             
                             
@@ -1800,12 +1716,12 @@ layout属性有： page（新建页面）、draft(新建草稿)、 post（新建
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Markdown/" target="_blank">
-                        <span class="chip bg-color">Markdown</span>
+                    <a href="/tags/%E5%89%8D%E7%AB%AF/" target="_blank">
+                        <span class="chip bg-color">前端</span>
                     </a>
                     
-                    <a href="/tags/Hexo/" target="_blank">
-                        <span class="chip bg-color">Hexo</span>
+                    <a href="/tags/HTML/" target="_blank">
+                        <span class="chip bg-color">HTML</span>
                     </a>
                     
                 </div>

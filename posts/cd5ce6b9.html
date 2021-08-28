@@ -4,19 +4,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="绘声绘影素材分享, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
-    <meta name="description" content="大概文件目录多年收集的绘声绘影素材集合，分享给有需要的你
-素材集合1
+    <meta name="keywords" content="前端-CSS规范, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
+    <meta name="description" content="class、id命名规则
+class 不能使用驼峰 使用(烤串写法) 
 
-素材集合2
+命名建议：页面-属性-功能
 
-素材集合3
-
-素材集合4
-
-下载地址链接:https://pan.baidu.com/s/11sUw2uCjpo4O27AYjr3P3A 
-
-  提取码6">
+公用类：修饰符-功能
+例子：class=&amp;quot;login-dialog&amp;quot;  class=&amp;quot;login-form">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -24,7 +19,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>绘声绘影素材分享 | 前端豆芽</title>
+    <title>前端-CSS规范 | 前端豆芽</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -368,7 +363,7 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('http://qiniu.luzhidong.cn/static/images/044.png')">
+<div class="bg-cover post-cover" style="background-image: url('http://qiniu.luzhidong.cn/medias/featureimages/9.jpg')">
     <style type="text/css">
     #canvasBg {
         display: block;
@@ -772,7 +767,7 @@ start();
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        绘声绘影素材分享
+                        前端-CSS规范
                     </div>
                 </div>
             </div>
@@ -888,8 +883,12 @@ start();
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E7%BB%98%E5%A3%B0%E7%BB%98%E5%BD%B1/" target="_blank">
-                                <span class="chip bg-color">绘声绘影</span>
+                            <a href="/tags/%E5%89%8D%E7%AB%AF/" target="_blank">
+                                <span class="chip bg-color">前端</span>
+                            </a>
+                        
+                            <a href="/tags/CSS/" target="_blank">
+                                <span class="chip bg-color">CSS</span>
                             </a>
                         
                     </div>
@@ -900,8 +899,8 @@ start();
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%BB%98%E5%A3%B0%E7%BB%98%E5%BD%B1/" class="post-category" target="_blank">
-                                绘声绘影
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category" target="_blank">
+                                前端
                             </a>
                         
                     </div>
@@ -912,21 +911,21 @@ start();
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-12-16
+                    2019-02-15
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        63
+                        830
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        3 分
                     </div>
                     
                 
@@ -942,19 +941,178 @@ start();
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="大概文件目录"><a href="#大概文件目录" class="headerlink" title="大概文件目录"></a>大概文件目录</h2><p>多年收集的绘声绘影素材集合，分享给有需要的你</p>
-<h3 id="素材集合1"><a href="#素材集合1" class="headerlink" title="素材集合1"></a>素材集合1</h3><img src="http://qiniu.luzhidong.cn/static/images/044.png">
+                <h2 id="class、id命名规则"><a href="#class、id命名规则" class="headerlink" title="class、id命名规则"></a>class、id命名规则</h2><ol>
+<li><p>class 不能使用驼峰 使用(烤串写法) </p>
+<ul>
+<li><p>命名建议：页面-属性-功能</p>
+</li>
+<li><p>公用类：修饰符-功能</p>
+<p>例子：<code>class=&quot;login-dialog&quot;</code>  <code>class=&quot;login-form-dialog&quot;</code></p>
+</li>
+</ul>
+</li>
+</ol>
+<ol start="2">
+<li>id 一般参与样式，命名的话使用驼峰。</li>
+</ol>
+<h2 id="页面布局"><a href="#页面布局" class="headerlink" title="页面布局"></a>页面布局</h2><p>页面布局均采用最新版 <code>flexbox</code> 进行布局，需兼容低版本 IE 项目除外。</p>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.selector</span> </span><span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+    <span class="token property">justify-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h2><p>使用 <code>4</code> 个空格作为一个缩进层级，不允许使用 <code>2</code> 个空格。</p>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.selector</span> </span><span class="token punctuation">{</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="分号"><a href="#分号" class="headerlink" title="分号"></a>分号</h2><p>每个属性声明末尾都要加分号</p>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.selector</span> </span><span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h2><ul>
+<li><p><code>:</code> 与属性值之间需要空格，与属性名之间不需要空格</p>
+</li>
+<li><p>属性值中的 <code>,</code> 后需要空格，<code>,</code> 前不需要空格</p>
+</li>
+<li><p>选择器 <code>&gt; + ~</code> 等前后需要空格</p>
+</li>
+<li><p>选择器与 <code>&#123;</code> 之间需要空格</p>
+</li>
+<li><p><code>/</code> 前后需要空格</p>
+</li>
+<li><p>注释 <code>/*</code> 后和 <code>*/</code> 前需要空格</p>
+</li>
+</ul>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.selector</span> > <span class="token class">.wrapper</span> </span><span class="token punctuation">{</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">"Hiragino Sans GB"</span>, sans-serif<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span>, <span class="token number">0</span>, <span class="token number">0</span>, <span class="token number">0.5</span><span class="token punctuation">)</span> <span class="token url">url(logo.png)</span> no-repeat center / contain<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="空行"><a href="#空行" class="headerlink" title="空行"></a>空行</h2><ul>
+<li><p>两个选择器属性块之间保留一个空行</p>
+</li>
+<li><p>代码块注释前与代码块后保留一个空行</p>
+</li>
+</ul>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.wrapper</span> </span><span class="token punctuation">{</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span>
 
-<h3 id="素材集合2"><a href="#素材集合2" class="headerlink" title="素材集合2"></a>素材集合2</h3><img src="http://qiniu.luzhidong.cn/static/images/045.png">
+    <span class="token comment" spellcheck="true">/* 字体相关 */</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'DINPro'</span><span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">16</span>px<span class="token punctuation">;</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> <span class="token number">700</span><span class="token punctuation">;</span>
 
-<h3 id="素材集合3"><a href="#素材集合3" class="headerlink" title="素材集合3"></a>素材集合3</h3><img src="http://qiniu.luzhidong.cn/static/images/046.png">
+    <span class="token property">background</span><span class="token punctuation">:</span> <span class="token hexcode">#000</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-<h3 id="素材集合4"><a href="#素材集合4" class="headerlink" title="素材集合4"></a>素材集合4</h3><img src="http://qiniu.luzhidong.cn/static/images/047.png">
+<span class="token selector"><span class="token class">.selector</span> </span><span class="token punctuation">{</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h2><ul>
+<li><p>当一个规则包含多个选择器时，每个选择器声明必须独占一行</p>
+</li>
+<li><p>每个属性定义必须另起一行</p>
+</li>
+<li><p><code>&#123;</code> 后需要换行，<code>&#125;</code> 前需要换行</p>
+</li>
+</ul>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.wrapper</span>,
+<span class="token class">.selector</span> </span><span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><ul>
+<li><p>统一使用 <code>/* */</code> 进行注释</p>
+</li>
+<li><p>缩进与下一行代码保持一致</p>
+</li>
+<li><p>可位于一个代码行的末尾，与代码间隔一个空格</p>
+</li>
+</ul>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.wrapper</span>,
+<span class="token class">.selector</span> </span><span class="token punctuation">{</span>
 
-<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>链接:<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/11sUw2uCjpo4O27AYjr3P3A">https://pan.baidu.com/s/11sUw2uCjpo4O27AYjr3P3A</a> </p>
-<details>
-  <summary>提取码</summary><p>6kac</p>
-</details>
+    <span class="token comment" spellcheck="true">/* 字体相关 */</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'DINPro'</span><span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">16</span>px<span class="token punctuation">;</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> <span class="token number">700</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/* 字重 */</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="引号"><a href="#引号" class="headerlink" title="引号"></a>引号</h2><ul>
+<li><p>引号统一使用双引号</p>
+</li>
+<li><p>属性选择器中的属性值需要引号</p>
+</li>
+</ul>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token attribute">[class="demo"]</span><span class="token pseudo-element">::after</span> </span><span class="token punctuation">{</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="颜色"><a href="#颜色" class="headerlink" title="颜色"></a>颜色</h2><ul>
+<li><p>16 进制颜色使用小写字母</p>
+</li>
+<li><p>16 进制颜色尽量使用简写</p>
+</li>
+</ul>
+<pre class=" language-css"><code class="language-css"><span class="token comment" spellcheck="true">/* good */</span>
+<span class="token selector"><span class="token class">.selector</span> </span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#abc</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">/* bad */</span>
+<span class="token selector"><span class="token class">.selector</span> </span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#AABBCC</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="属性简写"><a href="#属性简写" class="headerlink" title="属性简写"></a>属性简写</h2><p>支持简写的属性尽量使用简写<br>小数点前不需加<code>0</code></p>
+<pre class=" language-css"><code class="language-css"><span class="token comment" spellcheck="true">/* better */</span>
+<span class="token selector"><span class="token class">.selector</span> </span><span class="token punctuation">{</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span>, <span class="token number">0</span>, <span class="token number">0</span>, <span class="token number">0.5</span><span class="token punctuation">)</span> <span class="token url">url(logo.png)</span> no-repeat center / contain<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">/* bad */</span>
+<span class="token selector"><span class="token class">.selector</span> </span><span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span>, <span class="token number">0</span>, <span class="token number">0</span>, <span class="token number">0.5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url(logo.png)</span><span class="token punctuation">;</span>
+    <span class="token property">background-repeat</span><span class="token punctuation">:</span> no-repeat<span class="token punctuation">;</span>
+    <span class="token property">background-position</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token property">background-size</span><span class="token punctuation">:</span> contain<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="属性声明顺序"><a href="#属性声明顺序" class="headerlink" title="属性声明顺序"></a>属性声明顺序</h2><ol>
+<li>影响文档流的属性（比如：<code>display / position / float / clear / visibility</code> 等）</li>
+<li>自身盒模型的属性（比如：<code>width / height / margin / padding / border</code> 等）</li>
+<li>排版相关属性（比如：<code>font / line-height / text-align / vertical-align</code> 等）</li>
+<li>装饰性属性（比如：<code>color / background / opacity / cursor</code> 等） </li>
+<li>CSS3 新特性（比如：<code>transform / transition / animation</code> 等）<blockquote>
+<p>口诀: 显示大小文字背景</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><ul>
+<li><p>不允许有空的规则</p>
+</li>
+<li><p>元素选择器用小写字母</p>
+</li>
+<li><p>属性值 <code>0</code> 后面不要加单位</p>
+</li>
+<li><p>无前缀的标准属性应该写在有前缀的属性后面</p>
+</li>
+<li><p>不要在一个文件里出现两个相同的规则</p>
+</li>
+<li><p>发布的代码中不要有 <code>@import</code></p>
+</li>
+<li><p>尽量不用 <code>*</code> 选择器</p>
+</li>
+<li><p>禁止使用<code>!important</code></p>
+</li>
+<li><p>禁止使用<code>id</code>去修饰样式</p>
+</li>
+<li><p>position和float 能不用浮动就不要用浮动 尤其是float（使用float请保证父标签能被子标签内容撑开）</p>
+</li>
+<li><p>不要使用【标签做修饰符】-&gt;影响渲染速度 (除了万不得已的情况下)</p>
+</li>
+</ul>
+<h2 id="推荐文章"><a href="#推荐文章" class="headerlink" title="推荐文章"></a>推荐文章</h2><p>1、<a target="_blank" rel="noopener" href="https://guide.aotu.io/docs/">凹凸使用实验室的前端开发规范</a><br>2、<a target="_blank" rel="noopener" href="https://github.com/hardylinfee/styleguide">hardylinfee前端开发规范</a></p>
+
             </div>
             <hr/>
 
@@ -977,7 +1135,7 @@ start();
                     </span>
                     <a href="http://luzhidong.cn" class="b-link-green">前端豆芽</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2020/12/16/huishenghuiyingsucaifenxiang.html" class="b-link-green">绘声绘影素材分享</a>
+                    <a href="/posts/cd5ce6b9.html" class="b-link-green">前端-CSS规范</a>
                 </p>
             </div>
         </div>
@@ -1257,54 +1415,53 @@ start();
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
-            </div>
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/12/16/huishenghuiyingsucaifenxiang.html">
+                <a href="/posts/934ef266.html">
                     <div class="card-image">
                         
-                        <img src="http://qiniu.luzhidong.cn/static/images/044.png" class="responsive-img" alt="绘声绘影素材分享">
                         
-                        <span class="card-title">绘声绘影素材分享</span>
+                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/11.jpg" class="responsive-img" alt="前端-HTML规范">
+                        
+                        <span class="card-title">前端-HTML规范</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">大概文件目录多年收集的绘声绘影素材集合，分享给有需要的你
-素材集合1
+                    <div class="summary">class、id命名规则
+class 不能使用驼峰 使用(烤串写法) 例子：class=”login-dialog”  class=”login-form-dialog”  
 
-素材集合2
+命名建议：页面-属性-功能
+公用类 修饰符-功能
 
-素材集合3
 
-素材集合4
-
-下载地址链接:https://pan.baidu.com/s/11sUw2uCjpo4O27AYjr3P3A 
-
-  提取码6</div>
+id 一</div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-12-16
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-15
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%BB%98%E5%A3%B0%E7%BB%98%E5%BD%B1/" class="post-category" target="_blank">
-                                    绘声绘影
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category" target="_blank">
+                                    前端
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%BB%98%E5%A3%B0%E7%BB%98%E5%BD%B1/" target="_blank">
-                        <span class="chip bg-color">绘声绘影</span>
+                    <a href="/tags/%E5%89%8D%E7%AB%AF/" target="_blank">
+                        <span class="chip bg-color">前端</span>
+                    </a>
+                    
+                    <a href="/tags/HTML/" target="_blank">
+                        <span class="chip bg-color">HTML</span>
                     </a>
                     
                 </div>
@@ -1315,50 +1472,52 @@ start();
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/22/vscodephphuanjingpeizhiwindows.html">
+                <a href="/posts/cd5ce6b9.html">
                     <div class="card-image">
                         
-                        <img src="http://qiniu.luzhidong.cn/static/images/cover/002.jpg" class="responsive-img" alt="vsCode-PHP环境配置-windows">
                         
-                        <span class="card-title">vsCode-PHP环境配置-windows</span>
+                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/9.jpg" class="responsive-img" alt="前端-CSS规范">
+                        
+                        <span class="card-title">前端-CSS规范</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">安装Wampserver
-Wampserver点击下载集成了Apache、mysql、php(多个版本的)等环境  
+                    <div class="summary">class、id命名规则
+class 不能使用驼峰 使用(烤串写法) 
 
+命名建议：页面-属性-功能
 
-安装Wampserver，直接下一步就可以了 
-  
-这里可以选择要安装的应用，下面的是我选择，因为我本地已经安装了m</div>
+公用类：修饰符-功能
+例子：class=&quot;login-dialog&quot;  class=&quot;login-form</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-22
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-15
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/php/" class="post-category" target="_blank">
-                                    php
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category" target="_blank">
+                                    前端
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/php/" target="_blank">
-                        <span class="chip bg-color">php</span>
+                    <a href="/tags/%E5%89%8D%E7%AB%AF/" target="_blank">
+                        <span class="chip bg-color">前端</span>
                     </a>
                     
-                    <a href="/tags/vsCode/" target="_blank">
-                        <span class="chip bg-color">vsCode</span>
+                    <a href="/tags/CSS/" target="_blank">
+                        <span class="chip bg-color">CSS</span>
                     </a>
                     
                 </div>

@@ -4,10 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="VUE自定义过滤器和指令, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
-    <meta name="description" content="自定义过滤器（filters）1、过滤器可以串联：
-{{ message | filterA | filterB }}
-在这个例子中，filterA被定义为接收单个参数的过滤器函数，表达式message的值将作为参数传入到函数中。然后继续调">
+    <meta name="keywords" content="重学前端, 前端豆芽, 前端开发, 全栈开发, VUE，JS, CSS，小程序，微信公众号">
+    <meta name="description" content="0.1+0.2为什么不等于0.3// 比较大小使用下面的方式
+0.1+0.2-0.3 &amp;lt;= Number.EPSILON
+我怎么去区分对象，数组和null呢?Object.prototype.toString.call(null);
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>VUE自定义过滤器和指令 | 前端豆芽</title>
+    <title>重学前端 | 前端豆芽</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -359,7 +360,7 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('http://qiniu.luzhidong.cn/medias/featureimages/17.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('http://qiniu.luzhidong.cn/medias/featureimages/27.jpg')">
     <style type="text/css">
     #canvasBg {
         display: block;
@@ -763,7 +764,7 @@ start();
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        VUE自定义过滤器和指令
+                        重学前端
                     </div>
                 </div>
             </div>
@@ -879,8 +880,8 @@ start();
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/vue/" target="_blank">
-                                <span class="chip bg-color">vue</span>
+                            <a href="/tags/%E5%89%8D%E7%AB%AF/" target="_blank">
+                                <span class="chip bg-color">前端</span>
                             </a>
                         
                     </div>
@@ -891,8 +892,8 @@ start();
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/VUE/" class="post-category" target="_blank">
-                                VUE
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category" target="_blank">
+                                前端
                             </a>
                         
                     </div>
@@ -903,21 +904,21 @@ start();
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-05-22
+                    2019-06-02
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        766
+                        107
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        3 分
+                        1 分
                     </div>
                     
                 
@@ -933,67 +934,11 @@ start();
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="自定义过滤器（filters）"><a href="#自定义过滤器（filters）" class="headerlink" title="自定义过滤器（filters）"></a>自定义过滤器（filters）</h2><p>1、过滤器可以串联：</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token punctuation">{</span><span class="token punctuation">{</span> message <span class="token operator">|</span> filterA <span class="token operator">|</span> filterB <span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre>
-<p>在这个例子中，<code>filterA</code>被定义为接收单个参数的过滤器函数，表达式<code>message</code>的值将作为参数传入到函数中。然后继续调用同样被定义为接收单个参数的过滤器函数<code>filterB</code>，将<code>filterA</code>的结果传递到<code>filterB</code>中。</p>
-<p>2、过滤器是 JavaScript 函数，因此可以接收参数：</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token punctuation">{</span><span class="token punctuation">{</span> message <span class="token operator">|</span> <span class="token function">filterA</span><span class="token punctuation">(</span><span class="token string">'arg1'</span><span class="token punctuation">,</span> arg2<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre>
-<p>这里，<code>filterA</code>被定义为接收三个参数的过滤器函数。其中<code>message</code>的值作为第一个参数，普通字符串<code>arg1</code>作为第二个参数，表达式<code>arg2</code>的值作为第三个参数。</p>
-<p>3、全局过滤器定义<br>在main.js 里引入使用如下：</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> filters <span class="token keyword">from</span> <span class="token string">'./filters'</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// global filters</span>
-Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>filters<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>key <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-    Vue<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> filters<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h2 id="自定义指令的创建和使用（directives）"><a href="#自定义指令的创建和使用（directives）" class="headerlink" title="自定义指令的创建和使用（directives）"></a>自定义指令的创建和使用（directives）</h2><p>1、钩子函数：将作用域与DOM进行链接，链接函数用来创建可以操作DOM的指令</p>
-<blockquote>
-<p>bind - 只调用一次，指令第一次绑定到元素时调用。在这里可以进行一次性的初始化设置<br>update - 在bind之后立即以初始值为参数第一次调用，之后绑定值变化的时候，参数为新值与旧值<br>unbind - 只调用一次，在指令从元素上解绑的时候调用</p>
-</blockquote>
-<p>2、每个钩子都有<code>el</code>, <code>binding</code>, 和<code>vnode</code>参数可用. <code>update</code>和<code>componentUpdated</code>钩子还暴露了<code>oldVnode</code>, 以区分传递的旧值和较新的值</p>
-<p>3、钩子的执行情况</p>
-<blockquote>
-<p>a、页面加载时：bind inserted<br>b、更新组件：update componentUpdated<br>c、卸载组件：unbind<br>d、重新安装组件：bind inserted</p>
-</blockquote>
-<p>注意区别：bind与inserted：bind时父节点为null，inserted时父节点存在；update与componentUpdated：update是数据更新前，componentUpdated是数据更新后。</p>
-<p>4、指令的使用</p>
-<pre class=" language-javascript"><code class="language-javascript">Vue<span class="token punctuation">.</span><span class="token function">directive</span><span class="token punctuation">(</span><span class="token string">'hello'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
-    bind<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>el<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'bind'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    inserted<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>el<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'inserted'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    update<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>el<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'update'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    componentUpdated<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>el<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'componentUpdated'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    unbind<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>el<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'unbind'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<p>5、钩子函数参数</p>
-<ul>
-<li>指令钩子函数会被传入以下参数：</li>
-<li>el：指令所绑定的元素，可以用来直接操作 DOM 。</li>
-<li>binding：一个对象，包含以下属性：<ul>
-<li>name：指令名，不包括 v- 前缀。</li>
-<li>value：指令的绑定值，例如：v-my-directive=”1 + 1” 中，绑定值为 2。</li>
-<li>oldValue：指令绑定的前一个值，仅在 update 和 componentUpdated 钩子中可用。无论值是否改变都可用。</li>
-<li>expression：字符串形式的指令表达式。例如 v-my-directive=”1 + 1” 中，表达式为 “1 + 1”。</li>
-<li>arg：传给指令的参数，可选。例如 v-my-directive:foo 中，参数为 “foo”。</li>
-<li>modifiers：一个包含修饰符的对象。例如：v-my-directive.foo.bar 中，修饰符对象为 { foo: true, bar: true }。</li>
-</ul>
-</li>
-<li>vnode：Vue 编译生成的虚拟节点。移步 VNode API 来了解更多详情。</li>
-<li>oldVnode：上一个虚拟节点，仅在 update 和 componentUpdated 钩子中可用。</li>
-</ul>
-<p>6、全局指令定义<br>在main.js 里引入使用如下：</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> directives <span class="token keyword">from</span> <span class="token string">'./directive'</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// global directives</span>
-Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>directives<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>key <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-    Vue<span class="token punctuation">.</span><span class="token function">directive</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> directives<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p><a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/guide/custom-directive.html">vue官方文档-自定义指令</a><br><a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/guide/filters.html">vue官方文档-过滤器</a></p>
+                <h2 id="0-1-0-2为什么不等于0-3"><a href="#0-1-0-2为什么不等于0-3" class="headerlink" title="0.1+0.2为什么不等于0.3"></a>0.1+0.2为什么不等于0.3</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// 比较大小使用下面的方式</span>
+<span class="token number">0.1</span><span class="token operator">+</span><span class="token number">0.2</span><span class="token operator">-</span><span class="token number">0.3</span> <span class="token operator">&lt;=</span> Number<span class="token punctuation">.</span>EPSILON</code></pre>
+<h2 id="我怎么去区分对象，数组和null呢"><a href="#我怎么去区分对象，数组和null呢" class="headerlink" title="我怎么去区分对象，数组和null呢?"></a>我怎么去区分对象，数组和null呢?</h2><pre class=" language-javascript"><code class="language-javascript">Object<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>toString<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// console "[object Null]"</span></code></pre>
+<p>一个小练习：我们现在要实现一个红绿灯，把一个圆形 div 按照绿色 3 秒，黄色 1 秒，红色 2 秒循环改变背景色，你会怎样编写这个代码呢？</p>
 
             </div>
             <hr/>
@@ -1017,7 +962,7 @@ Object<span class="token punctuation">.</span><span class="token function">keys<
                     </span>
                     <a href="http://luzhidong.cn" class="b-link-green">前端豆芽</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/05/22/vuezidingyiguoluqihezhiling.html" class="b-link-green">VUE自定义过滤器和指令</a>
+                    <a href="/posts/c421a65c.html" class="b-link-green">重学前端</a>
                 </p>
             </div>
         </div>
@@ -1301,30 +1246,27 @@ Object<span class="token punctuation">.</span><span class="token function">keys<
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/06/02/chongxueqianduan.html">
+                <a href="/posts/7455f6fa.html">
                     <div class="card-image">
                         
                         
-                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/27.jpg" class="responsive-img" alt="重学前端">
+                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/20.jpg" class="responsive-img" alt="微信视频全屏方案">
                         
-                        <span class="card-title">重学前端</span>
+                        <span class="card-title">微信视频全屏方案</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">0.1+0.2为什么不等于0.3// 比较大小使用下面的方式
-0.1+0.2-0.3 &lt;= Number.EPSILON
-我怎么去区分对象，数组和null呢?Object.prototype.toString.call(null);
-</div>
+                    <div class="summary">微信视频播放全屏问题   在ios和安卓手机里的微信下播放视频时，会遇到不少问题，例如需要手动点击，视频才会播放，并且视频会跳出微信框，出现控制条，如果视频不是腾讯视频，播放完毕会出现腾讯视频的广告推送，今天我们就来看一下如何规避这些问题。</div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-06-02
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-06-29
                         </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category" target="_blank">
-                                    前端
+                            <a href="/categories/%E5%BE%AE%E4%BF%A1/" class="post-category" target="_blank">
+                                    微信
                                 </a>
                             
                             
@@ -1334,8 +1276,8 @@ Object<span class="token punctuation">.</span><span class="token function">keys<
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%89%8D%E7%AB%AF/" target="_blank">
-                        <span class="chip bg-color">前端</span>
+                    <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7/" target="_blank">
+                        <span class="chip bg-color">微信公众号</span>
                     </a>
                     
                 </div>
@@ -1349,28 +1291,29 @@ Object<span class="token punctuation">.</span><span class="token function">keys<
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/05/12/nodejspeizhi.html">
+                <a href="/posts/a6e58f56.html">
                     <div class="card-image">
                         
                         
-                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/12.jpg" class="responsive-img" alt="nodejs配置">
+                        <img src="http://qiniu.luzhidong.cn/medias/featureimages/17.jpg" class="responsive-img" alt="VUE自定义过滤器和指令">
                         
-                        <span class="card-title">nodejs配置</span>
+                        <span class="card-title">VUE自定义过滤器和指令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">node全局文件夹配置我希望将全模块所在路径和缓存路径放在我node.js安装的文件夹中，则在我安装的文件夹【D:\Develop\nodejs】下创建两个文件夹【node_global】及【node_cache】
-创建完两个空文件夹之后，</div>
+                    <div class="summary">自定义过滤器（filters）1、过滤器可以串联：
+{{ message | filterA | filterB }}
+在这个例子中，filterA被定义为接收单个参数的过滤器函数，表达式message的值将作为参数传入到函数中。然后继续调</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-12
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-22
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/nodejs/" class="post-category" target="_blank">
-                                    nodejs
+                            <a href="/categories/VUE/" class="post-category" target="_blank">
+                                    VUE
                                 </a>
                             
                             
@@ -1380,8 +1323,8 @@ Object<span class="token punctuation">.</span><span class="token function">keys<
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/node/" target="_blank">
-                        <span class="chip bg-color">node</span>
+                    <a href="/tags/vue/" target="_blank">
+                        <span class="chip bg-color">vue</span>
                     </a>
                     
                 </div>
