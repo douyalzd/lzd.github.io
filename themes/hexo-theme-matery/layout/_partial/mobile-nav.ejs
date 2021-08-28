@@ -48,12 +48,12 @@
                                 <%- (config.language === 'zh-CN' && menuMap.has(key)) ? menuMap.get(key) : key %>
                                 <span class="m-icon"><i class="fa fa-chevron-right"></i></span>
                         </a>
-                    <ul>
+                    <ul class="sub-menu">
                     <% for(let childrenLink of theme.menu[key].children){ %>
                         <li> 
                         <a href="<%- url_for(childrenLink.url)%>" >
                             <% if (childrenLink.icon && childrenLink.icon.length > 0) { %>
-                                <i class="fa <%- childrenLink.icon %>" style="left: 25px; position: absolute;"></i>
+                                <i class="fa <%- childrenLink.icon %>"></i>
                         <% } %>
                         <span><%- childrenLink.name %></span>
                         </a>

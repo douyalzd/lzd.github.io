@@ -1751,7 +1751,7 @@ footer .copy-right {
 
 .nav-menu li .sub-nav {
     position: absolute;
-    top: 77px;
+    top: 70px;
     list-style: none;
     /* margin-left: -20px; */
     padding: 0;
@@ -1793,7 +1793,7 @@ footer .copy-right {
 .menus_item_child {
     background-color: rgba(255, 255, 255, .8);
     width: fit-content;
-    border-radius: 10px;
+    border-radius: 5px;
     -webkit-box-shadow: 0 5px 20px -4px rgba(0, 0, 0, .5);
     box-shadow: 0 5px 20px -4px rgba(0, 0, 0, .5);
     display: none;
@@ -1869,4 +1869,27 @@ footer .copy-right {
 .nav-item li:hover a {
     color: #FFF;
     background: rgba(0, 0, 0, .1);
+}
+
+.side-nav .menu-list li > a > i {
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 32px 0 0;
+    width: 24px;
+}
+
+.side-nav .menu-list .sub-menu  li {
+    width: 240px;
+    text-align: left;
+}
+
+
+.mobile-menu-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.mobile-menu-list li > a {
+    padding: 0 40px;
 }
