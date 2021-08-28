@@ -135,14 +135,14 @@
   </url>
   
   <url>
-    <loc>http://luzhidong.cn/categories/index.html</loc>
+    <loc>http://luzhidong.cn/archives/index.html</loc>
     
     <lastmod>2019-05-09</lastmod>
     
   </url>
   
   <url>
-    <loc>http://luzhidong.cn/archives/index.html</loc>
+    <loc>http://luzhidong.cn/categories/index.html</loc>
     
     <lastmod>2019-05-09</lastmod>
     
@@ -193,6 +193,13 @@
   </url>
   
   <url>
+    <loc>http://luzhidong.cn/tags/HTML/</loc>
+    <lastmod>2021-08-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://luzhidong.cn/tags/CSS/</loc>
     <lastmod>2021-08-28</lastmod>
     <changefreq>daily</changefreq>
@@ -228,14 +235,14 @@
   </url>
   
   <url>
-    <loc>http://luzhidong.cn/tags/node/</loc>
+    <loc>http://luzhidong.cn/tags/Typora/</loc>
     <lastmod>2021-08-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://luzhidong.cn/tags/Typora/</loc>
+    <loc>http://luzhidong.cn/tags/node/</loc>
     <lastmod>2021-08-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -256,6 +263,13 @@
   </url>
   
   <url>
+    <loc>http://luzhidong.cn/tags/%E8%B5%84%E6%BA%90%E6%8E%A8%E8%8D%90/</loc>
+    <lastmod>2021-08-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://luzhidong.cn/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
     <lastmod>2021-08-28</lastmod>
     <changefreq>daily</changefreq>
@@ -264,13 +278,6 @@
   
   <url>
     <loc>http://luzhidong.cn/tags/tool/</loc>
-    <lastmod>2021-08-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://luzhidong.cn/tags/HTML/</loc>
     <lastmod>2021-08-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -292,13 +299,6 @@
   
   <url>
     <loc>http://luzhidong.cn/tags/%E7%BB%98%E5%A3%B0%E7%BB%98%E5%BD%B1/</loc>
-    <lastmod>2021-08-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://luzhidong.cn/tags/%E8%B5%84%E6%BA%90%E6%8E%A8%E8%8D%90/</loc>
     <lastmod>2021-08-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -370,6 +370,13 @@
   </url>
   
   <url>
+    <loc>http://luzhidong.cn/categories/%E8%B5%84%E6%BA%90/</loc>
+    <lastmod>2021-08-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://luzhidong.cn/categories/php/</loc>
     <lastmod>2021-08-28</lastmod>
     <changefreq>daily</changefreq>
@@ -378,13 +385,6 @@
   
   <url>
     <loc>http://luzhidong.cn/categories/%E7%BB%98%E5%A3%B0%E7%BB%98%E5%BD%B1/</loc>
-    <lastmod>2021-08-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://luzhidong.cn/categories/%E8%B5%84%E6%BA%90/</loc>
     <lastmod>2021-08-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
