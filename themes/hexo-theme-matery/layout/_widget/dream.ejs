@@ -6,7 +6,22 @@
     <% } %>
     <div class="row">
         <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            <%- theme.dream.text[new Date().getDay()] %>
+            <span id="dreamTxt"></span>
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+            <script>
+                var typed = new Typed("#dreamTxt", {
+                    strings: [ 
+                        <% theme.dream.text.forEach(function(item){%>
+                            "<%= item %>",
+                        <% }) %>
+                    ],
+                    startDelay: <%= theme.dream.startDelay %>,
+                    typeSpeed: <%= theme.dream.typeSpeed %>,
+                    loop: <%= theme.dream.loop %>,
+                    backSpeed: <%= theme.dream.backSpeed %>,
+                    showCursor: <%= theme.dream.showCursor %>
+                });
+            </script>
         </div>
     </div>
 </div>
