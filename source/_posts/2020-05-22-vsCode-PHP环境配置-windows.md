@@ -6,11 +6,12 @@ author:
 img: 'http://qiniu.luzhidong.cn/static/images/cover/002.jpg'
 top: false
 mathjax: false
-summary: vsCode-PHP环境配置-windows，在网上搜了蛮多, 全面说明的vscode配置php环境的很少，第一次次接触php这个文章很适合PHP新手
+summary: 'vsCode-PHP环境配置-windows，在网上搜了蛮多, 全面说明的vscode配置php环境的很少，第一次次接触php这个文章很适合PHP新手'
 categories: php
 tags:
   - php
   - vsCode
+abbrlink: 7de543a2
 date: 2020-05-22 11:36:17
 ---
 

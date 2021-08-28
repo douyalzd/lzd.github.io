@@ -1,15 +1,16 @@
 ---
 title: 开发工具VsCode-Eslint和代码格式化相关配置
 author:
-    nick: lzd
-    github_name: douyalzd
+  nick: lzd
+  github_name: douyalzd
 mathjax: false
 top: false
 summary: 为使开发更规范化，这里给出了关于vscode开发工具格式化代码的相关设置和eslint的配置信息
 categories: 开发工具
 tags:
-    - eslitn
-    - 开发工具
+  - eslitn
+  - 开发工具
+abbrlink: 874c4e84
 date: 2019-02-15 12:02:49
 ---
 
