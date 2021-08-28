@@ -25,26 +25,52 @@
         menuMap.set("Tools", "工具箱");
     %>
 
+    <!-- 支持二级菜单特性 洪卫 shw2018 modify 2019.09.17  -->
     <ul class="menu-list mobile-menu-list">
         <% Object.keys(theme.menu).forEach(function(key) { %>
-        <li>
-            <a href="<%- theme.menu[key].url %>" class="waves-effect waves-light">
-                <% if (theme.menu[key].icon && theme.menu[key].icon.length > 0) { %>
-                <i class="fa fa-fw <%- theme.menu[key].icon %>"></i>
+            <li class="m-nav-item">
+                    <% if(!theme.menu[key].children) { %>
+                        <a href="<%- theme.menu[key].url %>" class="waves-effect waves-light">
+                            <% if (theme.menu[key].icon && theme.menu[key].icon.length > 0) { %>
+                            <i class="fa fa-fw <%- theme.menu[key].icon %>"></i>
+                            <% } else { %>
+                            <i class="fa fa-fw fa-link"></i>
+                            <% } %>
+                            <%- (config.language === 'zh-CN' && menuMap.has(key)) ? menuMap.get(key) : key %>
+                        </a>
                 <% } else { %>
-                <i class="fa fa-fw fa-link"></i>
+                        <a href="javascript:;">
+                                <% if (theme.menu[key].icon && theme.menu[key].icon.length > 0) { %>
+                                <i class="fa fa-fw <%- theme.menu[key].icon %>"></i>
+                                <% } else { %>
+                                <i class="fa fa-fw fa-link"></i>
+                                <% } %>
+                                <%- (config.language === 'zh-CN' && menuMap.has(key)) ? menuMap.get(key) : key %>
+                                <span class="m-icon"><i class="fa fa-chevron-right"></i></span>
+                        </a>
+                    <ul>
+                    <% for(let childrenLink of theme.menu[key].children){ %>
+                        <li> 
+                        <a href="<%- url_for(childrenLink.url)%>" >
+                            <% if (childrenLink.icon && childrenLink.icon.length > 0) { %>
+                                <i class="fa <%- childrenLink.icon %>" style="left: 25px; position: absolute;"></i>
+                        <% } %>
+                        <span><%- childrenLink.name %></span>
+                        </a>
+                        </li>
+                    <% } %> 
+                    </ul>
                 <% } %>
-                <%- (config.language === 'zh-CN' && menuMap.has(key)) ? menuMap.get(key) : key %>
-            </a>
-        </li>
-        <% }); %>
-        <% if (theme.githubLink && theme.githubLink.enable) { %>
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="<%- theme.githubLink.url %>" class="waves-effect waves-light" target="_blank">
-                <i class="fa fa-github-square fa-fw"></i><%- theme.githubLink.title %>
-            </a>
-        </li>
+                </li>
+            <% }); %>
+
+            <% if (theme.githubLink && theme.githubLink.enable) { %>
+            <li><div class="divider"></div></li>
+            <li>
+                <a href="<%- theme.githubLink.url %>" class="waves-effect waves-light" target="_blank">
+                    <i class="fa fa-github-square fa-fw"></i><%- theme.githubLink.title %>
+                </a>
+            </li>
         <% } %>
     </ul>
 
