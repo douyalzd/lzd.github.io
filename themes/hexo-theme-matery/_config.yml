@@ -90,7 +90,7 @@ recommend:
 # Configure website favicon and LOGO
 # 配置网站favicon和网站LOGO
 favicon: /favicon.png
-logo: http://qiniu.luzhidong.cn/medias/logo3.png
+logo: /medias/logo2.png
 
 # The configuration of the second button in the home banner,
 # including the display name of the button, the font awesome icon, and the hyperlink to the button.
@@ -158,7 +158,7 @@ clicklove:
 # profile in about page, including avatars, career, and personal introductions.
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
-  avatar: http://qiniu.luzhidong.cn/medias/avatar3.awebp
+  avatar: /medias/avatar3.awebp
   career: 前端开发工程师
   introduction: If you wish to succeed, you should use persistence as your good friend, experience as your reference, prudence as your brother and hope as your sentry.
 
@@ -215,9 +215,9 @@ mySkills:
 myGallery:
   enable: true
   data:
-    - http://qiniu.luzhidong.cn/medias/featureimages/0.jpg
-    - http://qiniu.luzhidong.cn/medias/featureimages/1.jpg
-    - http://qiniu.luzhidong.cn/medias/featureimages/2.jpg
+    - /medias/featureimages/0.jpg
+    - /medias/featureimages/1.jpg
+    - /medias/featureimages/2.jpg
 
 # Whether to display post-calender in the `archive` page
 # 设置在归档页面中是否显示'文章日历'控件
@@ -304,35 +304,35 @@ googleAnalytics:
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
 featureImages: 
-  - http://qiniu.luzhidong.cn/medias/featureimages/0.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/1.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/2.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/3.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/4.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/5.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/6.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/7.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/8.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/9.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/10.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/11.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/12.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/13.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/14.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/15.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/16.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/17.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/18.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/19.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/20.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/21.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/22.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/23.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/24.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/25.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/26.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/27.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/28.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/29.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/30.jpg
-  - http://qiniu.luzhidong.cn/medias/featureimages/31.jpg
+  - /medias/featureimages/0.jpg
+  - /medias/featureimages/1.jpg
+  - /medias/featureimages/2.jpg
+  - /medias/featureimages/3.jpg
+  - /medias/featureimages/4.jpg
+  - /medias/featureimages/5.jpg
+  - /medias/featureimages/6.jpg
+  - /medias/featureimages/7.jpg
+  - /medias/featureimages/8.jpg
+  - /medias/featureimages/9.jpg
+  - /medias/featureimages/10.jpeg
+  - /medias/featureimages/11.jpg
+  - /medias/featureimages/12.jpg
+  - /medias/featureimages/13.jpg
+  - /medias/featureimages/14.jpeg
+  - /medias/featureimages/15.jpeg
+  - /medias/featureimages/16.jpeg
+  - /medias/featureimages/17.jpeg
+  - /medias/featureimages/18.jpeg
+  - /medias/featureimages/19.jpeg
+  - /medias/featureimages/20.jpg
+  - /medias/featureimages/21.jpg
+  - /medias/featureimages/22.jpg
+  - /medias/featureimages/23.jpg
+  - /medias/featureimages/24.jpg
+  - /medias/featureimages/25.jpg
+  - /medias/featureimages/26.jpg
+  - /medias/featureimages/27.jpg
+  - /medias/featureimages/28.jpg
+  - /medias/featureimages/29.jpg
+  - /medias/featureimages/30.jpg
+  - /medias/featureimages/31.jpg

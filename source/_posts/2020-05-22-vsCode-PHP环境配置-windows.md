@@ -3,7 +3,7 @@ title: vsCode-PHP环境配置-windows
 author:
   nick: lzd
   github_name: douyalzd
-img: 'http://qiniu.luzhidong.cn/static/images/cover/002.jpg'
+img: '/static/images/cover/002.jpg'
 top: false
 mathjax: false
 summary: 'vsCode-PHP环境配置-windows，在网上搜了蛮多, 全面说明的vscode配置php环境的很少，第一次次接触php这个文章很适合PHP新手'

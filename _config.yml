@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://luzhidong.cn/
+url: https://luzhidong.cn/
 root: /
 # permalink: :year/:month/:day/:title.html
 permalink: posts/:abbrlink.html
@@ -88,13 +88,13 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: hexo-theme-matery
 
-avatar: http://qiniu.luzhidong.cn/medias/avatar2.jpg
+avatar: ./medias/avatar2.jpg
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy: 
   type: git
-  repository: git@gitee.com:douyadg/douyadg.git
+  repository: git@github.com:douyalzd/lzd.github.io.git
   branch: gh-pages
     # - git@gitee.com:douyadg/douyadg.git 
     # - git@github.com:douyalzd/lzd.github.io.git
@@ -137,8 +137,8 @@ permalink_pinyin:
 ##image.extend  这是个特殊参数，用于生成缩略图或加水印等操作。具体请参考http://developer.qiniu.com/docs/v6/api/reference/fop/image/ 
 ##              可使用基本图片处理、高级图片处理、图片水印处理这3个接口。例如 ?imageView2/2/w/500 即生成宽度最多500px的缩略图
 qiniu:
-  offline: false
-  sync: true
+  offline: true
+  sync: false
   bucket: blog
   secret_file: source/_data/key.json
   # access_key: AccessKey

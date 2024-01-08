@@ -1,17 +1,17 @@
 [{
-    "avatar": "http://qiniu.luzhidong.cn/medias/github.png",
+    "avatar": "/medias/github.png",
     "name": "老郭种树",
     "introduction": "做正确的事，剩下的交给时间",
     "url": "https://guozh.net/",
     "title": "前去学习"
 },{
-    "avatar": "http://qiniu.luzhidong.cn/medias/github.png",
+    "avatar": "/medias/github.png",
     "name": "js-questions",
     "introduction": "从基础到进阶，测试你有多了解 JavaScript，刷新你的知识",
     "url": "https://github.com/lydiahallie/javascript-questions/blob/master/zh-CN/README-zh_CN.md",
     "title": "前去学习"
 },{
-    "avatar": "http://qiniu.luzhidong.cn/medias/github.png",
+    "avatar": "/medias/github.png",
     "name": "MR.TABLE",
     "introduction": "ONCE I WAS A PROGRAMMER, UNTIL MY KNEES IN AN ARROW",
     "url": "https://mrtable.cn/",
