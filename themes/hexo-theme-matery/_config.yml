@@ -260,7 +260,7 @@ livere:
 # To use it, activate the configuration item and set appId and appKey.
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
-  enable: true
+  enable: false
   appId: 'eGQo1GVw9hzjYKunc7w5WUiz-gzGzoHsz'
   appKey: 'COYw02xpalomAH6DpVic7Shd'
   notify: false
